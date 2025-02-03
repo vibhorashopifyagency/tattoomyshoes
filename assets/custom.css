@@ -7,6 +7,6 @@
 }
 .tmenu-watermark>span, .tmenu-watermark>a { visibility: hidden !important; }
 .tmenu_item_link { color: #000000; }
-.tmenu_item--root > .tmenu_submenu {
+#mega-custom-menu > .tmenu_submenu {
     box-shadow: #000000 !important;
 }
