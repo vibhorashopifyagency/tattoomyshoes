@@ -25,7 +25,7 @@
             "box_align": "middle-center",
             "show_text_box": false,
             "text_alignment": "center",
-            "image_overlay_opacity": 30,
+            "image_overlay_opacity": 0,
             "color_scheme": "",
             "text_alignment_mobile": "center"
           }
