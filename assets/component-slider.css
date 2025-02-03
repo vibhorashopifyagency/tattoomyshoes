@@ -316,7 +316,8 @@ slider-component.slider-component-full-width {
 .slider-buttons {
   display: flex;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
+  justify-content: flex-end;
 }
 
 @media screen and (min-width: 990px) {
