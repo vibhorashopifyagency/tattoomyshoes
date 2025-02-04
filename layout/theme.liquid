@@ -248,10 +248,6 @@
         font-weight: var(--font-body-weight);
       }
 
-      .tmenu_item_text { color: #ffffff !important; }
-      .tmenu-watermark>span, .tmenu-watermark>a { visibility: hidden !important; }
-      .tmenu_item_link { color: #000000; }
-
       @media screen and (min-width: 750px) {
         body {
           font-size: 1.6rem;
@@ -259,7 +255,9 @@
       }
     {% endstyle %}
 
+    {{ 'custom.css' | asset_url | stylesheet_tag }}
     {{ 'base.css' | asset_url | stylesheet_tag }}
+    
     <link rel="stylesheet" href="{{ 'component-cart-items.css' | asset_url }}" media="print" onload="this.media='all'">
 
     {%- if settings.cart_type == 'drawer' -%}

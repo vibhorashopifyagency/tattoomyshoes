@@ -101,7 +101,8 @@ slideshow-component .slideshow.banner {
 }
 
 .slideshow__controls {
-  border: 0.1rem solid rgba(var(--color-foreground), 0.08);
+  /* border: 0.1rem solid rgba(var(--color-foreground), 0.08); */
+  border: none;
 }
 
 .slideshow__controls--top {
@@ -129,6 +130,10 @@ slideshow-component .slideshow.banner {
 slideshow-component:not(.page-width) .slider-buttons {
   border-right: 0;
   border-left: 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin: auto;
 }
 
 .slideshow__control-wrapper {
