@@ -68,3 +68,11 @@
   object-position: center;
   aspect-ratio: 1/1;
 }
+@media (max-width: 749px) {
+  .two-image-columns {
+    flex-direction: column;
+  }
+  .two-image-columns .two-image-col--inner-container {
+    max-width: 100%;
+  }
+}
