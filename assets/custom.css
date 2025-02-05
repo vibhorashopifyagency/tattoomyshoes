@@ -48,3 +48,23 @@
 .whatsapp-button:hover, .email-button:hover {
   transform: scale(1.05);
 }
+
+/* Custom Two Image Column Section CSS */
+.two-image-columns {
+  border: 2px solid #ae0000;
+  display: flex;
+  position: relative;
+  max-width: 100%;
+  width: 100%;
+}
+.two-image-columns .two-image-col--inner-container {
+  max-width: 50%;
+  width: 100%;
+  position: relative;
+}
+.two-image-columns .two-image-col--inner-container > img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  aspect-ratio: 1/1;
+}
