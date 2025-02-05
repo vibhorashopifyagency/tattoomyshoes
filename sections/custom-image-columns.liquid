@@ -1,10 +1,45 @@
 <div id="two-image-columns--{{ section.id }}" class="two-image-columns">
     <div class="two-image-col--inner-container">
-        <img src="//mpsinxcuhmcbmy9m-90453344552.shopifypreview.com/cdn/shop/files/k7yUj-eaap6s6lx337xppzrmmvobrb.jpg?v=1738585353" alt="" />
+        {% comment %} <img src="//mpsinxcuhmcbmy9m-90453344552.shopifypreview.com/cdn/shop/files/k7yUj-eaap6s6lx337xppzrmmvobrb.jpg?v=1738585353" alt="" /> {% endcomment %}
+        <img src="{{ section.settings.left_img |  img_url: 'master' }}" alt="" />
+
+        <div style="
+      position: absolute;
+      text-align: center;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      /* background-color: #000000; */
+      /* opacity: 0.2; */
+  ">
+          <div style="
+      /* border: 2px solid#f2f2f2; */
+      padding: 10px 20px;
+      font-family: 'Righteous';
+      max-width: calc(100% / 2);
+      width: 100%;
+      background-color: #410202;
+      opacity: 0.8;
+  ">
+      <p style="
+      color: #ffffff;
+      font-size: 24px;
+      margin: 10px;
+  ">Hello World</p>
+              <h2 style="
+      color: #ffffff;
+  ">LOREM IPSUM</h2>
+              <a href="#" style="
+      color: #ffffff;
+  ">Button</a>
+          </div>
+      </div>
     </div>
 
     <div class="two-image-col--inner-container">
-        <img src="//mpsinxcuhmcbmy9m-90453344552.shopifypreview.com/cdn/shop/files/20240428_150958.jpg?v=1738595488" alt="" /> 
+        {% comment %} <img src="//mpsinxcuhmcbmy9m-90453344552.shopifypreview.com/cdn/shop/files/20240428_150958.jpg?v=1738595488" alt="" /> {% endcomment %}
+        <img src="{{ section.settings.right_img |  img_url: 'master' }}" alt="" />
     </div>
 </div>
 
@@ -17,6 +52,16 @@
     "groups": ["header", "footer"]
   },
   "settings": [
+    {
+      "type": "image_picker",
+      "id": "left_img",
+      "label": "Upload image for left side"
+    },
+    {
+      "type": "image_picker",
+      "id": "right_img",
+      "label": "Upload image for Right side"
+    },
     {
       "type": "inline_richtext",
       "id": "heading",
