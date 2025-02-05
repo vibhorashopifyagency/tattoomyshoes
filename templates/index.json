@@ -14,8 +14,16 @@
       "settings": {
         "left_img": "shopify://shop_images/k7yUj-eaap6s6lx337xppzrmmvobrb.jpg",
         "right_img": "shopify://shop_images/Gill_Montie.png",
-        "description": "",
-        "full_width": false,
+        "left_subheading": "",
+        "left_heading": "",
+        "left_button_text": "",
+        "left_button_link": "",
+        "right_subheading": "",
+        "right_heading": "",
+        "right_button_text": "",
+        "right_button_link": "",
+        "show_left_content": true,
+        "show_right_content": true,
         "padding_top": 0,
         "padding_bottom": 0
       }
