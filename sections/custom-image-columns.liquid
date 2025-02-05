@@ -1,6 +1,7 @@
 <div id="two-image-columns--{{ section.id }}" class="two-image-columns">
+  
     <div class="two-image-col--inner-container">
-        {% comment %} <img src="//mpsinxcuhmcbmy9m-90453344552.shopifypreview.com/cdn/shop/files/k7yUj-eaap6s6lx337xppzrmmvobrb.jpg?v=1738585353" alt="" /> {% endcomment %}
+
         <img src="{{ section.settings.left_img |  img_url: 'master' }}" alt="" />
 
         <div class="tic-inner-text--container">
@@ -14,6 +15,7 @@
     </div>
 
     <div class="two-image-col--inner-container">
+
         <img src="{{ section.settings.right_img |  img_url: 'master' }}" alt="" />
 
         <div class="tic-inner-text--container">
