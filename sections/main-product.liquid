@@ -464,6 +464,7 @@
               {%- when 'variant_picker' -%}
                 {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id %}
 
+              {% if product.id == '9555147030824' %}
               <div id="custom-buttons">
                 <a id="whatsapp-button" href="#" class="whatsapp-button" target="_blank">
                   <button class="whatsapp-button">
@@ -481,6 +482,7 @@
                   </button>
                 </a>
               </div>
+              {% endif %}
                       
               {%- when 'buy_buttons' -%}
                 {%- render 'buy-buttons',
