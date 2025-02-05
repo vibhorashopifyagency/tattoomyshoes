@@ -51,7 +51,6 @@
 
 /* Custom Two Image Column Section CSS */
 .two-image-columns {
-  border: 2px solid #ae0000;
   display: flex;
   position: relative;
   max-width: 100%;
