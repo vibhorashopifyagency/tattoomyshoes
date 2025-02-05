@@ -124,7 +124,7 @@
     "cart_type": "drawer",
     "show_vendor": false,
     "show_cart_note": false,
-    "cart_drawer_collection": "hand-drawn",
+    "cart_drawer_collection": "",
     "cart_color_scheme": "scheme-4",
     "sections": {
       "main-password-header": {
