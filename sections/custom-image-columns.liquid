@@ -1,29 +1,26 @@
 <div id="two-image-columns--{{ section.id }}" class="two-image-columns">
 
     <div class="two-image-col--inner-container">
+      <img src="{{ section.settings.left_img |  img_url: 'master' }}" alt="" />
 
-        <img src="{{ section.settings.left_img |  img_url: 'master' }}" alt="" />
-
-        <div class="tic-inner-text--container">
-          <div class="text-contents">
-            <p>Hello World</p>
-            <h2>LOREM IPSUM</h2>
-            <a href="#">Button</a>
-          </div>
+      <div class="tic-inner-text--container">
+        <div class="text-contents">
+          <p>Hello World</p>
+          <h2>LOREM IPSUM</h2>
+          <a href="#">Button</a>
         </div>
+      </div>
     </div>
 
     <div class="two-image-col--inner-container">
-
-        <img src="{{ section.settings.right_img |  img_url: 'master' }}" alt="" />
-
-        <div class="tic-inner-text--container">
-          <div class="text-contents">
-            <p>Hello World</p>
-            <h2>LOREM IPSUM</h2>
-            <a href="#">Button</a>
-          </div>
+      <img src="{{ section.settings.right_img |  img_url: 'master' }}" alt="" />
+      <div class="tic-inner-text--container">
+        <div class="text-contents">
+          <p>Hello World</p>
+          <h2>LOREM IPSUM</h2>
+          <a href="#">Button</a>
         </div>
+      </div>
     </div>
 
 </div>
