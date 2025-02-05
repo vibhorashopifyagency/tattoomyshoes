@@ -28,6 +28,46 @@
         "padding_bottom": 0
       }
     },
+    "collection_list_UgeEd7": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_hDGTWi": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "high-tops"
+          }
+        },
+        "featured_collection_aYzgxz": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "boots"
+          }
+        },
+        "featured_collection_CtAnLm": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "tattoo-my-shoes-slip-on-shoes"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_hDGTWi",
+        "featured_collection_aYzgxz",
+        "featured_collection_CtAnLm"
+      ],
+      "settings": {
+        "title": "TOP CATEGORIES",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "color_scheme": "",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "slideshow_MMUTTb": {
       "type": "slideshow",
       "blocks": {
@@ -153,6 +193,7 @@
   },
   "order": [
     "custom_image_columns_F8txGD",
+    "collection_list_UgeEd7",
     "slideshow_MMUTTb",
     "image_banner",
     "featured_collection"
