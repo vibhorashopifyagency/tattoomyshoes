@@ -13,6 +13,12 @@
 }
 
 /* Custom Product Template Buttons CSS */
+.custom-buttons {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 10px;
+  margin-top: 32px;
+}
 .whatsapp-button {
   background-color: #0f9b43;
 }
