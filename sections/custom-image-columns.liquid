@@ -1,10 +1,12 @@
 <div id="two-image-columns--{{ section.id }}" class="two-image-columns">
     <div class="two-image-col--inner-container">
-        <img src="//mpsinxcuhmcbmy9m-90453344552.shopifypreview.com/cdn/shop/files/k7yUj-eaap6s6lx337xppzrmmvobrb.jpg?v=1738585353" alt="" />
+        {% comment %} <img src="//mpsinxcuhmcbmy9m-90453344552.shopifypreview.com/cdn/shop/files/k7yUj-eaap6s6lx337xppzrmmvobrb.jpg?v=1738585353" alt="" /> {% endcomment %}
+        <img src="{{ section.settings.left_img |  img_url: 'master' }}" alt="" />
     </div>
 
     <div class="two-image-col--inner-container">
-        <img src="//mpsinxcuhmcbmy9m-90453344552.shopifypreview.com/cdn/shop/files/20240428_150958.jpg?v=1738595488" alt="" /> 
+        {% comment %} <img src="//mpsinxcuhmcbmy9m-90453344552.shopifypreview.com/cdn/shop/files/20240428_150958.jpg?v=1738595488" alt="" /> {% endcomment %}
+        <img src="{{ section.settings.right_img |  img_url: 'master' }}" alt="" />
     </div>
 </div>
 
