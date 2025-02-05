@@ -85,11 +85,10 @@
   opacity: 0.8;
 }
 .tic-inner-text--container .text-contents > p {
-  color: #ffffff;
   font-size: 24px;
   margin: 10px;
 }
-.tic-inner-text--container .text-contents > h2 {
+.tic-inner-text--container .text-contents > p, .tic-inner-text--container .text-contents > h2, .tic-inner-text--container .text-contents > a {
   color: #ffffff;
 }
 @media (max-width: 749px) {
