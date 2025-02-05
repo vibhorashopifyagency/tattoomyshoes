@@ -131,7 +131,7 @@
   endfor
 -%}
 
-<{% if section.settings.sticky_header_type != 'none' %}sticky-header data-sticky-type="{{ section.settings.sticky_header_type }}"{% else %}div{% endif %} class="{% if section.settings.show_line_separator %} header-wrapper--border-bottom{% endif %}" style="background-image: linear-gradient(45deg, rgba(30, 6, 8, 1), rgba(95, 29, 102, 1) 50%, rgba(4, 15, 26, 1) 100%)">
+<{% if section.settings.sticky_header_type != 'none' %}sticky-header data-sticky-type="{{ section.settings.sticky_header_type }}"{% else %}div{% endif %} class="header-wrapper color-{{ section.settings.color_scheme }} gradient{% if section.settings.show_line_separator %} header-wrapper--border-bottom{% endif %}">
   {%- liquid
     assign social_links = false
     assign localization_forms = false
