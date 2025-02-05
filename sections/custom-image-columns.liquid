@@ -16,6 +16,7 @@
     <div class="two-image-col--inner-container">
       <img src="{{ section.settings.left_img |  img_url: 'master' }}" width="" height="" alt="Tattoo My Shoes Homepge banner left image" />
 
+      {% if section.settings.show_left_content == true %}
       <div class="tic-inner-text--container">
         <div class="text-contents">
           <p>{{ section.settings.left_subheading }}</p>
@@ -23,11 +24,13 @@
           <a href="{{ section.settings.left_button_link }}">{{ section.settings.left_button_text }}</a>
         </div>
       </div>
+      {% endif %}
     </div>
 
     <div class="two-image-col--inner-container">
       <img src="{{ section.settings.right_img |  img_url: 'master' }}" width="" height="" alt="Tattoo My Shoes Homepge banner right image" />
 
+      {% if section.settings.show_right_content == true %}
       <div class="tic-inner-text--container">
         <div class="text-contents">
           <p>Hello World</p>
@@ -35,6 +38,7 @@
           <a href="#">Button</a>
         </div>
       </div>
+    {% endif %}
     </div>
 
 </div>
