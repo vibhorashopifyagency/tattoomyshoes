@@ -69,6 +69,14 @@
   object-position: center;
   aspect-ratio: 1/1;
 }
+.tic-inner-text--container {
+  position: absolute;
+  text-align: center;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 @media (max-width: 749px) {
   .two-image-columns {
     flex-direction: column;
