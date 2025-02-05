@@ -14,8 +14,16 @@
       "settings": {
         "left_img": "shopify://shop_images/k7yUj-eaap6s6lx337xppzrmmvobrb.jpg",
         "right_img": "shopify://shop_images/Gill_Montie.png",
-        "description": "",
-        "full_width": false,
+        "left_subheading": "Subheading",
+        "left_heading": "Heading",
+        "left_button_text": "Button",
+        "left_button_link": "shopify://collections/newest-products",
+        "right_subheading": "Subheading",
+        "right_heading": "Heading",
+        "right_button_text": "Button",
+        "right_button_link": "shopify://collections/gill-monte-1",
+        "show_left_content": true,
+        "show_right_content": true,
         "padding_top": 0,
         "padding_bottom": 0
       }
