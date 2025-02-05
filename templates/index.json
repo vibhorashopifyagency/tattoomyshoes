@@ -130,9 +130,24 @@
         "padding_top": 44,
         "padding_bottom": 36
       }
+    },
+    "custom_image_columns_F8txGD": {
+      "type": "custom-image-columns",
+      "settings": {
+        "heading": "Video",
+        "heading_size": "h1",
+        "enable_video_looping": false,
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
+    "custom_image_columns_F8txGD",
     "slideshow_MMUTTb",
     "image_banner",
     "featured_collection"
