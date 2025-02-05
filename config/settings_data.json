@@ -10,9 +10,9 @@
 {
   "current": {
     "logo_width": 90,
-    "type_header_font": "assistant_n4",
+    "type_header_font": "righteous_n4",
     "heading_scale": 100,
-    "type_body_font": "assistant_n4",
+    "type_body_font": "alegreya_n4",
     "body_scale": 100,
     "page_width": 1500,
     "spacing_sections": 0,
@@ -212,7 +212,7 @@
           "background": "#390303",
           "background_gradient": "",
           "text": "#ffffff",
-          "button": "#FFFFFF",
+          "button": "#ffffff",
           "button_label": "#000000",
           "secondary_button_label": "#ffffff",
           "shadow": "#121212"
