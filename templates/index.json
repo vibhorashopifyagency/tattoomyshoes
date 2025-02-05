@@ -9,6 +9,22 @@
  */
 {
   "sections": {
+    "custom_image_columns_F8txGD": {
+      "type": "custom-image-columns",
+      "settings": {
+        "left_img": "shopify://shop_images/k7yUj-eaap6s6lx337xppzrmmvobrb.jpg",
+        "right_img": "shopify://shop_images/Gill_Montie.png",
+        "heading": "Video",
+        "heading_size": "h1",
+        "enable_video_looping": false,
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "slideshow_MMUTTb": {
       "type": "slideshow",
       "blocks": {
@@ -128,20 +144,6 @@
         "columns_mobile": "1",
         "swipe_on_mobile": true,
         "padding_top": 44,
-        "padding_bottom": 36
-      }
-    },
-    "custom_image_columns_F8txGD": {
-      "type": "custom-image-columns",
-      "settings": {
-        "heading": "Video",
-        "heading_size": "h1",
-        "enable_video_looping": false,
-        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-        "description": "",
-        "full_width": false,
-        "color_scheme": "",
-        "padding_top": 36,
         "padding_bottom": 36
       }
     }
