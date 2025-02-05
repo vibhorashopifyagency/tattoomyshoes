@@ -89,6 +89,9 @@
   font-size: 24px;
   margin: 10px;
 }
+.tic-inner-text--container .text-contents > h2 {
+  color: #ffffff;
+}
 @media (max-width: 749px) {
   .two-image-columns {
     flex-direction: column;
