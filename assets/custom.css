@@ -13,7 +13,7 @@
 }
 
 /* Custom Product Template Buttons CSS */
-.custom-buttons {
+#custom-buttons {
   display: flex;
   flex-wrap: nowrap;
   gap: 10px;
