@@ -33,9 +33,9 @@
       {% if section.settings.show_right_content == true %}
       <div class="tic-inner-text--container">
         <div class="text-contents">
-          <p>Hello World</p>
-          <h2>LOREM IPSUM</h2>
-          <a href="#">Button</a>
+          <p>{{ section.settings.right_subheading }}</p>
+          <h2>{{ section.settings.right_heading }}</h2>
+          <a href="{{ section.settings.right_button_link }}">{{ section.settings.right_button_text }}</a>
         </div>
       </div>
     {% endif %}
