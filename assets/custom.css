@@ -77,6 +77,13 @@
   align-items: center;
   justify-content: center;
 }
+.tic-inner-text--container .text-contents {
+  padding: 10px 20px;
+  max-width: calc(100% / 2);
+  width: 100%;
+  background-color: #410202;
+  opacity: 0.8;
+}
 @media (max-width: 749px) {
   .two-image-columns {
     flex-direction: column;
