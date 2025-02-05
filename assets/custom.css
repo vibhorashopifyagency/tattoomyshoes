@@ -90,7 +90,7 @@
 .tic-inner-text--container .text-contents > p, .tic-inner-text--container .text-contents > h2, .tic-inner-text--container .text-contents > a {
   color: #ffffff;
 }
-/* .tic-inner-text--container .text-contents > a {text-decoration: none;} */
+.tic-inner-text--container .text-contents > a {text-decoration: none;}
 .tic-inner-text--container .text-contents > a:hover {
   text-underline-offset: 4px;
 }
