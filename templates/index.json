@@ -90,7 +90,7 @@
         "button"
       ],
       "settings": {
-        "image": "shopify://shop_images/20240428_151020.jpg",
+        "image": "shopify://shop_images/k7yUj-eaap6s6lx337xppzrmmvobrb.jpg",
         "image_overlay_opacity": 40,
         "image_height": "medium",
         "desktop_content_position": "middle-center",
@@ -99,7 +99,7 @@
         "color_scheme": "scheme-5",
         "image_behavior": "fixed",
         "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
+        "stack_images_on_mobile": true,
         "show_text_below": false
       }
     },
