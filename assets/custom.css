@@ -90,6 +90,9 @@
 .tic-inner-text--container .text-contents > p, .tic-inner-text--container .text-contents > h2, .tic-inner-text--container .text-contents > a {
   color: #ffffff;
 }
+.tic-inner-text--container .text-contents > a {
+  text-underline-offset: 5px;
+}
 @media (max-width: 749px) {
   .two-image-columns {
     flex-direction: column;
