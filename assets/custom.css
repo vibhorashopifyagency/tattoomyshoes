@@ -77,15 +77,18 @@
   justify-content: center;
 }
 .tic-inner-text--container .text-contents {
-  padding: 10px 20px;
+  padding: 20px;
   max-width: calc(100% / 2);
   width: 100%;
   background-color: #410202;
   opacity: 0.8;
 }
 .tic-inner-text--container .text-contents > p {
-  font-size: 24px;
-  margin: 10px;
+  font-size: 14px;
+  margin: 0px;
+}
+.tic-inner-text--container .text-contents > p {
+  margin: 14px;
 }
 .tic-inner-text--container .text-contents > p, .tic-inner-text--container .text-contents > h2, .tic-inner-text--container .text-contents > a {
   color: #ffffff;

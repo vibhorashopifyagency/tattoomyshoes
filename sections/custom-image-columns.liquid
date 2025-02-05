@@ -16,25 +16,29 @@
     <div class="two-image-col--inner-container">
       <img src="{{ section.settings.left_img |  img_url: 'master' }}" width="" height="" alt="Tattoo My Shoes Homepge banner left image" />
 
+      {% if section.settings.show_left_content == true %}
       <div class="tic-inner-text--container">
         <div class="text-contents">
-          <p>Hello World</p>
-          <h2>LOREM IPSUM</h2>
-          <a href="#">Button</a>
+          <p>{{ section.settings.left_subheading }}</p>
+          <h2>{{ section.settings.left_heading }}</h2>
+          <a href="{{ section.settings.left_button_link }}">{{ section.settings.left_button_text }}</a>
         </div>
       </div>
+      {% endif %}
     </div>
 
     <div class="two-image-col--inner-container">
       <img src="{{ section.settings.right_img |  img_url: 'master' }}" width="" height="" alt="Tattoo My Shoes Homepge banner right image" />
 
+      {% if section.settings.show_right_content == true %}
       <div class="tic-inner-text--container">
         <div class="text-contents">
-          <p>Hello World</p>
-          <h2>LOREM IPSUM</h2>
-          <a href="#">Button</a>
+          <p>{{ section.settings.right_subheading }}</p>
+          <h2>{{ section.settings.right_heading }}</h2>
+          <a href="{{ section.settings.right_button_link }}">{{ section.settings.right_button_text }}</a>
         </div>
       </div>
+    {% endif %}
     </div>
 
 </div>
@@ -59,19 +63,63 @@
       "label": "Upload image for Right side"
     },
     {
+      "type": "header",
+      "content": "Text Contents for Left Image"
+    },
+    {
       "type": "text",
-      "id": "description",
-      "label": "t:sections.video.settings.description.label",
-      "info": "t:sections.video.settings.description.info"
+      "id": "left_subheading",
+      "label": "Subheading"
+    },
+    {
+      "type": "text",
+      "id": "left_heading",
+      "label": "Heading"
+    },
+    {
+      "type": "text",
+      "id": "left_button_text",
+      "label": "Button Text"
+    },
+    {
+      "type": "url",
+      "id": "left_button_link",
+      "label": "Button Text"
     },
     {
       "type": "header",
-      "content": "t:sections.video.settings.header__3.content"
+      "content": "Text Contents for Right Image"
+    },
+    {
+      "type": "text",
+      "id": "right_subheading",
+      "label": "Subheading"
+    },
+    {
+      "type": "text",
+      "id": "right_heading",
+      "label": "Heading"
+    },
+    {
+      "type": "text",
+      "id": "right_button_text",
+      "label": "Button Text"
+    },
+    {
+      "type": "url",
+      "id": "right_button_link",
+      "label": "Button Text"
     },
     {
       "type": "checkbox",
-      "id": "full_width",
-      "label": "t:sections.video.settings.full_width.label",
+      "id": "show_left_content",
+      "label": "Show Content on Left Side Image",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "show_right_content",
+      "label": "Show Content on Right Side Image",
       "default": false
     },
     {
