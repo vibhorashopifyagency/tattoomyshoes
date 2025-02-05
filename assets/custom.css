@@ -49,9 +49,8 @@
   transform: scale(1.05);
 }
 
-/* Custom Two Image Column Section CSS */
+/* Custom Two Image Column Section CSS Starts Here */
 .two-image-columns {
-  border: 2px solid #ae0000;
   display: flex;
   position: relative;
   max-width: 100%;
@@ -69,6 +68,31 @@
   object-position: center;
   aspect-ratio: 1/1;
 }
+.tic-inner-text--container {
+  position: absolute;
+  text-align: center;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tic-inner-text--container .text-contents {
+  padding: 10px 20px;
+  max-width: calc(100% / 2);
+  width: 100%;
+  background-color: #410202;
+  opacity: 0.8;
+}
+.tic-inner-text--container .text-contents > p {
+  font-size: 24px;
+  margin: 10px;
+}
+.tic-inner-text--container .text-contents > p, .tic-inner-text--container .text-contents > h2, .tic-inner-text--container .text-contents > a {
+  color: #ffffff;
+}
+.tic-inner-text--container .text-contents > a {
+  text-underline-offset: 5px;
+}
 @media (max-width: 749px) {
   .two-image-columns {
     flex-direction: column;
@@ -77,3 +101,4 @@
     max-width: 100%;
   }
 }
+/* Custom Two Image Column Section CSS Ends Here */
