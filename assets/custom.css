@@ -61,6 +61,7 @@
   max-width: 50%;
   width: 100%;
   position: relative;
+  aspect-ratio: 1/1;
 }
 .two-image-columns .two-image-col--inner-container > img {
   width: 100%;
