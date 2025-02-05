@@ -87,6 +87,9 @@
   font-size: 24px;
   margin: 0px;
 }
+.tic-inner-text--container .text-contents > p {
+  margin: 14px;
+}
 .tic-inner-text--container .text-contents > p, .tic-inner-text--container .text-contents > h2, .tic-inner-text--container .text-contents > a {
   color: #ffffff;
 }
