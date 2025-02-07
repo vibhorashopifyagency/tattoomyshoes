@@ -117,13 +117,13 @@
     }
 </style>
 
-<div id="category-slider" class="category-slider">
+<div class="category-slider" id="category-slider-{{ section.id }}">
   <div class="category-slider__header">
     <h2 class="category-slider__title">{{ section.settings.title }}</h2>
     <p class="category-slider__subtitle">{{ section.settings.subtitle }}</p>
   </div>
   
-  <div class="category-slider-container">
+  <div class="category-slider-container-{{ section.id }}">
     {% for block in section.blocks %}
       {% if block.type == 'category' %}
         <div class="category-card">
