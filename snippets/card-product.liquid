@@ -124,6 +124,19 @@
               </a>
             </h3>
           </div>
+
+          {% comment %} Ready To Ship Bagde in Product Cards {% endcomment %}
+          <div class="card__badge-custom {{ settings.badge_position }}">
+            {% if card_product.tags contains 'rts' %}
+              <span
+              id="NoMediaStandardBadge-{{ section_id }}-{{ card_product.id }}"
+              class="badge badge--bottom-left color-{{ settings.sale_badge_color_scheme }}"
+            >
+              Ready To Ship
+            </span>
+            {% endif %}
+          </div>
+
           <div class="card__badge {{ settings.badge_position }}">
             {%- if card_product.available == false -%}
               <span
