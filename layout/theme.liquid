@@ -384,8 +384,24 @@
 
 
     <script>
+
+
+{
+  "container": "#autoplay",
+  "items": 3,
+  "speed": 300,
+  "autoplay": true,
+  "autoplayHoverPause": true,
+  "autoplayTimeout": 3500,
+  "autoplayText": [
+    "▶",
+    "❚❚"
+  ],
+  "swipeAngle": false
+}
+
       const slider = tns({
-        container: '.category-grid',
+        container: '.col-category-grid',
         loop: true,
         items: 4,
         slideBy: 'page',
