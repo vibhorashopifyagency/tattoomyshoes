@@ -383,35 +383,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js" integrity="sha512-j+F4W//4Pu39at5I8HC8q2l1BNz4OF3ju39HyWeqKQagW6ww3ZF9gFcu8rzUbyTDY7gEo/vqqzGte0UPpo65QQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const categoryGrid = document.querySelector(".col-category-grid");
-        if (categoryGrid) {
-          tns({
-            container: ".col-category-grid",
-            loop: true,
-            items: 4,
-            nav: false,
-            autoplay: true,
-            autoplayTimeout: 1500,
-            speed: 300,
-            autoplayButtonOutput: false,
-            mouseDrag: true,
-            responsive: {
-              640: {
-                items: 2,
-              },
-              768: {
-                items: 3,
-              },
-            },
-          });
-        } else {
-          console.error("Slider container not found.");
-        }
-      });
-
-    </script>
+   
     
   </body>
 </html>
