@@ -145,32 +145,37 @@
 
 <script>
   document.addEventListener('DOMContentLoaded', function() {
-    let slider = tns({
-      container: '.category-slider-container',
-      items: 1,
-      slideBy: 1,
-      autoplay: true,
-      autoplayTimeout: 4000,
-      autoplayButtonOutput: false,
-      controls: true,
-      nav: true,
-      mouseDrag: true,
-      loop: true,
-      responsive: {
-        640: {
-          items: 2,
-          gutter: 20
-        },
-        768: {
-          items: 3,
-          gutter: 20
-        },
-        1024: {
-          items: 4,
-          gutter: 20
+    var sliderContainer = document.querySelector('.category-slider-container-{{ section.id }}');
+    
+    if (sliderContainer && typeof tns === 'function') {
+      var slider = tns({
+        container: '.category-slider-container-{{ section.id }}',
+        items: 1,
+        slideBy: 1,
+        autoplay: true,
+        autoplayTimeout: 4000,
+        autoplayButtonOutput: false,
+        controls: true,
+        nav: true,
+        mouseDrag: true,
+        loop: true,
+        preventScrollOnTouch: 'auto',
+        responsive: {
+          640: {
+            items: 2,
+            gutter: 20
+          },
+          768: {
+            items: 3,
+            gutter: 20
+          },
+          1024: {
+            items: 4,
+            gutter: 20
+          }
         }
-      }
-    });
+      });
+    }
   });
 </script>
 
