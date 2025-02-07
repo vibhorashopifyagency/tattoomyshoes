@@ -22,25 +22,6 @@
       color: #666;
     }
     
-    .category-grid {
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
-      gap: 20px;
-      padding: 0;
-    }
-    
-    @media (min-width: 768px) {
-      .category-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-    
-    @media (min-width: 1024px) {
-      .category-grid {
-        grid-template-columns: repeat(4, 1fr);
-      }
-    }
-    
     .category-card {
       position: relative;
       border-radius: 8px;
@@ -83,34 +64,115 @@
       height: 100%;
       text-decoration: none;
     }
-</style>
-    
-    <div id="category-slider" class="category-slider">
-      <div class="category-slider__header">
-        <h2 class="category-slider__title">{{ section.settings.title }}</h2>
-        <p class="category-slider__subtitle">{{ section.settings.subtitle }}</p>
-      </div>
-      
-      <div class="col-category-grid">
-        {% for block in section.blocks %}
-          {% if block.type == 'category' %}
-            <div class="category-card">
-              <a href="{{ block.settings.link }}" class="category-card__link">
-                {% if block.settings.image %}
-                  {{ block.settings.image | image_url: width: 400 | image_tag: class: 'category-card__image', loading: 'lazy' }}
-                {% else %}
-                  {{ 'lifestyle-1' | placeholder_svg_tag: 'category-card__image' }}
-                {% endif %}
-                <div class="category-card__overlay">
-                  <span class="category-card__title">{{ block.settings.title }}</span>
-                </div>
-              </a>
-            </div>
-          {% endif %}
-        {% endfor %}
-      </div>
 
-    </div>
+    /* Tiny Slider Custom Styles */
+    .tns-outer {
+      position: relative;
+    }
+
+    .tns-nav {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .tns-nav button {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #ddd;
+      border: 0;
+      margin: 0 5px;
+      padding: 0;
+      transition: all 0.3s ease;
+    }
+
+    .tns-nav button.tns-nav-active {
+      background: #000;
+    }
+
+    .tns-controls button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      z-index: 10;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .tns-controls button:hover {
+      background: #f5f5f5;
+    }
+
+    .tns-controls button[data-controls="prev"] {
+      left: -20px;
+    }
+
+    .tns-controls button[data-controls="next"] {
+      right: -20px;
+    }
+</style>
+
+<div id="category-slider" class="category-slider">
+  <div class="category-slider__header">
+    <h2 class="category-slider__title">{{ section.settings.title }}</h2>
+    <p class="category-slider__subtitle">{{ section.settings.subtitle }}</p>
+  </div>
+  
+  <div class="category-slider-container">
+    {% for block in section.blocks %}
+      {% if block.type == 'category' %}
+        <div class="category-card">
+          <a href="{{ block.settings.link }}" class="category-card__link">
+            {% if block.settings.image %}
+              {{ block.settings.image | image_url: width: 400 | image_tag: class: 'category-card__image', loading: 'lazy' }}
+            {% else %}
+              {{ 'lifestyle-1' | placeholder_svg_tag: 'category-card__image' }}
+            {% endif %}
+            <div class="category-card__overlay">
+              <span class="category-card__title">{{ block.settings.title }}</span>
+            </div>
+          </a>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    let slider = tns({
+      container: '.category-slider-container',
+      items: 1,
+      slideBy: 1,
+      autoplay: true,
+      autoplayTimeout: 4000,
+      autoplayButtonOutput: false,
+      controls: true,
+      nav: true,
+      mouseDrag: true,
+      loop: true,
+      responsive: {
+        640: {
+          items: 2,
+          gutter: 20
+        },
+        768: {
+          items: 3,
+          gutter: 20
+        },
+        1024: {
+          items: 4,
+          gutter: 20
+        }
+      }
+    });
+  });
+</script>
 
 {% schema %}
 {
