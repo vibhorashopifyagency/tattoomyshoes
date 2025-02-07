@@ -22,12 +22,30 @@
       color: #666;
     }
     
+    .category-grid {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 20px;
+      padding: 0;
+    }
+    
+    @media (min-width: 768px) {
+      .category-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    
+    @media (min-width: 1024px) {
+      .category-grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+    
     .category-card {
       position: relative;
       border-radius: 8px;
       overflow: hidden;
       transition: transform 0.3s ease;
-      padding: 0 10px;
     }
     
     .category-card:hover {
@@ -43,7 +61,7 @@
     .category-card__overlay {
       position: absolute;
       bottom: 0;
-      left: 5px;
+      left: -5px;
       right: 0;
       background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
       padding: 20px 0;
@@ -65,118 +83,34 @@
       height: 100%;
       text-decoration: none;
     }
-
-    /* Slick Slider Custom Styles */
-    .slick-prev,
-    .slick-next {
-      width: 40px;
-      height: 40px;
-      z-index: 1;
-    }
-
-    .slick-prev {
-      left: -20px;
-    }
-
-    .slick-next {
-      right: -20px;
-    }
-
-    .slick-prev:before,
-    .slick-next:before {
-      font-size: 40px;
-      color: #000;
-      opacity: 0.75;
-    }
-
-    .slick-dots {
-      bottom: -40px;
-    }
-
-    .slick-dots li button:before {
-      font-size: 12px;
-      color: #000;
-    }
-
-    .slick-slide {
-      margin: 0 10px;
-    }
-
-    /* Fix for Slick initialization flicker */
-    .category-slider-container {
-      opacity: 0;
-      visibility: hidden;
-      transition: opacity 0.5s ease;
-      height: 0;
-    }
-    .category-slider-container.slick-initialized {
-      opacity: 1;
-      visibility: visible;
-      height: auto;
-    }
 </style>
-
-<div class="category-slider" id="category-slider-{{ section.id }}">
-  <div class="category-slider__header">
-    <h2 class="category-slider__title">{{ section.settings.title }}</h2>
-    <p class="category-slider__subtitle">{{ section.settings.subtitle }}</p>
-  </div>
-  
-  <div id="col-category-slider">
-    <div class="category-slider-container">
-    {% for block in section.blocks %}
-      {% if block.type == 'category' %}
-        <div class="category-card">
-          <a href="{{ block.settings.link }}" class="category-card__link">
-            {% if block.settings.image %}
-              {{ block.settings.image | image_url: width: 400 | image_tag: class: 'category-card__image', loading: 'lazy' }}
-            {% else %}
-              {{ 'lifestyle-1' | placeholder_svg_tag: 'category-card__image' }}
-            {% endif %}
-            <div class="category-card__overlay">
-              <span class="category-card__title">{{ block.settings.title }}</span>
+    
+    <div class="category-slider">
+      <div class="category-slider__header">
+        <h2 class="category-slider__title">{{ section.settings.title }}</h2>
+        <p class="category-slider__subtitle">{{ section.settings.subtitle }}</p>
+      </div>
+      
+      <div class="category-grid">
+        {% for block in section.blocks %}
+          {% if block.type == 'category' %}
+            <div class="category-card">
+              <a href="{{ block.settings.link }}" class="category-card__link">
+                {% if block.settings.image %}
+                  {{ block.settings.image | image_url: width: 400 | image_tag: class: 'category-card__image', loading: 'lazy' }}
+                {% else %}
+                  {{ 'lifestyle-1' | placeholder_svg_tag: 'category-card__image' }}
+                {% endif %}
+                <div class="category-card__overlay">
+                  <span class="category-card__title">{{ block.settings.title }}</span>
+                </div>
+              </a>
             </div>
-          </a>
-        </div>
-      {% endif %}
-    {% endfor %}
-    </div>
-  </div>
-  
-</div>
+          {% endif %}
+        {% endfor %}
+      </div>
 
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    if (".category-slider-container") {
-      $(".category-slider-container").slick({
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 3000,
-        arrows: true,
-        responsive: [
-          {
-            breakpoint: 768,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 1
-            }
-          },
-          {
-            breakpoint: 480,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1
-            }
-          }
-        ]
-      });
-    }
-  });
-</script>
+    </div>
 
 {% schema %}
 {
