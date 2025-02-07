@@ -381,5 +381,33 @@
 
     {% comment %} Tiny Slider JS {% endcomment %}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js" integrity="sha512-j+F4W//4Pu39at5I8HC8q2l1BNz4OF3ju39HyWeqKQagW6ww3ZF9gFcu8rzUbyTDY7gEo/vqqzGte0UPpo65QQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <script>
+      const slider = tns({
+        container: '.my-slider',
+        loop: true,
+        items: 1,
+        slideBy: 'page',
+        nav: false,    
+        autoplay: true,
+        speed: 400,
+        autoplayButtonOutput: false,
+        mouseDrag: true,
+        lazyload: true,
+        controlsContainer: "#customize-controls",
+        responsive: {
+            640: {
+                items: 2,
+            },
+            
+            768: {
+                items: 3,
+            }
+        }
+
+      });
+    </script>
+    
   </body>
 </html>
