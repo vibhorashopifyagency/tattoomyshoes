@@ -384,28 +384,35 @@
 
 
     <script>
-      const slider = tns({
-        container: '.col-category-grid',
-        loop: true,
-        items: 4,
-        slideBy: 'page',
-        nav: false,    
-        autoplay: true,
-        autoplayTimeout: 1500,
-        speed: 300,
-        autoplayButtonOutput: false,
-        mouseDrag: true,
-        lazyload: true,
-        responsive: {
-            640: {
+      document.addEventListener("DOMContentLoaded", function () {
+        const categoryGrid = document.querySelector(".col-category-grid");
+        if (categoryGrid) {
+          tns({
+            container: ".col-category-grid",
+            loop: true,
+            items: 4,
+            slideBy: "page",
+            nav: false,
+            autoplay: true,
+            autoplayTimeout: 1500,
+            speed: 300,
+            autoplayButtonOutput: false,
+            mouseDrag: true,
+            lazyload: true,
+            responsive: {
+              640: {
                 items: 2,
-            },
-            
-            768: {
+              },
+              768: {
                 items: 3,
-            }
+              },
+            },
+          });
+        } else {
+          console.error("Slider container not found.");
         }
       });
+
     </script>
     
   </body>
