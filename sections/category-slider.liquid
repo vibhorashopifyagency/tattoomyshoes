@@ -122,7 +122,7 @@
     <p class="category-slider__subtitle">{{ section.settings.subtitle }}</p>
   </div>
   
-  <div id="col-category-slider-{{ section.id }}" class="category-slider-container">
+  <div id="col-category-slider" class="category-slider-container">
     {% for block in section.blocks %}
       {% if block.type == 'category' %}
         <div class="category-card">
@@ -144,8 +144,8 @@
 
 <script>
   document.addEventListener('DOMContentLoaded', function() {
-    if ("#col-category-slider-{{ section.id }}") {
-      $("#col-category-slider-{{ section.id }}").slick({
+    if ("#col-category-slider") {
+      $("#col-category-slider").slick({
         dots: true,
         infinite: true,
         speed: 500,
