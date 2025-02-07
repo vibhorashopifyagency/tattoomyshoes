@@ -122,7 +122,8 @@
     <p class="category-slider__subtitle">{{ section.settings.subtitle }}</p>
   </div>
   
-  <div id="col-category-slider" class="category-slider-container">
+  <div id="col-category-slider">
+    <div class="category-slider-container">
     {% for block in section.blocks %}
       {% if block.type == 'category' %}
         <div class="category-card">
@@ -139,7 +140,9 @@
         </div>
       {% endif %}
     {% endfor %}
+    </div>
   </div>
+  
 </div>
 
 <script>
