@@ -1,7 +1,105 @@
-<style>
+{% schema %}
+    {
+      "name": "Category Slider",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "TOP CATEGORIES"
+        },
+        {
+          "type": "text",
+          "id": "subtitle",
+          "label": "Subtitle",
+          "default": "Best Selling Disposable Vape"
+        },
+        {
+          "type": "select",
+          "id": "columns_desktop",
+          "label": "Number of columns on desktop",
+          "options": [
+            {
+              "value": "3",
+              "label": "3"
+            },
+            {
+              "value": "4",
+              "label": "4"
+            },
+            {
+              "value": "5",
+              "label": "5"
+            }
+          ],
+          "default": "4"
+        },
+        {
+          "type": "select",
+          "id": "columns_mobile",
+          "label": "Number of columns on mobile",
+          "options": [
+            {
+              "value": "1",
+              "label": "1"
+            },
+            {
+              "value": "2",
+              "label": "2"
+            }
+          ],
+          "default": "1"
+        }
+      ],
+      "blocks": [
+        {
+          "type": "category",
+          "name": "Category",
+          "settings": [
+            {
+              "type": "text",
+              "id": "title",
+              "label": "Category Title",
+              "default": "VAPE PODS"
+            },
+            {
+              "type": "image_picker",
+              "id": "image",
+              "label": "Category Image"
+            },
+            {
+              "type": "url",
+              "id": "link",
+              "label": "Category Link"
+            }
+          ]
+        }
+      ],
+      "presets": [
+        {
+          "name": "Category Slider",
+          "blocks": [
+            {
+              "type": "category"
+            },
+            {
+              "type": "category"
+            },
+            {
+              "type": "category"
+            },
+            {
+              "type": "category"
+            }
+          ]
+        }
+      ]
+    }
+    {% endschema %}
+    
+    <style>
     .category-slider {
       padding: 40px 20px;
-      max-width: 1200px;
       margin: 0 auto;
     }
     
@@ -11,51 +109,33 @@
     }
     
     .category-slider__title {
-      font-size: 24px;
-      font-weight: 700;
+      margin: 0;
       margin-bottom: 10px;
-      text-transform: uppercase;
     }
     
     .category-slider__subtitle {
-      font-size: 16px;
-      color: #666;
-    }
-    
-    .category-grid {
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
-      gap: 20px;
-      padding: 0;
-    }
-    
-    @media (min-width: 768px) {
-      .category-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-    
-    @media (min-width: 1024px) {
-      .category-grid {
-        grid-template-columns: repeat(4, 1fr);
-      }
+      margin: 0;
+      color: rgba(var(--color-foreground), 0.75);
     }
     
     .category-card {
       position: relative;
-      border-radius: 8px;
-      overflow: hidden;
-      transition: transform 0.3s ease;
+      height: 100%;
     }
     
-    .category-card:hover {
-      transform: scale(1.05);
+    .category-card__content {
+      display: block;
+      position: relative;
+      height: 100%;
     }
     
     .category-card__image {
-      width: 100%;
+      display: block;
       height: 240px;
+      width: 100%;
       object-fit: cover;
+      border-radius: var(--media-radius);
+      border: var(--media-border-width) solid rgba(var(--color-foreground), var(--media-border-opacity));
     }
     
     .category-card__overlay {
@@ -63,113 +143,97 @@
       bottom: 0;
       left: 0;
       right: 0;
-      background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
       padding: 20px;
+      background: linear-gradient(to top, rgba(var(--color-foreground), 0.4), transparent);
     }
     
     .category-card__title {
-      background: white;
-      color: black;
+      background: rgb(var(--color-background));
+      color: rgb(var(--color-foreground));
       display: inline-block;
       padding: 8px 16px;
       border-radius: 4px;
       font-size: 14px;
       font-weight: 600;
       text-transform: uppercase;
+      margin: 0;
     }
     
-    .category-card__link {
-      display: block;
-      height: 100%;
-      text-decoration: none;
+    @media screen and (max-width: 749px) {
+      .slider--mobile {
+        margin: 0;
+        position: relative;
+        display: flex;
+        padding-bottom: 3rem;
+      }
+      
+      .slider--mobile .slider__slide {
+        flex: 1 0 calc({{ section.settings.columns_mobile }} / var(--page-width) * 100%);
+        padding: 0 1rem;
+      }
+    }
+    
+    @media screen and (min-width: 750px) {
+      .slider--desktop {
+        position: relative;
+        display: flex;
+        padding-bottom: 3rem;
+      }
+      
+      .slider--desktop .slider__slide {
+        flex: 1 0 calc({{ section.settings.columns_desktop }} / var(--page-width) * 100%);
+        padding: 0 1rem;
+      }
     }
     </style>
     
-    <div class="category-slider">
+    <div class="category-slider page-width">
       <div class="category-slider__header">
-        <h2 class="category-slider__title">{{ section.settings.title }}</h2>
-        <p class="category-slider__subtitle">{{ section.settings.subtitle }}</p>
+        <h2 class="category-slider__title">{{ section.settings.title | escape }}</h2>
+        <p class="category-slider__subtitle">{{ section.settings.subtitle | escape }}</p>
       </div>
-      
-      <div class="category-grid">
-        {% for block in section.blocks %}
-          {% if block.type == 'category' %}
-            <div class="category-card">
-              <a href="{{ block.settings.link }}" class="category-card__link">
-                {% if block.settings.image %}
-                  {{ block.settings.image | image_url: width: 400 | image_tag: class: 'category-card__image', loading: 'lazy' }}
-                {% else %}
-                  {{ 'lifestyle-1' | placeholder_svg_tag: 'category-card__image' }}
-                {% endif %}
-                <div class="category-card__overlay">
-                  <span class="category-card__title">{{ block.settings.title }}</span>
-                </div>
-              </a>
+    
+      <slider-component class="slider-mobile-gutter">
+        <ul class="slider slider--mobile grid grid--peek grid--2-col-tablet-down grid--{{ section.settings.columns_desktop }}-col-desktop slider--desktop"
+          role="list"
+        >
+          {%- for block in section.blocks -%}
+            <li class="slider__slide grid__item" {{ block.shopify_attributes }}>
+              <div class="category-card">
+                {%- if block.settings.link != blank -%}
+                  <a href="{{ block.settings.link }}" class="category-card__content">
+                {%- endif -%}
+                  {%- if block.settings.image != blank -%}
+                    {{ block.settings.image | image_url: width: 400 | image_tag:
+                      loading: 'lazy',
+                      class: 'category-card__image',
+                      sizes: '(min-width: 990px) 25vw, (min-width: 750px) 50vw, 100vw'
+                    }}
+                  {%- else -%}
+                    {{ 'lifestyle-1' | placeholder_svg_tag: 'category-card__image placeholder' }}
+                  {%- endif -%}
+                  <div class="category-card__overlay">
+                    <h3 class="category-card__title">{{ block.settings.title | escape }}</h3>
+                  </div>
+                {%- if block.settings.link != blank -%}
+                  </a>
+                {%- endif -%}
+              </div>
+            </li>
+          {%- endfor -%}
+        </ul>
+    
+        {%- if section.blocks.size > 1 -%}
+          <div class="slider-buttons no-js-hidden">
+            <button type="button" class="slider-button slider-button--prev" name="previous" aria-label="{{ 'general.slider.previous_slide' | t }}">{% render 'icon-caret' %}</button>
+            <div class="slider-counter caption">
+              <span class="slider-counter--current">1</span>
+              <span aria-hidden="true"> / </span>
+              <span class="visually-hidden">{{ 'general.slider.of' | t }}</span>
+              <span class="slider-counter--total">{{ section.blocks.size }}</span>
             </div>
-          {% endif %}
-        {% endfor %}
-      </div>
+            <button type="button" class="slider-button slider-button--next" name="next" aria-label="{{ 'general.slider.next_slide' | t }}">{% render 'icon-caret' %}</button>
+          </div>
+        {%- endif -%}
+      </slider-component>
     </div>
-
-{% schema %}
-{
-    "name": "Category Slider",
-    "settings": [
-    {
-        "type": "text",
-        "id": "title",
-        "label": "Title",
-        "default": "TOP CATEGORIES"
-    },
-    {
-        "type": "text",
-        "id": "subtitle",
-        "label": "Subtitle",
-        "default": "Best Selling Disposable Vape"
-    }
-    ],
-    "blocks": [
-    {
-        "type": "category",
-        "name": "Category",
-        "settings": [
-        {
-            "type": "text",
-            "id": "title",
-            "label": "Category Title",
-            "default": "VAPE PODS"
-        },
-        {
-            "type": "image_picker",
-            "id": "image",
-            "label": "Category Image"
-        },
-        {
-            "type": "url",
-            "id": "link",
-            "label": "Category Link"
-        }
-        ]
-    }
-    ],
-    "presets": [
-    {
-        "name": "Category Slider",
-        "blocks": [
-        {
-            "type": "category"
-        },
-        {
-            "type": "category"
-        },
-        {
-            "type": "category"
-        },
-        {
-            "type": "category"
-        }
-        ]
-    }
-    ]
-}
-{% endschema %}
