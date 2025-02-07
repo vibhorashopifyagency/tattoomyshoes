@@ -189,6 +189,81 @@
         "stack_images_on_mobile": true,
         "show_text_below": false
       }
+    },
+    "category_slider_FiR4dW": {
+      "type": "category-slider",
+      "blocks": {
+        "category_TjNCDK": {
+          "type": "category",
+          "settings": {
+            "title": "VAPE PODS",
+            "link": ""
+          }
+        },
+        "category_8ewFfk": {
+          "type": "category",
+          "settings": {
+            "title": "VAPE PODS",
+            "link": ""
+          }
+        },
+        "category_98TUjN": {
+          "type": "category",
+          "settings": {
+            "title": "VAPE PODS",
+            "link": ""
+          }
+        },
+        "category_VMnaVk": {
+          "type": "category",
+          "settings": {
+            "title": "VAPE PODS",
+            "link": ""
+          }
+        },
+        "category_AHzzJz": {
+          "type": "category",
+          "settings": {
+            "title": "VAPE PODS",
+            "link": ""
+          }
+        },
+        "category_NqTczd": {
+          "type": "category",
+          "settings": {
+            "title": "VAPE PODS",
+            "link": ""
+          }
+        },
+        "category_zYJCCk": {
+          "type": "category",
+          "settings": {
+            "title": "VAPE PODS",
+            "link": ""
+          }
+        },
+        "category_Fn9gVz": {
+          "type": "category",
+          "settings": {
+            "title": "VAPE PODS",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "category_TjNCDK",
+        "category_8ewFfk",
+        "category_98TUjN",
+        "category_VMnaVk",
+        "category_AHzzJz",
+        "category_NqTczd",
+        "category_zYJCCk",
+        "category_Fn9gVz"
+      ],
+      "settings": {
+        "title": "TOP CATEGORIES",
+        "subtitle": "Best Selling Disposable Vape"
+      }
     }
   },
   "order": [
@@ -196,6 +271,7 @@
     "collection_list_UgeEd7",
     "featured_collection",
     "slideshow_MMUTTb",
-    "image_banner"
+    "image_banner",
+    "category_slider_FiR4dW"
   ]
 }
