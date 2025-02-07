@@ -3,7 +3,7 @@
   color: #000000 !important;
 }
 .tmenu_item_text { font-family: 'Righteous' !important; }
-.tmenu_item_icon > svg path {
+#menu-drawer > .tmenu_item_icon > svg path {
   fill: #ce0000 !important;
 }
 .tmenu-watermark>span, .tmenu-watermark>a { visibility: hidden !important; }
