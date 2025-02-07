@@ -2,6 +2,7 @@
 .tmenu_indicator_icon, .tmenu_indicator_icon svg { 
   color: #000000 !important;
 }
+.tmenu_item_text { font-family: 'Righteous' !important; }
 .tmenu_item_icon > svg path {
   fill: #ce0000 !important;
 }
