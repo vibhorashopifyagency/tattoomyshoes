@@ -1,6 +1,6 @@
 .tmenu_item_icon+.tmenu_item_text,
 .tmenu_indicator_icon, .tmenu_indicator_icon svg { 
-  color: #ffffff !important;
+  color: #000000 !important;
 }
 .tmenu_item_icon > svg path {
   fill: #ce0000 !important;
