@@ -129,3 +129,9 @@
   gap: 10px;
 }
 .custom-announcement--sc-links svg { display: block; }
+.custom-announcement-bar--content {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  gap: 20px;
+}
