@@ -97,31 +97,7 @@
 
 <script src="{{ 'cart-notification.js' | asset_url }}" defer="defer"></script>
 
-
-<div style="
-    background-color: #000000;
-    max-width: 100%;
-    width: 100%;
-    position: relative;
-    margin: auto;">
-    <div style="
-    display: flex;
-    justify-content: flex-end;
-    flex-wrap: nowrap;
-    gap: 20px;
-    padding: 0 10px;">
-        <a href="/about" style="
-    color: #ffffff;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-family: 'Righteous';">About Us</a>
-        <a href="/contact" style="
-    color: #ffffff;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-family: 'Righteous';">Contact Us</a>
-    </div>
-</div>
+{% render 'custom-announcement-bar' %}
 
 {%- liquid
   for block in section.blocks
