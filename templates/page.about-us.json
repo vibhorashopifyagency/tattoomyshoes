@@ -16,9 +16,17 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
+    },
+    "how_it_works_Pc9r3U": {
+      "type": "how-it-works",
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "how_it_works_Pc9r3U"
   ]
 }
