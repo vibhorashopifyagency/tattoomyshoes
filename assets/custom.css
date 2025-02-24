@@ -135,3 +135,9 @@
   flex-wrap: nowrap;
   gap: 20px;
 }
+.custom-announcement-bar--content > a {
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Righteous';
+}
