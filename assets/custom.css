@@ -120,3 +120,11 @@
   justify-content: space-between;
   padding: 0 10px;
 }
+.custom-announcement--container {
+
+}
+.custom-announcement--container .social-icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
