@@ -144,3 +144,6 @@
 .social-icon--heading {
   margin: 0;
 }
+@media (max-width: 640px) {
+  .social-icon--heading { display: none; }
+}
