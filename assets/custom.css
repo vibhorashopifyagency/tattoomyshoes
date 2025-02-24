@@ -135,9 +135,12 @@
   flex-wrap: nowrap;
   gap: 20px;
 }
-.custom-announcement-bar--content > a {
+.custom-announcement-bar--content > a, .social-icon--heading {
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
   font-family: 'Righteous';
+}
+.social-icon--heading {
+  margin: 0;
 }
