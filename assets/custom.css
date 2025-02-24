@@ -106,3 +106,17 @@
   }
 }
 /* Custom Two Image Column Section CSS Ends Here */
+
+
+/* Custom Announcement Bar */
+.custom-announcement-bar {
+  background-color: #390303;
+  max-width: 100%;
+  width: 100%;
+  position: relative;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+}
