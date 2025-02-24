@@ -9,6 +9,7 @@
  */
 {
   "current": {
+    "logo": "shopify://shop_images/e951a5_41aea6817d194210bf398958bc1dd699mv2.png",
     "logo_width": 90,
     "type_header_font": "righteous_n4",
     "heading_scale": 100,
@@ -152,10 +153,10 @@
         "disabled": false,
         "settings": {
           "button_color": "#6e0c0c",
-          "secondary_color": "#FFFFFF",
+          "secondary_color": "#ffffff",
           "ternary_color": "#121212",
           "button_icon": "chat_bubble",
-          "button_text": "chat_with_us",
+          "button_text": "no_text",
           "button_horizontal_position": "bottom_right",
           "button_vertical_position": "lowest",
           "greeting_message": ""
