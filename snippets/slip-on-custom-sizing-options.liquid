@@ -1,0 +1,34 @@
+<p class="cart-attribute__field">
+    <label>Select your size:</label>
+    <select id="slip-on__men" form="{{ product_form_id }}" >
+    <option value="4"{% if cart.attributes["Size"] == "4" %} selected{% endif %}>4</option>
+    <option value="5"{% if cart.attributes["Size"] == "5" %} selected{% endif %}>5</option>
+    <option value="5.5"{% if cart.attributes["Size"] == "5.5" %} selected{% endif %}>5.5</option>
+    <option value="6"{% if cart.attributes["Size"] == "6" %} selected{% endif %}>6</option>
+    <option value="6.5"{% if cart.attributes["Size"] == "6.5" %} selected{% endif %}>6.5</option>
+    <option value="7"{% if cart.attributes["Size"] == "7" %} selected{% endif %}>7</option>
+    <option value="8"{% if cart.attributes["Size"] == "8" %} selected{% endif %}>8</option>
+    <option value="9"{% if cart.attributes["Size"] == "9" %} selected{% endif %}>9</option>
+    <option value="9.5"{% if cart.attributes["Size"] == "9.5" %} selected{% endif %}>9.5</option>
+    <option value="10"{% if cart.attributes["Size"] == "10" %} selected{% endif %}>10</option>
+    <option value="10.5"{% if cart.attributes["Size"] == "10.5" %} selected{% endif %}>10.5</option>
+    <option value="11"{% if cart.attributes["Size"] == "11" %} selected{% endif %}>11</option>
+    <option value="11.5"{% if cart.attributes["Size"] == "11.5" %} selected{% endif %}>11.5</option>
+    <option value="12"{% if cart.attributes["Size"] == "12" %} selected{% endif %}>12</option>
+    <option value="13"{% if cart.attributes["Size"] == "13" %} selected{% endif %}>13</option>
+    </select>
+
+
+    <select id="slip-on__women" form="{{ product_form_id }}" >
+    <option value="6"{% if cart.attributes["Size"] == "6" %} selected{% endif %}>6</option>
+    <option value="7"{% if cart.attributes["Size"] == "7" %} selected{% endif %}>7</option>
+    <option value="7.5"{% if cart.attributes["Size"] == "7.5" %} selected{% endif %}>7.5</option>
+    <option value="8"{% if cart.attributes["Size"] == "8" %} selected{% endif %}>8</option>
+    <option value="8.5"{% if cart.attributes["Size"] == "8.5" %} selected{% endif %}>8.5</option>
+    <option value="9"{% if cart.attributes["Size"] == "9" %} selected{% endif %}>9</option>
+    <option value="10"{% if cart.attributes["Size"] == "10" %} selected{% endif %}>10</option>
+    <option value="10.5"{% if cart.attributes["Size"] == "10.5" %} selected{% endif %}>10.5</option>
+    <option value="11"{% if cart.attributes["Size"] == "11" %} selected{% endif %}>11</option>
+    <option value="11.5"{% if cart.attributes["Size"] == "11.5" %} selected{% endif %}>11.5</option>
+    </select>
+</p>

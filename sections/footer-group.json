@@ -1,0 +1,62 @@
+{
+  "name": "t:sections.footer.name",
+  "type": "footer",
+  "sections": {
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "image_jFwCbm": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/TMS_white_logo.png",
+            "image_width": 200,
+            "alignment": "center"
+          }
+        },
+        "link_list_RWLpfD": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Quick links",
+            "menu": "footer"
+          }
+        },
+        "link_list_cxwwRM": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Useful Links",
+            "menu": "main-menu"
+          }
+        },
+        "brand_information_MRAMrc": {
+          "type": "brand_information",
+          "settings": {
+            "show_social": true
+          }
+        }
+      },
+      "block_order": [
+        "image_jFwCbm",
+        "link_list_RWLpfD",
+        "link_list_cxwwRM",
+        "brand_information_MRAMrc"
+      ],
+      "settings": {
+        "color_scheme": "scheme-84a78fdd-99c2-4f0c-be81-2ab09e7dddd6",
+        "newsletter_enable": false,
+        "newsletter_heading": "Join the TMS Family !",
+        "enable_follow_on_shop": false,
+        "show_social": false,
+        "enable_country_selector": false,
+        "enable_language_selector": false,
+        "payment_enable": true,
+        "show_policy": true,
+        "margin_top": 0,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "footer"
+  ]
+}

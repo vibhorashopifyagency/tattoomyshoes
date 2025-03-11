@@ -1,0 +1,198 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "rich_text_dqAWwF": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_CUfQw9": {
+          "type": "heading",
+          "settings": {
+            "heading": "Explore the Tattoo My Shoes Gallery",
+            "heading_size": "h1"
+          }
+        },
+        "text_eKnChm": {
+          "type": "text",
+          "settings": {
+            "text": "<h5>Step into a world of artistic expression with our Tattoo My Shoes Gallery. Find unique designs that will take your footwear to the next level.<\/h5>"
+          }
+        },
+        "button_7iemKV": {
+          "type": "button",
+          "settings": {
+            "button_label": "Start Shopping",
+            "button_link": "shopify:\/\/collections\/all",
+            "button_style_secondary": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_CUfQw9",
+        "text_eKnChm",
+        "button_7iemKV"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-84a78fdd-99c2-4f0c-be81-2ab09e7dddd6",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "1740737791edf2c27e": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "custom_gallery_slider_fBigER": {
+      "type": "custom-gallery-slider",
+      "blocks": {
+        "image_slide_NhTBmA": {
+          "type": "image_slide",
+          "settings": {
+            "slide_image": "shopify:\/\/shop_images\/20250302_102831.jpg",
+            "image_title": "Custom Shoe",
+            "image_description": "A beautifully designed custom shoe."
+          }
+        },
+        "image_slide_UqJtjW": {
+          "type": "image_slide",
+          "settings": {
+            "slide_image": "shopify:\/\/shop_images\/20250302_102825.jpg",
+            "image_title": "Custom Shoe",
+            "image_description": "A beautifully designed custom shoe."
+          }
+        },
+        "image_slide_DKra8U": {
+          "type": "image_slide",
+          "settings": {
+            "slide_image": "shopify:\/\/shop_images\/20250302_102814.jpg",
+            "image_title": "Custom Shoe",
+            "image_description": "A beautifully designed custom shoe."
+          }
+        },
+        "image_slide_rBPPDR": {
+          "type": "image_slide",
+          "settings": {
+            "slide_image": "shopify:\/\/shop_images\/20250302_102804.jpg",
+            "image_title": "Custom Shoe",
+            "image_description": "A beautifully designed custom shoe."
+          }
+        },
+        "image_slide_V4CARV": {
+          "type": "image_slide",
+          "settings": {
+            "slide_image": "shopify:\/\/shop_images\/20250302_102707.jpg",
+            "image_title": "Custom Shoe",
+            "image_description": "A beautifully designed custom shoe."
+          }
+        },
+        "image_slide_j9D8ik": {
+          "type": "image_slide",
+          "settings": {
+            "slide_image": "shopify:\/\/shop_images\/20250302_102725.jpg",
+            "image_title": "Custom Shoe",
+            "image_description": "A beautifully designed custom shoe."
+          }
+        }
+      },
+      "block_order": [
+        "image_slide_NhTBmA",
+        "image_slide_UqJtjW",
+        "image_slide_DKra8U",
+        "image_slide_rBPPDR",
+        "image_slide_V4CARV",
+        "image_slide_j9D8ik"
+      ],
+      "settings": {
+        "section_title": "Explore our past custom shoe designs, crafted with precision and creativity.",
+        "h2_color": "#ffffff",
+        "section_description": "",
+        "background_image": "shopify:\/\/shop_images\/27230.jpg",
+        "padding": 20,
+        "slides_desktop": 4,
+        "slides_mobile": 2,
+        "enable_loop": true,
+        "enable_autoplay": true,
+        "autoplay_speed": 3,
+        "button_text": "View More",
+        "button_link": "",
+        "button_color": "#ffffff",
+        "button_text_color": "#ffffff",
+        "button_font_size": 16
+      }
+    },
+    "custom_design_gallery_Gfy78M": {
+      "type": "custom-design-gallery",
+      "blocks": {
+        "image_G46RN6": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/20250302_102657_d4a7d620-c25b-4841-8594-6bf26c9035c1.jpg",
+            "alt": "Gallery Image"
+          }
+        },
+        "image_GNQ3ar": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/20250302_102831.jpg",
+            "alt": "Gallery Image"
+          }
+        },
+        "image_L7gxmR": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/20250302_102707.jpg",
+            "alt": "Gallery Image"
+          }
+        },
+        "image_UAh9kp": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/20250302_102814.jpg",
+            "alt": "Gallery Image"
+          }
+        },
+        "video_rYGU9g": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/youtu.be\/Z7lWcSXnQtE",
+            "cover_image": "shopify:\/\/shop_images\/20250302_102831.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "image_G46RN6",
+        "image_GNQ3ar",
+        "image_L7gxmR",
+        "image_UAh9kp",
+        "video_rYGU9g"
+      ],
+      "settings": {
+        "title": "Our Gallery",
+        "columns_desktop": "4",
+        "columns_mobile": "2",
+        "gap": 5
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_dqAWwF",
+    "1740737791edf2c27e",
+    "custom_gallery_slider_fBigER",
+    "custom_design_gallery_Gfy78M"
+  ]
+}

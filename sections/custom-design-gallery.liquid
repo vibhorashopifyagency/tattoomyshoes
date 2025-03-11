@@ -1,0 +1,565 @@
+<style>
+    .masonry-gallery {
+        margin: 0 auto;
+        /* padding: 20px 0; */
+    }
+
+    .masonry-gallery__title {
+        text-align: center;
+        margin-block: 20px;
+    }
+
+    .masonry-wrapper {
+        position: relative;
+        width: 100%;
+    }
+
+    .masonry-sizer,
+    .masonry-item {
+        width: calc(100% / {{ section.settings.columns_desktop }});
+    }
+
+    .masonry-gutter {
+        width: {{ section.settings.gap }}px;
+    }
+
+    .masonry-item {
+        position: relative;
+        /* padding: {{ section.settings.gap | divided_by: 2 }}px; */
+        box-sizing: border-box;
+        /* margin-bottom: {{ section.settings.gap }}px; */
+        cursor: pointer;
+        overflow: hidden;
+    }
+
+    .masonry-item__inner {
+        position: relative;
+        overflow: hidden;
+        /* border-radius: 8px; */
+        transition: transform 0.3s ease;
+    }
+
+    .masonry-item__inner:hover {
+        transform: scale(1.02);
+    }
+
+    .masonry-item img {
+        width: 100%;
+        height: auto;
+        display: block;
+        /* border-radius: 8px; */
+    }
+
+    .video-container {
+        position: relative;
+        width: 100%;
+        /* border-radius: 8px; */
+        overflow: hidden;
+    }
+
+    .video-cover {
+        width: 100%;
+        height: auto;
+        display: block;
+        /* border-radius: 8px; */
+    }
+
+    .play-button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(0, 0, 0, 0.6);
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .play-button svg {
+        width: 24px;
+        height: 24px;
+        fill: white;
+    }
+
+    /* Modal styles */
+    .gallery-modal {
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        backdrop-filter: blur(5px);
+        overflow: auto;
+        transition: opacity 0.3s ease;
+        opacity: 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .gallery-modal.active {
+        display: flex;
+        opacity: 1;
+    }
+
+    .gallery-modal__content {
+        position: relative;
+        max-width: 80%;
+        max-height: 80vh;
+        margin: auto;
+    }
+
+    .gallery-modal__close {
+        position: absolute;
+        top: -40px;
+        right: 0;
+        color: white;
+        background: transparent;
+        border: none;
+        font-size: 28px;
+        cursor: pointer;
+        z-index: 1001;
+    }
+
+    .gallery-modal__image {
+        max-width: 100%;
+        max-height: 80vh;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .gallery-modal__video {
+        width: 720px;
+        max-width: 1000px;
+        aspect-ratio: 16/9;
+    }
+
+    /* Navigation arrows */
+    .gallery-modal__nav {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        color: white;
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        z-index: 1001;
+        transition: background-color 0.3s ease, opacity 0.3s ease;
+        border: none;
+    }
+
+    .gallery-modal__nav:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .gallery-modal__nav--prev {
+        left: 20px;
+    }
+
+    .gallery-modal__nav--next {
+        right: 20px;
+    }
+
+    .gallery-modal__nav svg {
+        width: 24px;
+        height: 24px;
+        fill: white;
+    }
+    
+    @media screen and (max-width: 767px) {
+    .masonry-sizer,
+    .masonry-item {
+        width: calc(100% / {{ section.settings.columns_mobile }});
+    }
+    
+    .gallery-modal__nav {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .gallery-modal__nav--prev {
+        left: 10px;
+    }
+    
+    .gallery-modal__nav--next {
+        right: 10px;
+    }
+    }
+</style>
+    
+<div class="masonry-gallery">
+    {% if section.settings.title != blank %}
+    <h2 class="masonry-gallery__title h1">{{ section.settings.title }}</h2>
+    {% endif %}
+    
+    <div class="masonry-wrapper">
+    <div class="masonry-sizer"></div>
+    <div class="masonry-gutter"></div>
+    
+    {% for block in section.blocks %}
+        {% case block.type %}
+        {% when 'image' %}
+            {% if block.settings.image != blank %}
+            <div class="masonry-item" {{ block.shopify_attributes }} data-index="{{ forloop.index0 }}">
+                <div class="masonry-item__inner">
+                <img 
+                    src="{{ block.settings.image | img_url: 'master' }}" 
+                    alt="{{ block.settings.alt | escape }}"
+                    loading="lazy"
+                    data-type="image"
+                >
+                </div>
+            </div>
+            {% endif %}
+        
+            {% when 'video' %}
+                {% if block.settings.video_url != blank %}
+                <div class="masonry-item" {{ block.shopify_attributes }} data-index="{{ forloop.index0 }}">
+                    <div class="masonry-item__inner">
+                        <div class="video-container">
+                            <iframe 
+                                width="100%" 
+                                height="240px" 
+                                src="{{ block.settings.video_url | replace: 'youtu.be/', 'www.youtube.com/embed/' }}" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            {% endif %}
+        {% endcase %}
+    {% endfor %}
+    </div>
+</div>
+
+<!-- Modal/Popup HTML -->
+<div class="gallery-modal">
+    <button class="gallery-modal__close">&times;</button>
+    <button class="gallery-modal__nav gallery-modal__nav--prev">
+        <svg viewBox="0 0 24 24">
+            <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+        </svg>
+    </button>
+    <div class="gallery-modal__content">
+        <!-- Content will be inserted here dynamically -->
+    </div>
+    <button class="gallery-modal__nav gallery-modal__nav--next">
+        <svg viewBox="0 0 24 24">
+            <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+        </svg>
+    </button>
+</div>
+
+<script src="https://unpkg.com/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"></script>
+<script src="https://unpkg.com/imagesloaded@5.0.0/imagesloaded.pkgd.min.js"></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Initialize masonry layout when images are loaded
+        const masonryWrapper = document.querySelector('.masonry-wrapper');
+        
+        // Initialize masonry
+        const masonry = new Masonry(masonryWrapper, {
+            itemSelector: '.masonry-item',
+            columnWidth: '.masonry-sizer',
+            gutter: '.masonry-gutter',
+            percentPosition: true
+        });
+        
+        // Wait for images to load
+        imagesLoaded(masonryWrapper).on('progress', function() {
+            masonry.layout();
+        });
+        
+        // Modal functionality
+        const modal = document.querySelector('.gallery-modal');
+        const modalContent = document.querySelector('.gallery-modal__content');
+        const closeButton = document.querySelector('.gallery-modal__close');
+        const prevButton = document.querySelector('.gallery-modal__nav--prev');
+        const nextButton = document.querySelector('.gallery-modal__nav--next');
+        const galleryItems = document.querySelectorAll('.masonry-item');
+        
+        let currentIndex = 0;
+        
+        // Open modal when clicking on a gallery item
+        galleryItems.forEach(item => {
+            item.addEventListener('click', function() {
+            currentIndex = parseInt(item.dataset.index);
+            openItemInModal(currentIndex);
+            });
+        });
+        
+        // Navigate to previous item
+        prevButton.addEventListener('click', function(e) {
+            e.stopPropagation();
+            navigateGallery(-1);
+        });
+        
+        // Navigate to next item
+        nextButton.addEventListener('click', function(e) {
+            e.stopPropagation();
+            navigateGallery(1);
+        });
+        
+        // Close modal when clicking the close button
+        closeButton.addEventListener('click', closeModal);
+        
+        // Close modal when clicking outside the content
+        modal.addEventListener('click', function(e) {
+            if (e.target === modal) {
+            closeModal();
+            }
+        });
+        
+        // Close modal with ESC key and navigate with arrow keys
+        document.addEventListener('keydown', function(e) {
+            if (!modal.classList.contains('active')) return;
+            
+            if (e.key === 'Escape') {
+            closeModal();
+            } else if (e.key === 'ArrowLeft') {
+            navigateGallery(-1);
+            } else if (e.key === 'ArrowRight') {
+            navigateGallery(1);
+            }
+        });
+        
+        // Function to open specific item in modal
+        function openItemInModal(index) {
+            const item = galleryItems[index];
+            const videoContainer = item.querySelector('.video-container');
+            
+            if (videoContainer) {
+            // It's a video
+            const videoData = item.querySelector('.hidden-data');
+            const videoUrl = videoData.dataset.videoUrl;
+            
+            let embedUrl = '';
+            
+            // Convert YouTube/Vimeo URL to embed URL
+            if (videoUrl.includes('youtube.com') || videoUrl.includes('youtu.be')) {
+                const videoId = videoUrl.includes('v=') 
+                ? videoUrl.split('v=')[1].split('&')[0]
+                : videoUrl.split('/').pop();
+                embedUrl = `https://www.youtube.com/embed/${videoId}?autoplay=true`;
+            } else if (videoUrl.includes('vimeo.com')) {
+                const videoId = videoUrl.split('/').pop();
+                embedUrl = `https://player.vimeo.com/video/${videoId}?autoplay=true`;
+            }
+            
+            modalContent.innerHTML = `
+                <iframe class="gallery-modal__video" src="${embedUrl}" frameborder="0" allowfullscreen></iframe>
+            `;
+            } else {
+            // It's an image
+            const img = item.querySelector('img');
+            const src = img.src;
+            const alt = img.alt;
+            
+            modalContent.innerHTML = `
+                <img class="gallery-modal__image" src="${src}" alt="${alt}">
+            `;
+            }
+            
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden'; // Prevent scrolling of background
+            
+            // Update navigation visibility
+            updateNavigation();
+        }
+        
+        // Function to navigate through gallery items
+        function navigateGallery(direction) {
+            // Stop any playing videos
+            const iframe = modalContent.querySelector('iframe');
+            if (iframe) {
+                iframe.src = '';
+            }
+            
+            // Calculate new index
+            currentIndex = (currentIndex + direction + galleryItems.length) % galleryItems.length;
+            
+            // Open the new item
+            openItemInModal(currentIndex);
+        }
+        
+        // Update navigation buttons based on current position
+        function updateNavigation() {
+            prevButton.style.display = galleryItems.length > 1 ? 'flex' : 'none';
+            nextButton.style.display = galleryItems.length > 1 ? 'flex' : 'none';
+        }
+        
+        function closeModal() {
+            modal.classList.remove('active');
+            document.body.style.overflow = 'auto';
+            
+            // Clear iframe src to stop videos
+            const iframe = modalContent.querySelector('iframe');
+            if (iframe) {
+            iframe.src = '';
+            }
+            
+            // Clear content after animation
+            setTimeout(() => {
+                if (!modal.classList.contains('active')) {
+                    modalContent.innerHTML = '';
+                }
+            }, 300);
+        }
+    });
+</script>
+
+
+{% schema %}
+    {
+      "name": "Masonry Gallery",
+      "tag": "section",
+      "class": "section",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Gallery Title",
+          "default": "Our Gallery"
+        },
+        {
+          "type": "select",
+          "id": "columns_desktop",
+          "label": "Columns on desktop",
+          "options": [
+            {
+              "value": "2",
+              "label": "2 columns"
+            },
+            {
+              "value": "3",
+              "label": "3 columns"
+            },
+            {
+              "value": "4",
+              "label": "4 columns"
+            },
+            {
+              "value": "5",
+              "label": "5 columns"
+            },
+            {
+              "value": "6",
+              "label": "6 columns"
+            },
+            {
+              "value": "7",
+              "label": "7 columns"
+            },
+            {
+              "value": "8",
+              "label": "8 columns"
+            },
+            {
+              "value": "9",
+              "label": "9 columns"
+            },
+            {
+              "value": "10",
+              "label": "10 columns"
+            }
+          ],
+          "default": "3"
+        },
+        {
+          "type": "select",
+          "id": "columns_mobile",
+          "label": "Columns on mobile",
+          "options": [
+            {
+              "value": "1",
+              "label": "1 column"
+            },
+            {
+              "value": "2",
+              "label": "2 columns"
+            }
+          ],
+          "default": "1"
+        },
+        {
+          "type": "range",
+          "id": "gap",
+          "min": 5,
+          "max": 30,
+          "step": 5,
+          "unit": "px",
+          "label": "Gap between items",
+          "default": 15
+        }
+      ],
+      "blocks": [
+        {
+          "type": "image",
+          "name": "Image",
+          "settings": [
+            {
+              "type": "image_picker",
+              "id": "image",
+              "label": "Image"
+            },
+            {
+              "type": "text",
+              "id": "alt",
+              "label": "Alt Text",
+              "default": "Gallery Image"
+            }
+          ]
+        },
+        {
+          "type": "video",
+          "name": "Video",
+          "settings": [
+            {
+              "type": "video_url",
+              "id": "video_url",
+              "accept": ["youtube", "vimeo"],
+              "label": "Video URL",
+              "placeholder": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+            },
+            {
+              "type": "image_picker",
+              "id": "cover_image",
+              "label": "Cover Image"
+            }
+          ]
+        }
+      ],
+      "presets": [
+        {
+          "name": "Masonry Gallery",
+          "blocks": [
+            {
+              "type": "image"
+            },
+            {
+              "type": "image"
+            },
+            {
+              "type": "image"
+            },
+            {
+              "type": "image"
+            }
+          ]
+        }
+      ]
+    }
+{% endschema %}

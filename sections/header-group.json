@@ -1,0 +1,78 @@
+{
+  "name": "t:sections.header.name",
+  "type": "header",
+  "sections": {
+    "announcement-bar": {
+      "type": "announcement-bar",
+      "blocks": {
+        "announcement-bar-0": {
+          "type": "announcement",
+          "settings": {
+            "text": "Welcome to Tattoo My Shoes !",
+            "link": ""
+          }
+        },
+        "announcement_VJzxze": {
+          "type": "announcement",
+          "settings": {
+            "text": "Where every shoe tells a story",
+            "link": ""
+          }
+        },
+        "announcement_tVN63q": {
+          "type": "announcement",
+          "settings": {
+            "text": "Get FREE SHIPPING on orders above $110",
+            "link": ""
+          }
+        },
+        "announcement_L9NGYm": {
+          "type": "announcement",
+          "settings": {
+            "text": "HURRY! SHOP NOW",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "announcement-bar-0",
+        "announcement_VJzxze",
+        "announcement_tVN63q",
+        "announcement_L9NGYm"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "scheme-84a78fdd-99c2-4f0c-be81-2ab09e7dddd6",
+        "show_line_separator": true,
+        "show_social": true,
+        "auto_rotate": true,
+        "change_slides_speed": 3,
+        "enable_country_selector": false,
+        "enable_language_selector": false
+      }
+    },
+    "header": {
+      "type": "header",
+      "settings": {
+        "logo_position": "middle-left",
+        "menu": "main-menu",
+        "menu_type_desktop": "dropdown",
+        "sticky_header_type": "on-scroll-up",
+        "show_line_separator": true,
+        "color_scheme": "scheme-37dad7b4-fed2-4e9e-812a-4267b336ef78",
+        "menu_color_scheme": "scheme-84a78fdd-99c2-4f0c-be81-2ab09e7dddd6",
+        "enable_country_selector": false,
+        "enable_language_selector": false,
+        "enable_customer_avatar": true,
+        "mobile_logo_position": "center",
+        "margin_bottom": 0,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "announcement-bar",
+    "header"
+  ]
+}

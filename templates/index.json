@@ -1,0 +1,796 @@
+{
+  "sections": {
+    "slideshow_WFydwJ": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_e4UGNj": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Black_and_Beige_Minimalist_Black_Friday_Sale_Banner.png",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-left",
+            "show_text_box": false,
+            "text_alignment": "left",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-a705afd9-5c1f-4480-9e44-5dac04f31da8",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_azxdna": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Untitled_design_33.png",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-left",
+            "show_text_box": false,
+            "text_alignment": "left",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-a705afd9-5c1f-4480-9e44-5dac04f31da8",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_dY839n": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/BANNER_BOOTS_TATTOO_MY_SHOES.png",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-left",
+            "show_text_box": false,
+            "text_alignment": "left",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-a705afd9-5c1f-4480-9e44-5dac04f31da8",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "slide_e4UGNj",
+        "slide_azxdna",
+        "slide_dY839n"
+      ],
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "adapt_image",
+        "slider_visual": "dots",
+        "auto_rotate": true,
+        "change_slides_speed": 3,
+        "image_behavior": "none",
+        "show_text_below": false,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "featured_collection": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Ready To Ship",
+        "heading_size": "h1",
+        "justify_heading_text": "center",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "ready-to-ship-tattoo-my-shoes",
+        "products_to_show": 12,
+        "columns_desktop": 4,
+        "full_width": true,
+        "show_view_all": true,
+        "view_all_style": "link",
+        "enable_desktop_slider": false,
+        "color_scheme": "scheme-37dad7b4-fed2-4e9e-812a-4267b336ef78",
+        "image_ratio": "portrait",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": true,
+        "show_rating": true,
+        "quick_add": "standard",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "video_WxTBbc": {
+      "type": "video",
+      "disabled": true,
+      "settings": {
+        "heading": "",
+        "heading_size": "h0",
+        "enable_video_looping": true,
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "full_width": true,
+        "color_scheme": "scheme-a705afd9-5c1f-4480-9e44-5dac04f31da8",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "image_with_text_Dht8Jw": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_Pm4iwQ": {
+          "type": "heading",
+          "settings": {
+            "heading": "Upcoming Events",
+            "heading_size": "h1"
+          }
+        },
+        "text_jGx7XV": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Discover the Hottest Events Featuring Tattoo My Shoes - Don't Miss Out!<\/p>",
+            "text_style": "body"
+          }
+        },
+        "button_HmC976": {
+          "type": "button",
+          "settings": {
+            "button_label": "Show Events",
+            "button_link": "shopify:\/\/pages\/tattoo-my-shoes-events-calendar",
+            "button_style_secondary": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_Pm4iwQ",
+        "text_jGx7XV",
+        "button_HmC976"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/IMG_20240525_104238_346.jpg",
+        "height": "large",
+        "desktop_image_width": "large",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "center",
+        "content_layout": "overlap",
+        "section_color_scheme": "scheme-84a78fdd-99c2-4f0c-be81-2ab09e7dddd6",
+        "color_scheme": "scheme-a705afd9-5c1f-4480-9e44-5dac04f31da8",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "featured_product_ekRHJt": {
+      "type": "featured-product",
+      "blocks": {
+        "text_nLWrPE": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title_KNGWad": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "price_JKyX8n": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker_KR6AP9": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "quantity_selector_39BrWw": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons_zXC4ea": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "text_wKrGWD": {
+          "type": "text",
+          "settings": {
+            "text": "Acquire this stylish slip-on shoe featuring smoking skulls to create a striking impression. Designed by renowned artist Gill Montie, this shoe can bring a rockstar vibe to your footwear collection.",
+            "text_style": "body"
+          }
+        },
+        "share_ehkHad": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "text_nLWrPE",
+        "title_KNGWad",
+        "price_JKyX8n",
+        "variant_picker_KR6AP9",
+        "quantity_selector_39BrWw",
+        "buy_buttons_zXC4ea",
+        "text_wKrGWD",
+        "share_ehkHad"
+      ],
+      "settings": {
+        "product": "gill-montie-high-tops-red-shoes",
+        "color_scheme": "scheme-37dad7b4-fed2-4e9e-812a-4267b336ef78",
+        "secondary_background": false,
+        "media_size": "small",
+        "constrain_to_viewport": true,
+        "media_fit": "cover",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_looping": true,
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "rich_text_3QnYP9": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_UhFdCq": {
+          "type": "heading",
+          "settings": {
+            "heading": "LET'S SHOP BY ARTIST",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_UhFdCq"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-84a78fdd-99c2-4f0c-be81-2ab09e7dddd6",
+        "full_width": true,
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "rich_text_tQKdV6": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_jjhKpw": {
+          "type": "heading",
+          "settings": {
+            "heading": "Exclusive Kids Collection",
+            "heading_size": "h1"
+          }
+        },
+        "text_FeGehQ": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+          }
+        },
+        "button_EVjn9M": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_jjhKpw",
+        "text_FeGehQ",
+        "button_EVjn9M"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-84a78fdd-99c2-4f0c-be81-2ab09e7dddd6",
+        "full_width": true,
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "featured_collection_9rpKNM": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "justify_heading_text": "left",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "kids",
+        "products_to_show": 6,
+        "columns_desktop": 3,
+        "full_width": true,
+        "show_view_all": true,
+        "view_all_style": "outline",
+        "enable_desktop_slider": true,
+        "color_scheme": "scheme-37dad7b4-fed2-4e9e-812a-4267b336ef78",
+        "image_ratio": "portrait",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_banner": {
+      "type": "image-banner",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Tell your story with your shoes",
+            "heading_size": "h0"
+          }
+        },
+        "button": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Start Shopping!",
+            "button_link_1": "shopify:\/\/collections\/all",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "button"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/women-in-dress-walks-through-mist.jpg",
+        "image_overlay_opacity": 40,
+        "image_height": "large",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-3",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false
+      }
+    },
+    "custom_tabs_rqKNkf": {
+      "type": "custom-tabs",
+      "blocks": {
+        "tab_xPNnbn": {
+          "type": "tab",
+          "settings": {
+            "title": "Ernie Moreno",
+            "featured_image": "shopify:\/\/shop_images\/ernie.jpg",
+            "description": "<p>Hey, I’m Ernie, and I believe shoes should tell a story. Every step you take should be a statement, a reflection of your personality, passion, and creativity. That’s why I pour my heart and soul into crafting each pair in this hand-drawn collection, ensuring every design is unique, bold, and meaningful. Whether you're looking for a striking piece of wearable art or something that truly represents you, my creations are here to turn your vision into reality. Ready to walk in art? Own a piece of my vision. Check out my designs below!<\/p>",
+            "read_more_link": "shopify:\/\/collections\/ernie-moreno",
+            "collection": "ernie-moreno",
+            "products_to_show": 8,
+            "products_per_view": 4,
+            "image_ratio": "portrait"
+          }
+        },
+        "tab_T3pwFL": {
+          "type": "tab",
+          "settings": {
+            "title": "Gill Montie",
+            "featured_image": "shopify:\/\/shop_images\/Gill_Montie.png",
+            "description": "<p>Hi, I am Gill Montie, and I’ve designed these custom shoes to bring tattoo artistry to life. Featuring my exclusive artwork, each pair blends bold skulls, intricate details, and raw artistic expression into every step you take. This collection is a tribute to classic tattoo culture, crafted for those who appreciate masterful ink work and want to wear something truly unique. Whether you’re a longtime fan or just love standout designs, here’s your chance to own a piece of tattoo history. Step in, make a statement, and check out my designs below!<\/p>",
+            "read_more_link": "shopify:\/\/collections\/gill-monte-shoes-at-tattoo-my-shoes",
+            "collection": "gill-monte-shoes-at-tattoo-my-shoes",
+            "products_to_show": 4,
+            "products_per_view": 4,
+            "image_ratio": "portrait"
+          }
+        }
+      },
+      "block_order": [
+        "tab_xPNnbn",
+        "tab_T3pwFL"
+      ],
+      "settings": {
+        "background_image": "shopify:\/\/shop_images\/3d-dark-grunge-display-background-with-smoky-atmosphere.webp",
+        "heading": "",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "set_active_tab_background": "#7f0101",
+        "set_active_tab_text": "#ffffff",
+        "color_scheme_1": "scheme-84a78fdd-99c2-4f0c-be81-2ab09e7dddd6",
+        "color_scheme_2": "scheme-2087ceec-c001-491b-8899-09652e7e391f",
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "collection_list_qPwY9d": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_arxd6f": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "high-tops"
+          }
+        },
+        "featured_collection_apyLnq": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "tattoo-my-shoes-slip-on-shoes"
+          }
+        },
+        "featured_collection_P44aqm": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "boots"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_arxd6f",
+        "featured_collection_apyLnq",
+        "featured_collection_P44aqm"
+      ],
+      "settings": {
+        "title": "Shop By Category",
+        "heading_size": "h1",
+        "justify_heading_text": "center",
+        "card_heading_align": "center",
+        "image_ratio": "portrait",
+        "columns_desktop": 3,
+        "color_scheme": "scheme-84a78fdd-99c2-4f0c-be81-2ab09e7dddd6",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_MeYWeA": {
+      "type": "rich-text",
+      "blocks": {
+        "caption_aiDDjN": {
+          "type": "caption",
+          "settings": {
+            "caption": "Because your shoes should be as bold as you are!",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "heading_cYPFiD": {
+          "type": "heading",
+          "settings": {
+            "heading": "Why People Choose Tattoo My Shoes?",
+            "heading_size": "h1"
+          }
+        },
+        "text_RnJRwa": {
+          "type": "text",
+          "settings": {
+            "text": "<p>At <strong>Tattoo My Shoes<\/strong>, we design <strong>custom-printed<\/strong> and <strong>custom hand-drawn<\/strong> shoes that bring your <strong>wildest thoughts to <\/strong>life on shoes.<\/p><p>Founded by <strong>Ernie Moreno<\/strong>, we create <strong>comfortable<\/strong>, <strong>stylish<\/strong>, and <strong>custom shoes<\/strong> that make you a true <strong>trendsetter<\/strong>. Whether you want <span style=\"text-decoration:underline\">stories on shoes<\/span> or a one-of-a-kind design, we’ve got you covered. Step up your style—let’s create something legendary! 🚀👟<\/p>"
+          }
+        },
+        "button_riE9Dt": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "caption_aiDDjN",
+        "heading_cYPFiD",
+        "text_RnJRwa",
+        "button_riE9Dt"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-37dad7b4-fed2-4e9e-812a-4267b336ef78",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "reviews_slider_xAUHXe": {
+      "type": "reviews-slider",
+      "blocks": {
+        "review_bfEcMB": {
+          "type": "review",
+          "settings": {
+            "review_text": "Test",
+            "review_author": "Test"
+          }
+        },
+        "review_UmX4Q4": {
+          "type": "review",
+          "settings": {
+            "review_text": "Test",
+            "review_author": "Test",
+            "review_image": "shopify:\/\/shop_images\/e951a5_41aea6817d194210bf398958bc1dd699mv2.png"
+          }
+        },
+        "review_DRzmFN": {
+          "type": "review",
+          "settings": {
+            "review_text": "Test",
+            "review_author": "Test",
+            "review_image": "shopify:\/\/shop_images\/e951a5_41aea6817d194210bf398958bc1dd699mv2.png"
+          }
+        },
+        "review_mVhgWR": {
+          "type": "review",
+          "settings": {
+            "review_text": "Test 2",
+            "review_author": "Test 2",
+            "review_image": "shopify:\/\/shop_images\/e951a5_41aea6817d194210bf398958bc1dd699mv2.png"
+          }
+        },
+        "review_E4H6UW": {
+          "type": "review",
+          "settings": {
+            "review_text": "Test",
+            "review_author": "Test",
+            "review_image": "shopify:\/\/shop_images\/e951a5_41aea6817d194210bf398958bc1dd699mv2.png"
+          }
+        },
+        "review_JAUPNY": {
+          "type": "review",
+          "settings": {
+            "review_text": "Test",
+            "review_author": "Test",
+            "review_image": "shopify:\/\/shop_images\/e951a5_41aea6817d194210bf398958bc1dd699mv2.png"
+          }
+        },
+        "review_e9DQmb": {
+          "type": "review",
+          "settings": {
+            "review_text": "Test",
+            "review_author": "Test",
+            "review_image": "shopify:\/\/shop_images\/e951a5_41aea6817d194210bf398958bc1dd699mv2.png"
+          }
+        },
+        "review_WTnXMM": {
+          "type": "review",
+          "settings": {
+            "review_text": "Test Final",
+            "review_author": "Test Final",
+            "review_image": "shopify:\/\/shop_images\/e951a5_41aea6817d194210bf398958bc1dd699mv2.png"
+          }
+        }
+      },
+      "block_order": [
+        "review_bfEcMB",
+        "review_UmX4Q4",
+        "review_DRzmFN",
+        "review_mVhgWR",
+        "review_E4H6UW",
+        "review_JAUPNY",
+        "review_e9DQmb",
+        "review_WTnXMM"
+      ],
+      "disabled": true,
+      "settings": {}
+    },
+    "multirow_eNEJ4X": {
+      "type": "multirow",
+      "blocks": {
+        "row_XVNyJM": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ernie.jpg",
+            "caption": "Level up your game with",
+            "heading": "Ernie Moreno",
+            "text": "<p>I’m Ernie, and I believe shoes should tell a story. Each pair in this hand-drawn collection is crafted with passion and precision. Ready to walk in art? Own a piece of my vision<\/p>",
+            "button_label": "View Collection",
+            "button_link": "shopify:\/\/collections\/ernie-moreno"
+          }
+        },
+        "row_jNfANa": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/gill_montie.jpg",
+            "caption": "Unique designs for you by",
+            "heading": "Gill Montie",
+            "text": "<p>The Gill Montie custom shoes showcase exclusive tattoo artwork by the legendary artist, blending bold skulls and intricate designs. Step into a piece of tattoo history and make a statement!<\/p>",
+            "button_label": "View Collection",
+            "button_link": "shopify:\/\/collections\/gill-monte-shoes-at-tattoo-my-shoes"
+          }
+        },
+        "row_WEKqxm": {
+          "type": "row",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/sean_kydd.jpg",
+            "caption": "Fashion into statement by",
+            "heading": "Sean Kydd",
+            "text": "<p>Sean’s stunning tattoo-inspired designs transform shoes into bold fashion statements, reflecting his passion and your personality. Choose a unique, custom-printed pair and step into something truly one of a kind!<\/p>",
+            "button_label": "View Collection",
+            "button_link": "shopify:\/\/collections\/sean-kydd"
+          }
+        }
+      },
+      "block_order": [
+        "row_XVNyJM",
+        "row_jNfANa",
+        "row_WEKqxm"
+      ],
+      "disabled": true,
+      "settings": {
+        "image_height": "medium",
+        "desktop_image_width": "medium",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "center",
+        "image_layout": "alternate-left",
+        "section_color_scheme": "scheme-37dad7b4-fed2-4e9e-812a-4267b336ef78",
+        "row_color_scheme": "scheme-84a78fdd-99c2-4f0c-be81-2ab09e7dddd6",
+        "mobile_content_alignment": "center",
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "featured_collection_Wri4JW": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "What's Trending",
+        "heading_size": "h1",
+        "justify_heading_text": "left",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "best-selling-products",
+        "products_to_show": 8,
+        "columns_desktop": 4,
+        "full_width": true,
+        "show_view_all": true,
+        "view_all_style": "link",
+        "enable_desktop_slider": true,
+        "color_scheme": "scheme-84a78fdd-99c2-4f0c-be81-2ab09e7dddd6",
+        "image_ratio": "portrait",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collapsible_content_ptce4X": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_RpTpGi": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How Long before I get my shoes ?",
+            "icon": "check_mark",
+            "row_content": "<p>Typically, turn around time for your shoes is approximately 2 weeks.<\/p><p>Around the holidays, you may experience a delay due to order volumes.<br\/>All orders will come via USPS.<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_88pAL6": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What do you use to color your shoes?",
+            "icon": "check_mark",
+            "row_content": "<p>All of our artistically created, handmade shoes are drawn in pencil and then colored with a high quality art marker.<\/p><p>No paint of any kind is ever used.<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_bP8QUz": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How do I keep my shoes clean?",
+            "icon": "check_mark",
+            "row_content": "<p>All of our shoes are coated with a clear enamel to protect them.<\/p><p>To clean, use a rag with a mild soap.<\/p><p>This is also recommended for custom print designs.<\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_RpTpGi",
+        "collapsible_row_88pAL6",
+        "collapsible_row_bP8QUz"
+      ],
+      "settings": {
+        "caption": "We thought you might want to know about some",
+        "heading": "Frequently Asked Questions",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "row",
+        "color_scheme": "scheme-37dad7b4-fed2-4e9e-812a-4267b336ef78",
+        "container_color_scheme": "scheme-84a78fdd-99c2-4f0c-be81-2ab09e7dddd6",
+        "open_first_collapsible_row": true,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "newsletter_CJ9eCQ": {
+      "type": "newsletter",
+      "blocks": {
+        "heading_pDW3Tk": {
+          "type": "heading",
+          "settings": {
+            "heading": "Join The TMS Family",
+            "heading_size": "h1"
+          }
+        },
+        "email_form_MfJVgX": {
+          "type": "email_form",
+          "settings": {}
+        },
+        "paragraph_nBrWwV": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p><strong>Be the first to know about new collections and exclusive offers.<\/strong><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_pDW3Tk",
+        "email_form_MfJVgX",
+        "paragraph_nBrWwV"
+      ],
+      "settings": {
+        "color_scheme": "scheme-37dad7b4-fed2-4e9e-812a-4267b336ef78",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    }
+  },
+  "order": [
+    "slideshow_WFydwJ",
+    "featured_collection",
+    "video_WxTBbc",
+    "image_with_text_Dht8Jw",
+    "featured_product_ekRHJt",
+    "rich_text_3QnYP9",
+    "custom_tabs_rqKNkf",
+    "rich_text_tQKdV6",
+    "featured_collection_9rpKNM",
+    "image_banner",
+    "collection_list_qPwY9d",
+    "rich_text_MeYWeA",
+    "reviews_slider_xAUHXe",
+    "multirow_eNEJ4X",
+    "featured_collection_Wri4JW",
+    "collapsible_content_ptce4X",
+    "newsletter_CJ9eCQ"
+  ]
+}

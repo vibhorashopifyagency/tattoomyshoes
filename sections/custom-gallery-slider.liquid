@@ -1,0 +1,609 @@
+<style>
+  .custom-gallery-slider {
+    text-align: center;
+    padding: {{ section.settings.padding }}px;
+    {% if section.settings.background_image != blank %}
+      background: url({{ section.settings.background_image | img_url: '1920x1080' }}) no-repeat center/cover;
+    {% endif %}
+  }
+  .custom-gallery-slider h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: {{ section.settings.h2_color }};
+  }
+  .custom-gallery-slider > p {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 3.2em;
+    line-height: 1.6;
+    margin: 0 auto 20px;
+    width: 80%;
+    font-size: 16px;
+  }
+  .slider-container {
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  .slider {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 100%;
+  }
+  .slide {
+    flex: 0 0 calc(100% / {{ section.settings.slides_desktop }});
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  .slide h3, .slide p { color: #ffffff; }
+  .slide img {
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .slide h3 {
+    margin-bottom: 5px;
+    height: 1.5em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 100%;
+  }
+  .slide .image-description {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 4.2em;
+    line-height: 1.4;
+    word-break: break-word;
+    margin: 10px 0;
+    width: 100%;
+    text-align: center;
+    height: 4.2em;
+  }
+  .nav-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    z-index: 10;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+  }
+  .nav-arrow:hover {
+    opacity: 1;
+  }
+  .nav-arrow.left {
+    left: 10px;
+  }
+  .nav-arrow.right {
+    right: 10px;
+  }
+  .button-container {
+    margin-top: 20px;
+  }
+  .gallery-button {
+    background-color: {{ section.settings.button_color }};
+    color: {{ section.settings.button_text_color }};
+    font-size: {{ section.settings.button_font_size }}px;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+  }
+  @media (max-width: 768px) {
+    .slide {
+      flex: 0 0 calc(100% / {{ section.settings.slides_mobile }});
+    }
+  }
+  .no-image-placeholder {
+    width: 100%;
+    height: 200px;
+    background: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+  }
+  
+  /* Character count styles */
+  .char-count {
+    font-size: 12px;
+    color: #666;
+    text-align: right;
+    margin-top: 5px;
+  }
+  .char-count.limit-reached {
+    color: #ff0000;
+  }
+</style>
+
+<div class="custom-gallery-slider" id="custom-gallery-slider-{{ section.id }}">
+  <h2>{{ section.settings.section_title }}</h2>
+  <p>{{ section.settings.section_description }}</p>
+
+  <div class="slider-container">
+    <button type="button" class="nav-arrow left" aria-label="Previous slide">&#10094;</button>
+    <div class="slider" id="slider-{{ section.id }}">
+      {% if section.blocks.size > 0 %}
+        {% for block in section.blocks %}
+          <div class="slide">
+            {% if block.settings.slide_image != blank %}
+              <img 
+                src="{{ block.settings.slide_image | img_url: '800x800' }}" 
+                alt="{{ block.settings.image_title | truncate: 30 }}" 
+                loading="lazy"
+              >
+            {% else %}
+              <div class="no-image-placeholder">No Image</div>
+            {% endif %}
+            <h3>{{ block.settings.image_title | truncate: 30 }}</h3>
+            <p class="image-description">{{ block.settings.image_description | truncate: 100 }}</p>
+          </div>
+        {% endfor %}
+      {% else %}
+        <div class="slide">
+          <div class="no-image-placeholder">No Images Added</div>
+        </div>
+      {% endif %}
+    </div>
+    <button type="button" class="nav-arrow right" aria-label="Next slide">&#10095;</button>
+  </div>
+
+  {% if section.settings.button_text != blank and section.settings.button_link != blank %}
+    <div class="button-container">
+      <a href="{{ section.settings.button_link }}" class="gallery-button">
+        {{ section.settings.button_text }}
+      </a>
+    </div>
+  {% endif %}
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Initialize each slider section
+    initSlider('{{ section.id }}');
+  });
+
+  function initSlider(sectionId) {
+    var sliderContainer = document.getElementById('custom-gallery-slider-' + sectionId);
+    if (!sliderContainer) return;
+    
+    var sliderElement = document.getElementById('slider-' + sectionId);
+    var slides = sliderElement ? sliderElement.querySelectorAll('.slide') : [];
+    var totalSlides = slides.length;
+    
+    // Configuration
+    var isAutoplayEnabled = {{ section.settings.enable_autoplay }};
+    var autoplaySpeed = {{ section.settings.autoplay_speed }} * 1000;
+    var enableLoop = {{ section.settings.enable_loop }};
+    var slidesDesktop = {{ section.settings.slides_desktop }};
+    var slidesMobile = {{ section.settings.slides_mobile }};
+    
+    // State variables
+    var slideIndex = 0;
+    var autoplayTimer;
+    var isInTransition = false;
+    var slidesToShow = getSlidesToShow();
+    
+    // Button handlers
+    var prevButton = sliderContainer.querySelector('.nav-arrow.left');
+    var nextButton = sliderContainer.querySelector('.nav-arrow.right');
+    
+    // Get slides to show based on screen width
+    function getSlidesToShow() {
+      return window.innerWidth > 768 ? slidesDesktop : slidesMobile;
+    }
+    
+    // Initialize the slider
+    function init() {
+      if (totalSlides <= slidesToShow) {
+        // Hide nav buttons if not enough slides
+        if (prevButton) prevButton.style.display = 'none';
+        if (nextButton) nextButton.style.display = 'none';
+        return;
+      }
+      
+      // Set initial position
+      updateSlider(0);
+      
+      // Add event listeners
+      if (prevButton) {
+        prevButton.addEventListener('click', prevSlide);
+      }
+      
+      if (nextButton) {
+        nextButton.addEventListener('click', nextSlide);
+      }
+      
+      // Start autoplay if enabled
+      if (isAutoplayEnabled) {
+        startAutoplay();
+      }
+      
+      // Add keyboard navigation
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'ArrowLeft') {
+          e.preventDefault();
+          prevSlide();
+        } else if (e.key === 'ArrowRight') {
+          e.preventDefault();
+          nextSlide();
+        }
+      });
+      
+      // Add click handler for images to open lightbox
+      slides.forEach(function(slide) {
+        var img = slide.querySelector('img');
+        if (img) {
+          img.addEventListener('click', function() {
+            var src = img.src.replace('800x800', '1200x1200');
+            openLightbox(src);
+          });
+        }
+      });
+      
+      // Handle window resize
+      window.addEventListener('resize', handleResize);
+    }
+    
+    // Navigate to previous slide
+    function prevSlide() {
+      if (isInTransition) return;
+      isInTransition = true;
+      
+      if (enableLoop) {
+        // For loop mode, we'll implement a circular motion in both directions
+        if (slideIndex <= 0) {
+          // Create a quick transition to the end (without animation)
+          sliderElement.style.transition = 'none';
+          slideIndex = totalSlides - slidesToShow;
+          updateSlider(slideIndex);
+          
+          // Force reflow to apply the immediate position change
+          sliderElement.offsetHeight;
+          
+          // Then animate to the previous slide
+          sliderElement.style.transition = 'transform 0.5s ease';
+          slideIndex--;
+          updateSlider(slideIndex);
+        } else {
+          slideIndex--;
+          updateSlider(slideIndex);
+        }
+      } else {
+        // For non-loop mode, simply stop at the first slide
+        slideIndex = Math.max(0, slideIndex - 1);
+        updateSlider(slideIndex);
+      }
+      
+      resetAutoplayTimer();
+      setTimeout(function() { isInTransition = false; }, 500);
+    }
+    
+    // Navigate to next slide
+    function nextSlide() {
+      if (isInTransition) return;
+      isInTransition = true;
+      
+      if (enableLoop) {
+        if (slideIndex >= totalSlides - slidesToShow) {
+          // Create continuous forward motion for looping
+          slideIndex++;
+          updateSlider(slideIndex);
+          
+          // After animation completes, jump back to the beginning
+          setTimeout(function() {
+            sliderElement.style.transition = 'none';
+            slideIndex = 0;
+            updateSlider(slideIndex);
+            
+            // Force reflow
+            sliderElement.offsetHeight;
+            
+            // Restore transition
+            sliderElement.style.transition = 'transform 0.5s ease';
+            isInTransition = false;
+          }, 500);
+        } else {
+          slideIndex++;
+          updateSlider(slideIndex);
+          setTimeout(function() { isInTransition = false; }, 500);
+        }
+      } else {
+        // For non-loop mode, stop at the last possible position
+        var maxIndex = Math.max(0, totalSlides - slidesToShow);
+        slideIndex = Math.min(maxIndex, slideIndex + 1);
+        updateSlider(slideIndex);
+        setTimeout(function() { isInTransition = false; }, 500);
+      }
+      
+      resetAutoplayTimer();
+    }
+    
+    // Update slider position
+    function updateSlider(index) {
+      if (!sliderElement) return;
+      var slideWidth = 100 / slidesToShow;
+      sliderElement.style.transform = 'translateX(-' + (index * slideWidth) + '%)';
+    }
+    
+    // Handle window resize
+    function handleResize() {
+      var newSlidesToShow = getSlidesToShow();
+      if (newSlidesToShow !== slidesToShow) {
+        slidesToShow = newSlidesToShow;
+        
+        // Adjust slideIndex if needed
+        var maxIndex = totalSlides - slidesToShow;
+        if (slideIndex > maxIndex && maxIndex >= 0) {
+          slideIndex = maxIndex;
+        }
+        
+        updateSlider(slideIndex);
+      }
+    }
+    
+    // Autoplay functions
+    function startAutoplay() {
+      stopAutoplay();
+      autoplayTimer = setInterval(nextSlide, autoplaySpeed);
+    }
+    
+    function stopAutoplay() {
+      if (autoplayTimer) {
+        clearInterval(autoplayTimer);
+      }
+    }
+    
+    function resetAutoplayTimer() {
+      if (isAutoplayEnabled) {
+        stopAutoplay();
+        startAutoplay();
+      }
+    }
+    
+    // Lightbox function
+    function openLightbox(src) {
+      stopAutoplay();
+      
+      var lightbox = document.createElement('div');
+      lightbox.style.position = 'fixed';
+      lightbox.style.top = '0';
+      lightbox.style.left = '0';
+      lightbox.style.width = '100%';
+      lightbox.style.height = '100%';
+      lightbox.style.background = 'rgba(0,0,0,0.8)';
+      lightbox.style.display = 'flex';
+      lightbox.style.justifyContent = 'center';
+      lightbox.style.alignItems = 'center';
+      lightbox.style.zIndex = '1000';
+      
+      var img = document.createElement('img');
+      img.src = src;
+      img.style.maxWidth = '90%';
+      img.style.maxHeight = '90%';
+      lightbox.appendChild(img);
+      
+      // Close on click
+      lightbox.addEventListener('click', function() {
+        document.body.removeChild(lightbox);
+        startAutoplay();
+      });
+      
+      document.body.appendChild(lightbox);
+    }
+    
+    // Character limit setup for admin
+    function setupCharacterLimits() {
+      var titleInputs = document.querySelectorAll('input[id*="image_title"]');
+      titleInputs.forEach(function(input) {
+        setupCharacterLimit(input, 30);
+      });
+      
+      var descInputs = document.querySelectorAll('textarea[id*="image_description"]');
+      descInputs.forEach(function(input) {
+        setupCharacterLimit(input, 100);
+      });
+    }
+    
+    function setupCharacterLimit(input, limit) {
+      if (!input) return;
+      
+      var counterId = input.id + '_counter';
+      var counter = document.createElement('div');
+      counter.id = counterId;
+      counter.className = 'char-count';
+      counter.textContent = '0/' + limit + ' characters';
+      
+      input.parentNode.insertBefore(counter, input.nextSibling);
+      
+      function updateCounter() {
+        var currentLength = input.value.length;
+        counter.textContent = currentLength + '/' + limit + ' characters';
+        
+        if (currentLength >= limit) {
+          counter.classList.add('limit-reached');
+          input.value = input.value.substring(0, limit);
+        } else {
+          counter.classList.remove('limit-reached');
+        }
+      }
+      
+      updateCounter();
+      input.addEventListener('input', updateCounter);
+      input.setAttribute('maxlength', limit);
+    }
+    
+    // Initialize the slider components
+    init();
+    setupCharacterLimits();
+  }
+</script>
+
+
+{% schema %}
+  {
+    "name": "Custom Gallery Slider",
+    "settings": [
+      {
+        "type": "text",
+        "id": "section_title",
+        "label": "Section Title",
+        "default": "Our Previous Designs"
+      },
+      {
+        "type": "color",
+        "id": "h2_color",
+        "label": "Heading Color",
+        "default": "#000000"
+      },
+      {
+        "type": "textarea",
+        "id": "section_description",
+        "label": "Section Description",
+        "default": "Explore our past custom shoe designs, crafted with precision and creativity."
+      },
+      {
+        "type": "image_picker",
+        "id": "background_image",
+        "label": "Background Image"
+      },
+      {
+        "type": "range",
+        "id": "padding",
+        "label": "Section Padding",
+        "min": 0,
+        "max": 100,
+        "step": 5,
+        "default": 20,
+        "unit": "px"
+      },
+      {
+        "type": "range",
+        "id": "slides_desktop",
+        "label": "Slides to Show (Desktop)",
+        "min": 1,
+        "max": 5,
+        "step": 1,
+        "default": 3
+      },
+      {
+        "type": "range",
+        "id": "slides_mobile",
+        "label": "Slides to Show (Mobile)",
+        "min": 1,
+        "max": 3,
+        "step": 1,
+        "default": 1
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_loop",
+        "label": "Enable Infinite Loop",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_autoplay",
+        "label": "Enable Automatic Sliding",
+        "default": true
+      },
+      {
+        "type": "range",
+        "id": "autoplay_speed",
+        "label": "Autoplay Speed (seconds)",
+        "min": 1,
+        "max": 10,
+        "step": 1,
+        "default": 3
+      },
+      {
+        "type": "text",
+        "id": "button_text",
+        "label": "Button Text",
+        "default": "View More"
+      },
+      {
+        "type": "url",
+        "id": "button_link",
+        "label": "Button Link"
+      },
+      {
+        "type": "color",
+        "id": "button_color",
+        "label": "Button Color",
+        "default": "#000000"
+      },
+      {
+        "type": "color",
+        "id": "button_text_color",
+        "label": "Button Text Color",
+        "default": "#ffffff"
+      },
+      {
+        "type": "range",
+        "id": "button_font_size",
+        "label": "Button Font Size",
+        "min": 10,
+        "max": 24,
+        "step": 1,
+        "default": 16,
+        "unit": "px"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "image_slide",
+        "name": "Image Slide",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "slide_image",
+            "label": "Slide Image"
+          },
+          {
+            "type": "text",
+            "id": "image_title",
+            "label": "Image Title (30 char max)",
+            "default": "Custom Shoe"
+          },
+          {
+            "type": "textarea",
+            "id": "image_description",
+            "label": "Image Description (100 char max)",
+            "default": "A beautifully designed custom shoe."
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Custom Gallery Slider",
+        "category": "Image",
+        "blocks": [
+          { "type": "image_slide" },
+          { "type": "image_slide" }
+        ]
+      }
+    ]
+  }
+  {% endschema %}

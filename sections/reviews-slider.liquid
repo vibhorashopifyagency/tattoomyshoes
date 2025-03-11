@@ -1,0 +1,156 @@
+<style>
+    .review-slider {
+        width: 100%;
+        padding: 20px;
+        position: relative;
+    }
+    .swiper-wrapper {
+        display: flex;
+        padding-left: initial;
+        margin: 0;
+    }
+    .review-slide {
+        display: flex;
+        justify-content: center;
+        height: auto;
+    }
+    .review-card {
+        width: 100%;
+        text-align: center;
+        background: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 6px 12px 12px 1px rgb(0 0 0 / 20%)
+    }
+    .review-image {
+        width: 80px;
+        height: 80px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin: 0 auto 15px;
+    }
+    .review-text {
+        font-size: 16px;
+        color: #333;
+        margin-bottom: 10px;
+    }
+    .review-author {
+        font-size: 14px;
+        color: #666;
+        margin-top: 10px;
+    }
+    .swiper-button-next,
+    .swiper-button-prev {
+        color: #333;
+    }
+    .swiper-pagination {
+        position: relative;
+        margin-top: 20px;
+    }
+</style>
+    
+<div class="review-slider swiper">
+    <div class="swiper-wrapper">
+        {% for block in section.blocks %}
+        <div class="swiper-slide review-slide">
+        <div class="review-card">
+            {% if block.settings.review_image %}
+            <img src="{{ block.settings.review_image | img_url: 'medium' }}" alt="{{ block.settings.review_author }}" class="review-image">
+            {% endif %}
+            <p class="review-text">{{ block.settings.review_text }}</p>
+            <h4 class="review-author">- {{ block.settings.review_author }}</h4>
+        </div>
+        </div>
+        {% endfor %}
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const swiper = new Swiper('.review-slider', {
+            loop: true,
+            loopAdditionalSlides: 10, // Ensures smooth transition for loop
+            speed: 5000, // Slow speed for smooth scrolling (in ms)
+            autoplay: {
+                delay: 0, // No delay between transitions
+                disableOnInteraction: false, // Continue autoplay after user interaction
+                reverseDirection: false, // Set to true if you want reverse direction
+            },
+            slidesPerView: 2, // Set default for mobile to 2
+            spaceBetween: 20,
+            allowTouchMove: true, // Allow user to drag/touch (optional)
+            cssMode: false, // Disable CSS mode for smoother animation
+            breakpoints: {
+                // When window width is >= specific pixel value
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 10
+                },
+                480: {
+                    slidesPerView: 1,
+                    spaceBetween: 15
+                },
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 20
+                },
+                992: {
+                    slidesPerView: 4,
+                    spaceBetween: 25
+                },
+                1200: {
+                    slidesPerView: 5,
+                    spaceBetween: 30
+                }
+            },
+            // Optional - you may want to keep or remove these based on preference
+            pagination: { 
+                el: '.swiper-pagination', 
+                clickable: true 
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    });
+</script>
+
+
+{% schema %}
+    {
+      "name": "Review Slider",
+      "settings": [],
+      "blocks": [
+        {
+          "type": "review",
+          "name": "Review",
+          "settings": [
+            {
+              "type": "text",
+              "id": "review_text",
+              "label": "Review Text"
+            },
+            {
+              "type": "text",
+              "id": "review_author",
+              "label": "Author Name"
+            },
+            {
+              "type": "image_picker",
+              "id": "review_image",
+              "label": "Author Image"
+            }
+          ]
+        }
+      ],
+      "presets": [
+        {
+          "name": "Review Slider"
+        }
+      ]
+    }
+{% endschema %}

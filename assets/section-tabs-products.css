@@ -1,0 +1,139 @@
+.tabs-container {
+  padding: 10px;
+  /* border-radius: 30px; */
+  background-color: transparent !important;
+}
+
+.tab-featured-row {
+  margin-bottom: 30px;
+}
+
+.tab-featured-image img {
+  border-radius: 8px;
+}
+
+.tab-featured-content {
+  padding: 15px 0;
+}
+
+.tab-products-slider {
+  position: relative;
+  margin-top: 20px;
+}
+
+.no-collection-message {
+  text-align: center;
+  padding: 30px 0;
+  background: #f5f5f5;
+  border-radius: 8px;
+}
+
+.collection__view-all {
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Slider styles */
+.slider {
+  scrollbar-width: none;
+}
+
+.slider::-webkit-scrollbar {
+  display: none;
+}
+
+.slider--mobile {
+  position: relative;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 1rem;
+  padding-bottom: 10px;
+}
+
+.slider--mobile .slider__slide {
+  scroll-snap-align: start;
+  flex-shrink: 0;
+}
+
+.slider-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.slider-counter {
+  margin: 0 1rem;
+}
+
+.slider-button {
+  color: rgba(var(--color-foreground), 0.75);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+}
+
+.slider-button--prev .icon {
+  transform: rotate(90deg);
+}
+
+.slider-button--next .icon {
+  transform: rotate(-90deg);
+}
+
+.slider-button:hover {
+  color: rgba(var(--color-foreground), 1);
+}
+
+/* Mobile styles */
+@media screen and (max-width: 749px) {
+  .tabs-container .tabs {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-bottom: 10px;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+  }
+  
+  .tabs-container .tab-btn {
+    scroll-snap-align: start;
+  }
+  
+  .tab-featured-image {
+    margin-bottom: 20px;
+  }
+  
+  .slider--mobile .grid__item {
+    width: 80%;
+    padding: 0 10px;
+  }
+  
+  .slider--mobile.slider--tablet.grid--2-col-tablet-down .grid__item {
+    width: 80%;
+    margin-left: 0;
+  }
+  
+  /* Force specific styling for mobile */
+  .product-grid.slider.slider--mobile {
+    display: flex;
+  }
+}
+
+/* Animation */
+.animate--slide-in {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.animate--slide-in.active {
+  opacity: 1;
+  transform: translateY(0);
+}

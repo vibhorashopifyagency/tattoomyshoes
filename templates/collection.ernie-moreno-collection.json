@@ -1,0 +1,96 @@
+{
+  "sections": {
+    "image_with_text_drUpyF": {
+      "type": "image-with-text",
+      "blocks": {
+        "caption_FNiXRq": {
+          "type": "caption",
+          "settings": {
+            "caption": "Tattoo My Shoes | Artist",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "heading_igDJLh": {
+          "type": "heading",
+          "settings": {
+            "heading": "{{ collection.title }}",
+            "heading_size": "h0"
+          }
+        },
+        "text_YpnGMa": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>{{ collection.description }}<\/p>",
+            "text_style": "body"
+          }
+        },
+        "button_hNpE7p": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "caption_FNiXRq",
+        "heading_igDJLh",
+        "text_YpnGMa",
+        "button_hNpE7p"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/ernie.jpg",
+        "height": "medium",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "center",
+        "content_layout": "overlap",
+        "section_color_scheme": "scheme-84a78fdd-99c2-4f0c-be81-2ab09e7dddd6",
+        "color_scheme": "scheme-a705afd9-5c1f-4480-9e44-5dac04f31da8",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "banner": {
+      "type": "main-collection-banner",
+      "disabled": true,
+      "settings": {
+        "show_collection_description": true,
+        "show_collection_image": true,
+        "color_scheme": "scheme-84a78fdd-99c2-4f0c-be81-2ab09e7dddd6"
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "products_per_page": 16,
+        "columns_desktop": 4,
+        "color_scheme": "scheme-37dad7b4-fed2-4e9e-812a-4267b336ef78",
+        "image_ratio": "portrait",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": true,
+        "show_rating": false,
+        "quick_add": "standard",
+        "enable_filtering": true,
+        "filter_type": "horizontal",
+        "enable_sorting": true,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "image_with_text_drUpyF",
+    "banner",
+    "product-grid"
+  ]
+}
