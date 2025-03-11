@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -15,7 +24,7 @@
           "settings": {}
         },
         "judge_me_reviews_preview_badge_n7pmkT": {
-          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {}
         },
         "price": {
@@ -52,6 +61,14 @@
             "page": "tattoo-my-shoes-size-chart"
           }
         },
+        "inventory_tHiR64": {
+          "type": "inventory",
+          "settings": {
+            "text_style": "uppercase",
+            "inventory_threshold": 10,
+            "show_inventory_quantity": true
+          }
+        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -64,13 +81,13 @@
           "settings": {
             "layout": "horizontal",
             "icon_1": "lock",
-            "image_1": "shopify:\/\/shop_images\/icons8-tick.gif",
-            "heading_1": "<strong>100% Secure Payment<\/strong>",
+            "image_1": "shopify://shop_images/icons8-tick.gif",
+            "heading_1": "<strong>100% Secure Payment</strong>",
             "icon_2": "star",
-            "image_2": "shopify:\/\/shop_images\/best-quality.gif",
+            "image_2": "shopify://shop_images/best-quality.gif",
             "heading_2": "Premium Quality",
             "icon_3": "map_pin",
-            "image_3": "shopify:\/\/shop_images\/united-states-of-america.gif",
+            "image_3": "shopify://shop_images/united-states-of-america.gif",
             "heading_3": "Popular in USA"
           }
         },
@@ -105,6 +122,7 @@
         "text_Yg7BWh",
         "optional_sizing_Mk4TD9",
         "popup_dGXUG7",
+        "inventory_tHiR64",
         "buy_buttons",
         "icon_with_text_8bmAPD",
         "collapsible_tab_LTYFh4",
@@ -131,7 +149,7 @@
       "type": "apps",
       "blocks": {
         "judge_me_reviews_review_widget_tCm9XY": {
-          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {}
         }
       },
