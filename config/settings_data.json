@@ -1,15 +1,6 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "current": {
-    "logo": "shopify://shop_images/e951a5_41aea6817d194210bf398958bc1dd699mv2.png",
+    "logo": "shopify:\/\/shop_images\/e951a5_41aea6817d194210bf398958bc1dd699mv2.png",
     "logo_width": 90,
     "type_header_font": "righteous_n4",
     "heading_scale": 100,
@@ -107,7 +98,7 @@
     "sale_badge_color_scheme": "scheme-4",
     "sold_out_badge_color_scheme": "scheme-3",
     "brand_headline": "",
-    "brand_description": "<p></p>",
+    "brand_description": "<p><\/p>",
     "brand_image_width": 100,
     "social_facebook_link": "",
     "social_instagram_link": "",
@@ -144,12 +135,12 @@
     "content_for_index": [],
     "blocks": {
       "15623156175785154009": {
-        "type": "shopify://apps/qikify-smart-menu-mega-menu/blocks/app-embed/19d2f1cd-1836-4a32-8937-03df3c601dc8",
+        "type": "shopify:\/\/apps\/qikify-smart-menu-mega-menu\/blocks\/app-embed\/19d2f1cd-1836-4a32-8937-03df3c601dc8",
         "disabled": false,
         "settings": {}
       },
       "15683396631634586217": {
-        "type": "shopify://apps/inbox/blocks/chat/841fc607-4181-4ad1-842d-e24d7f8bad6b",
+        "type": "shopify:\/\/apps\/inbox\/blocks\/chat\/841fc607-4181-4ad1-842d-e24d7f8bad6b",
         "disabled": false,
         "settings": {
           "button_color": "#6e0c0c",
@@ -377,7 +368,7 @@
       "sale_badge_color_scheme": "scheme-4",
       "sold_out_badge_color_scheme": "scheme-3",
       "brand_headline": "",
-      "brand_description": "<p></p>",
+      "brand_description": "<p><\/p>",
       "brand_image_width": 100,
       "social_twitter_link": "",
       "social_facebook_link": "",

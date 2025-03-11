@@ -1,31 +1,22 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
     "custom_image_columns_F8txGD": {
       "type": "custom-image-columns",
       "settings": {
-        "left_img": "shopify://shop_images/k7yUj-eaap6s6lx337xppzrmmvobrb.jpg",
-        "right_img": "shopify://shop_images/Gill_Montie.png",
+        "left_img": "shopify:\/\/shop_images\/k7yUj-eaap6s6lx337xppzrmmvobrb.jpg",
+        "right_img": "shopify:\/\/shop_images\/Gill_Montie.png",
         "left_subheading": "Subheading",
         "left_heading": "Heading",
         "left_button_text": "Button",
-        "left_button_link": "shopify://collections/newest-products",
+        "left_button_link": "shopify:\/\/collections\/newest-products",
         "right_subheading": "Subheading",
         "right_heading": "Heading",
         "right_button_text": "Button",
-        "right_button_link": "shopify://collections/gill-monte-1",
+        "right_button_link": "shopify:\/\/collections\/gill-monte-1",
         "center_subheading": "Tattoo My Shoes: Shoes | Boots | Slip-Ons",
         "center_heading": "Custom Design Ready Shoes",
         "center_button_text": "Grab Now",
-        "center_button_link": "shopify://collections/women",
+        "center_button_link": "shopify:\/\/collections\/women",
         "show_left_content": false,
         "show_right_content": false,
         "show_center_content": true,
@@ -178,7 +169,7 @@
         "slide_dGbgJb": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/person-stands-on-rocks-poking-out-of-the-ocean-shoreline.jpg",
+            "image": "shopify:\/\/shop_images\/person-stands-on-rocks-poking-out-of-the-ocean-shoreline.jpg",
             "heading": "Image slide",
             "heading_size": "h1",
             "subheading": "Tell your brand's story through images",
@@ -240,7 +231,7 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "Shop all",
-            "button_link_1": "shopify://collections/all",
+            "button_link_1": "shopify:\/\/collections\/all",
             "button_style_secondary_1": true,
             "button_label_2": "",
             "button_link_2": "",
@@ -253,7 +244,7 @@
         "button"
       ],
       "settings": {
-        "image": "shopify://shop_images/k7yUj-eaap6s6lx337xppzrmmvobrb.jpg",
+        "image": "shopify:\/\/shop_images\/k7yUj-eaap6s6lx337xppzrmmvobrb.jpg",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "desktop_content_position": "middle-center",
@@ -273,7 +264,7 @@
           "type": "category",
           "settings": {
             "title": "VAPE PODS",
-            "image": "shopify://shop_images/SmokingSkulls_2.jpg",
+            "image": "shopify:\/\/shop_images\/SmokingSkulls_2.jpg",
             "link": ""
           }
         },
@@ -281,7 +272,7 @@
           "type": "category",
           "settings": {
             "title": "VAPE PODS",
-            "image": "shopify://shop_images/20240428_150925.jpg",
+            "image": "shopify:\/\/shop_images\/20240428_150925.jpg",
             "link": ""
           }
         },
@@ -289,7 +280,7 @@
           "type": "category",
           "settings": {
             "title": "VAPE PODS",
-            "image": "shopify://shop_images/20240330_162128.jpg",
+            "image": "shopify:\/\/shop_images\/20240330_162128.jpg",
             "link": ""
           }
         },
@@ -297,7 +288,7 @@
           "type": "category",
           "settings": {
             "title": "VAPE PODS",
-            "image": "shopify://shop_images/20250123_200144.jpg",
+            "image": "shopify:\/\/shop_images\/20250123_200144.jpg",
             "link": ""
           }
         },
@@ -305,7 +296,7 @@
           "type": "category",
           "settings": {
             "title": "VAPE PODS",
-            "image": "shopify://shop_images/k7yUj-eaap6s6lx337xppzrmmvobrb_bbc8f09b-d2f4-4e42-afa4-527d545e5e56.jpg",
+            "image": "shopify:\/\/shop_images\/k7yUj-eaap6s6lx337xppzrmmvobrb_bbc8f09b-d2f4-4e42-afa4-527d545e5e56.jpg",
             "link": ""
           }
         },
