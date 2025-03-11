@@ -12,11 +12,19 @@
         "right_subheading": "Subheading",
         "right_heading": "Heading",
         "right_button_text": "Button",
+<<<<<<< HEAD
         "right_button_link": "shopify:\/\/collections\/gill-monte-1",
         "center_subheading": "Tattoo My Shoes: Shoes | Boots | Slip-Ons",
         "center_heading": "Custom Design Ready Shoes",
         "center_button_text": "Grab Now",
         "center_button_link": "shopify:\/\/collections\/women",
+=======
+        "right_button_link": "shopify://collections/gill-monte-shoes-at-tattoo-my-shoes",
+        "center_subheading": "Tattoo My Shoes: Shoes | Boots | Slip-Ons",
+        "center_heading": "Custom Design Ready Shoes",
+        "center_button_text": "Grab Now",
+        "center_button_link": "shopify://collections/ready-to-ship-tattoo-my-shoes",
+>>>>>>> 74100a8047b62c06099d623515364cc5cd878ab5
         "show_left_content": false,
         "show_right_content": false,
         "show_center_content": true,
