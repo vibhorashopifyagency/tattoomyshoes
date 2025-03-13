@@ -462,9 +462,7 @@
                 %}
 
               {%- when 'variant_picker' -%}
-                {%- if product.selected_or_first_available_variant != null -%}
                 {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id %}
-                {% endif %}
 
               {% comment %} Custom Buttons Starts Here {% endcomment %}
 
