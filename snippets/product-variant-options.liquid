@@ -77,7 +77,7 @@
       additional_props: input_dataset
     %}
   {%- elsif picker_type == 'button' -%}
-    {% if product.available %}
+    {% if product.variant.selected_or_first_available_variant.available %}
     <input
       type="radio"
       id="{{ input_id }}"
