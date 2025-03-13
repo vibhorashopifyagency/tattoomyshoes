@@ -41,7 +41,6 @@
         },
         "buy_buttons": {
           "type": "buy_buttons",
-          "disabled": true,
           "settings": {
             "show_dynamic_checkout": true,
             "show_gift_card_recipient": true
@@ -71,7 +70,7 @@
       ],
       "settings": {
         "enable_sticky_info": true,
-        "color_scheme": "scheme-a705afd9-5c1f-4480-9e44-5dac04f31da8",
+        "color_scheme": "scheme-37dad7b4-fed2-4e9e-812a-4267b336ef78",
         "media_size": "large",
         "constrain_to_viewport": true,
         "media_fit": "cover",
@@ -81,8 +80,8 @@
         "mobile_thumbnails": "hide",
         "hide_variants": true,
         "enable_video_looping": false,
-        "padding_top": 36,
-        "padding_bottom": 12
+        "padding_top": 20,
+        "padding_bottom": 20
       }
     },
     "custom_gallery_slider_Qk4AFP": {
