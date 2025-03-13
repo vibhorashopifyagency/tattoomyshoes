@@ -77,7 +77,7 @@
       additional_props: input_dataset
     %}
   {%- elsif picker_type == 'button' -%}
-    {% if label_unavailable != true %}
+    {% if product.available %}
     <input
       type="radio"
       id="{{ input_id }}"
