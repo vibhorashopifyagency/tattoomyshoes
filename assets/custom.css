@@ -262,20 +262,3 @@
   }
 }
 .shopify-policy__container { max-width: 1500px !important; }
-
-
-/* Hide crossed-out variant options */
-[style*="text-decoration: line-through"],
-.unavailable,
-[aria-disabled="true"],
-.product-variant-unavailable {
-  display: none !important;
-}
-
-/* If the variants are in grid buttons like your screenshot */
-.product-form__input label[style*="text-decoration: line-through"],
-.product-form__input label.unavailable,
-.product-form__input button[aria-disabled="true"],
-.product-form__input button.product-variant-unavailable {
-  display: none !important;
-}
