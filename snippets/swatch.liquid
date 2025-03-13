@@ -21,7 +21,7 @@
     assign swatch_value = 'rgb(' | append: swatch.color.rgb | append: ')'
   endif
 -%}
-
+{{ swatch_value }}
 <span
   {% if swatch_value %}
     class="swatch{% if shape == 'square' %} swatch--square{% endif %}"
