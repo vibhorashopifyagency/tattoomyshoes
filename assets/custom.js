@@ -106,37 +106,3 @@ $("#gender-optional").on("change", (event) => {
         }
     }
 });
-
-
-document.addEventListener('DOMContentLoaded', function() {
-    // Hide all unavailable variant options that are crossed out
-    function hideUnavailableVariants() {
-      // Target elements with line-through style or specific classes used in your theme
-      const unavailableOptions = document.querySelectorAll('[style*="text-decoration: line-through"], .unavailable, [aria-disabled="true"], .product-variant-unavailable');
-      
-      unavailableOptions.forEach(option => {
-        // Find the parent button or container element
-        const optionContainer = option.closest('button') || option.closest('label') || option;
-        if (optionContainer) {
-          optionContainer.style.display = 'none';
-        }
-      });
-    }
-    
-    // Run immediately and also after any variant selection changes
-    hideUnavailableVariants();
-    
-    // Re-run when variant selections change
-    document.addEventListener('change', function(event) {
-      if (event.target.closest('variant-selectors') || event.target.closest('.product-form__input')) {
-        setTimeout(hideUnavailableVariants, 100); // Small delay to allow for DOM updates
-      }
-    });
-    
-    // For click events on variant buttons
-    document.addEventListener('click', function(event) {
-      if (event.target.closest('variant-selectors') || event.target.closest('.product-form__input')) {
-        setTimeout(hideUnavailableVariants, 100);
-      }
-    });
-  });
