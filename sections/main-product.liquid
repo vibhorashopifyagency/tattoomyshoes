@@ -466,47 +466,41 @@
 
                 {% if product.id == 9594835206440 or product.id == 9594843988264 or product.id == 9594895696168 %}
 
-                  <div class="custom-design-container">
-
-                  {% render 'custom-product-selector-link' %}
-
-                    <div style="
-                          position: relative;
-                      ">
-                        <div style="
-                        display: flex;
-                        flex-direction: column;
-                    ">
-                        <span class="custom-subtitle">Want to share your design idea?</span>
-
-                        <button id="talk-open-chat" type="submit" name="add" class="product-form__submit button button--full-width hard-bg" aria-haspopup="dialog">
+                  <div class="product-form__customization">
+                    <!-- Talk to us section -->
+                    <div class="customization-section">
+                      <h3 class="customization-title">Want to share your design idea?</h3>
+                      
+                      <button id="talk-open-chat" type="submit" name="add" class="product-form__submit button button--full-width button--primary">
                         <span>TALK TO US</span>
-                    
-                          <div class="loading__spinner hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="spinner" viewBox="0 0 66 66"><circle stroke-width="6" cx="33" cy="33" r="30" fill="none" class="path"></circle></svg>
-                          
-                          </div>
-                          </button>
-
-                        <span class="separator">OR</span>
-
-                        <span class="custom-subtitle">Place Your Order here:</span>
-                          
+                        <div class="loading__spinner hidden">
+                          <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" class="spinner" viewBox="0 0 66 66">
+                            <circle stroke-width="6" cx="33" cy="33" r="30" fill="none" class="path"></circle>
+                          </svg>
                         </div>
+                      </button>
+                      
+                      <div class="divider">
+                        <span class="divider-text">OR</span>
+                      </div>
+                      
+                      <h3 class="customization-title">Place Your Order here:</h3>
                     </div>
-
+                    
+                    <!-- Variant picker -->
                     {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id %}
-
-                    <div>
+                    
+                    <!-- Upload and comments section -->
+                    <div class="customization-options">
                       <div class="product-form__input product-form__file-upload">
-                        <span class="custom-subtitle">Add your custom design here (image only):</span>
+                        <h3 class="customization-title">Add your custom design here (image only):</h3>
                         <div class="file-upload">
                           <input type="file" 
-                                id="file" 
+                                id="custom-design-file" 
                                 name="properties[File]" 
                                 form="{{ product_form_id }}" 
                                 class="file-upload__input">
-                          <label for="file" class="button button--secondary file-upload__button">
+                          <label for="custom-design-file" class="button button--secondary file-upload__button">
                             <span class="file-upload__button-text">Choose file</span>
                           </label>
                           <span class="file-upload__selected-file"></span>
@@ -523,11 +517,10 @@
                             form="{{ product_form_id }}"
                             placeholder=" "
                           >
-                          <label class="field__label" for="engraving">Engraving Text (Optional)</label>
+                          <label class="field__label" for="engraving">Comments (Optional)</label>
                         </div>
                       </div>
                     </div>
-
                   </div>
 
                 {%  else %}
