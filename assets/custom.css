@@ -271,3 +271,21 @@
 .hard-bg:after {
   box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset)) rgba(249,244,244, calc(1 - 1.0)), 0 0 0 var(--buttons-border-width) rgb(255 255 255);
 }
+
+
+.separator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.separator::before,
+.separator::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #000; /* You can change the color as needed */
+  margin: 0 10px;
+}
