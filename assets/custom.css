@@ -286,6 +286,6 @@
 .separator::after {
   content: "";
   flex: 1;
-  border-bottom: 1px solid #000; /* You can change the color as needed */
+  border-bottom: 1px solid #ffffff; /* You can change the color as needed */
   margin: 0 10px;
 }
