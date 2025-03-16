@@ -496,8 +496,15 @@
                     {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id %}
 
                     <div>
-                      <input type="file" id="file" name="properties[File]" form="{{ product_form_id }}">
-                      <label class="field__label" for="file">Custom Image</label>
+                      <div>
+                        <input type="file" id="file" name="properties[File]" form="{{ product_form_id }}">
+                        <label class="field__label" for="file">Custom Image (Optional)</label>
+                      </div>
+
+                      <div class="field">
+                        <input class="field__input" type="text" id="engraving" name="properties[engraving]" form="{{ product_form_id }}">
+                        <label class="field__label" for="engraving">Note (Optional)</label>
+                      </div>
                     </div>
 
                   </div>
