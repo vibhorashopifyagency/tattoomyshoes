@@ -496,9 +496,19 @@
                     {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id %}
 
                     <div>
-                      <div>
-                        <input type="file" id="file" name="properties[File]" form="{{ product_form_id }}">
-                        <label class="field__label" for="file">Custom Image (Optional)</label>
+                      <div class="product-form__input product-form__file-upload">
+                        <label class="form__label field__label" for="file">Custom Image (Optional)</label>
+                        <div class="file-upload">
+                          <input type="file" 
+                                id="file" 
+                                name="properties[File]" 
+                                form="{{ product_form_id }}" 
+                                class="file-upload__input">
+                          <label for="file" class="button button--secondary file-upload__button">
+                            <span class="file-upload__button-text">Choose file</span>
+                          </label>
+                          <span class="file-upload__selected-file"></span>
+                        </div>
                       </div>
 
                       <div class="field">
