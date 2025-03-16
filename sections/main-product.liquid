@@ -484,7 +484,10 @@
                 High Top: 9594843988264
               {% endcomment %}
               {% if product.id == 9594835206440 or product.id == 9594843988264 or product.id == 9594895696168 %}
-              <div id="custom-buttons" style="
+
+
+              {% endif %}
+              {% comment %} <div id="custom-buttons" style="
                 display: flex;
                 flex-wrap: nowrap;
                 gap: 10px;
@@ -507,9 +510,8 @@
                   </svg>                    
                 Contact TMS Email
                 </button></a>
-              </div>
+              </div> {% endcomment %}
               {% comment %} Custom Buttons Ends Here {% endcomment %}
-              {% endif %}
 
               {%- when 'optional_sizing' -%}
                 {% if product.template_suffix == 'rts' %}
