@@ -262,3 +262,178 @@
   }
 }
 .shopify-policy__container { max-width: 1500px !important; }
+
+
+/* Custom Page Custom CSS */
+.hard-bg {
+  background-color: #891616;
+}
+.hard-bg:after {
+  box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset)) rgba(249,244,244, calc(1 - 1.0)), 0 0 0 var(--buttons-border-width) rgb(255 255 255);
+}
+.separator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.separator::before,
+.separator::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #ffffff; /* You can change the color as needed */
+  margin: 0 10px;
+}
+.custom-subtitle {
+  padding-bottom: 5px;
+  font-size: 1.8rem;
+}
+
+
+.customization-section {
+  margin-bottom: 2rem;
+}
+
+.product-form__customization {
+  padding: 0.5rem 0;
+}
+
+.customization-title {
+  font-size: 1.4rem;
+  margin: 1rem 0;
+  font-weight: 500;
+  color: rgb(var(--color-foreground));
+}
+
+.divider {
+  position: relative;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.divider:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  border-top: 1px solid rgba(var(--color-foreground), 0.1);
+}
+
+.divider-text {
+  position: relative;
+  display: inline-block;
+  padding: 0 1rem;
+  background-color: rgb(var(--color-background));
+  font-weight: 500;
+  color: rgb(var(--color-foreground));
+}
+
+.file-upload {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.file-upload__selected-file {
+  font-size: 1.2rem;
+  color: rgb(var(--color-foreground), 0.75);
+  word-break: break-all;
+}
+
+.customization-options {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+@media screen and (min-width: 750px) {
+  .customization-title {
+    font-size: 1.5rem;
+  }
+}
+
+.product-form__file-upload {
+  margin-bottom: 1.5rem;
+}
+
+.file-upload {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.file-upload__input {
+  position: absolute;
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.file-upload__button {
+  cursor: pointer;
+  min-height: 4.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.2rem 3rem;
+}
+
+.file-upload__selected-file {
+  color: var(--color-foreground);
+  font-size: 1.4rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 50%;
+}
+.product-form__text {
+  margin-bottom: 1.5rem;
+}
+
+.product-form__text .field {
+  position: relative;
+  width: 100%;
+}
+
+.product-form__text .field__input {
+  padding: 1.5rem;
+  width: 100%;
+  color: var(--color-foreground);
+  background-color: transparent;
+  border: 0.1rem solid var(--color-foreground);
+  border-radius: 0;
+  font-size: 1.6rem;
+  transition: box-shadow var(--duration-short) ease;
+}
+
+.product-form__text .field__input:focus {
+  box-shadow: 0 0 0 0.1rem var(--color-foreground);
+  outline: transparent;
+}
+
+.product-form__text .field__label {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  pointer-events: none;
+  color: var(--color-foreground-opacity-60);
+  font-size: 1.6rem;
+  transition: all var(--duration-short) ease;
+}
+
+.product-form__text .field__input:focus ~ .field__label,
+.product-form__text .field__input:not(:placeholder-shown) ~ .field__label {
+  top: 0.8rem;
+  left: 1.5rem;
+  font-size: 1rem;
+}

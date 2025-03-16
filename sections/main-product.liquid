@@ -462,7 +462,72 @@
                 %}
 
               {%- when 'variant_picker' -%}
-                {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id %}
+
+
+                {% if product.id == 9594835206440 or product.id == 9594843988264 or product.id == 9594895696168 %}
+
+                  {% render 'custom-product-selector-link' %}
+
+                  <div class="product-form__customization">
+                    <!-- Talk to us section -->
+                    <div class="customization-section">
+                      <h3 class="customization-title">Want to share your design idea?</h3>
+                      
+                      <button id="talk-open-chat" type="submit" name="add" class="product-form__submit button button--full-width hard-bg">
+                        <span>TALK TO US</span>
+                        <div class="loading__spinner hidden">
+                          <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" class="spinner" viewBox="0 0 66 66">
+                            <circle stroke-width="6" cx="33" cy="33" r="30" fill="none" class="path"></circle>
+                          </svg>
+                        </div>
+                      </button>
+                      
+                      <div class="divider">
+                        <span class="divider-text">OR</span>
+                      </div>
+                      
+                      <h3 class="customization-title">Place Your Order here:</h3>
+                    </div>
+                    
+                    <!-- Variant picker -->
+                    {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id %}
+                    
+                    <!-- Upload and comments section -->
+                    <div class="customization-options">
+                      <div class="product-form__input product-form__file-upload">
+                        <h3 class="customization-title">Add your custom design here (image only):</h3>
+                        <div class="file-upload">
+                          <input type="file" 
+                                id="custom-design-file" 
+                                name="properties[File]" 
+                                form="{{ product_form_id }}" 
+                                class="file-upload__input">
+                          <label for="custom-design-file" class="button button--secondary file-upload__button">
+                            <span class="file-upload__button-text">Choose file</span>
+                          </label>
+                          <span class="file-upload__selected-file"></span>
+                        </div>
+                      </div>
+                  
+                      <div class="product-form__input product-form__text">
+                        <div class="field">
+                          <input 
+                            class="field__input" 
+                            type="text" 
+                            id="engraving" 
+                            name="properties[engraving]" 
+                            form="{{ product_form_id }}"
+                            placeholder=" "
+                          >
+                          <label class="field__label" for="engraving">Comments (Optional)</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                {%  else %}
+                  {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id %}
+                {% endif %}
 
               {% comment %} Custom Buttons Starts Here {% endcomment %}
 
@@ -478,8 +543,13 @@
                 </div>
               </div> {% endcomment %}
               
-              {% if product.id == 9555147030824 %}
-              <div id="custom-buttons" style="
+              {% comment %} 
+                Boots: 9594835206440
+                Slip On: 9594895696168
+                High Top: 9594843988264
+              {% endcomment %}
+              
+              {% comment %} <div id="custom-buttons" style="
                 display: flex;
                 flex-wrap: nowrap;
                 gap: 10px;
@@ -491,9 +561,9 @@
                   </button>
                 </a>
                 
-                {% comment %} <a class="whatsapp-button" href="mailto:recipientname@gmail.com?subject=Hello%20There&body=This%20is%20the%20email%20body%20content">
+                <a class="whatsapp-button" href="mailto:recipientname@gmail.com?subject=Hello%20There&body=This%20is%20the%20email%20body%20content">
                   Send details in Email
-                </a> {% endcomment %}
+                </a>
 
                 <a id="emailDetailsLink" class="email-button" href="#" style="font-family: Righteous">
                   <button class="email-button">
@@ -502,9 +572,8 @@
                   </svg>                    
                 Contact TMS Email
                 </button></a>
-              </div>
+              </div> {% endcomment %}
               {% comment %} Custom Buttons Ends Here {% endcomment %}
-              {% endif %}
 
               {%- when 'optional_sizing' -%}
                 {% if product.template_suffix == 'rts' %}
