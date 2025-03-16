@@ -121,3 +121,8 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     }
 });
+
+
+$("#talk-open-chat").on("click", function(e) {
+    $("#ShopifyChat").trigger("click");
+});
