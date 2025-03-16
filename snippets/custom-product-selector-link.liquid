@@ -1,0 +1,126 @@
+<div class="product-category-links">
+  <p class="product-category-links__heading">Browse Similar Styles</p>
+  <div class="product-category-links__grid">
+    <!-- Slip-ons Category Box -->
+    <a href="/products/slip-ons" class="product-category-link">
+      <div class="product-category-link__image-container">
+        <img 
+          src="{{ 'slipons-thumbnail.jpg' | asset_url }}" 
+          alt="Slip-on Shoes"
+          class="product-category-link__image"
+          loading="lazy"
+          width="120"
+          height="120">
+      </div>
+      <div class="product-category-link__text">
+        <span class="product-category-link__title">Slip-ons</span>
+      </div>
+    </a>
+    
+    <!-- High-tops Category Box -->
+    <a href="/products/hightops" class="product-category-link">
+      <div class="product-category-link__image-container">
+        <img 
+          src="{{ 'hightops-thumbnail.jpg' | asset_url }}" 
+          alt="High-top Shoes"
+          class="product-category-link__image"
+          loading="lazy"
+          width="120" 
+          height="120">
+      </div>
+      <div class="product-category-link__text">
+        <span class="product-category-link__title">High-tops</span>
+      </div>
+    </a>
+    
+    <!-- Boots Category Box -->
+    <a href="/products/boots" class="product-category-link">
+      <div class="product-category-link__image-container">
+        <img 
+          src="{{ 'boots-thumbnail.jpg' | asset_url }}" 
+          alt="Boots"
+          class="product-category-link__image"
+          loading="lazy"
+          width="120" 
+          height="120">
+      </div>
+      <div class="product-category-link__text">
+        <span class="product-category-link__title">Boots</span>
+      </div>
+    </a>
+  </div>
+</div>
+
+<style>
+.product-category-links {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 0.1rem solid rgba(var(--color-foreground-rgb), 0.08);
+}
+
+.product-category-links__heading {
+  font-size: 1.4rem;
+  color: var(--color-foreground-opacity-85);
+  margin-bottom: 1.5rem;
+}
+
+.product-category-links__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+@media screen and (max-width: 749px) {
+  .product-category-links__grid {
+    grid-template-columns: repeat(3, 1fr); /* Still show all 3 on mobile but smaller */
+    gap: 0.8rem;
+  }
+}
+
+.product-category-link {
+  display: block;
+  position: relative;
+  text-decoration: none;
+  color: var(--color-foreground);
+  transition: transform 0.2s ease-in-out;
+  border-radius: 0.6rem;
+  overflow: hidden;
+  border: 0.1rem solid rgba(var(--color-foreground-rgb), 0.08);
+}
+
+.product-category-link:hover {
+  transform: translateY(-0.3rem);
+  box-shadow: 0 0.5rem 1rem rgba(var(--color-foreground-rgb), 0.08);
+}
+
+.product-category-link__image-container {
+  position: relative;
+  overflow: hidden;
+  padding-top: 100%; /* 1:1 Aspect Ratio */
+}
+
+.product-category-link__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.product-category-link:hover .product-category-link__image {
+  transform: scale(1.05);
+}
+
+.product-category-link__text {
+  padding: 0.8rem;
+  background-color: var(--color-background);
+  text-align: center;
+}
+
+.product-category-link__title {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+</style>
