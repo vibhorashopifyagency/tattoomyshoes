@@ -176,7 +176,7 @@ document.addEventListener('DOMContentLoaded', function() {
       });
 
 
-      
+
     // const customChatButton = document.getElementById('talk-open-chat');
     
     // if (customChatButton) {
