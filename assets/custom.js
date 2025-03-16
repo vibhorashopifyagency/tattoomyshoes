@@ -125,41 +125,93 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
     // Open ShopifyChat on Talk to us button click
-    const customChatButton = document.getElementById('talk-open-chat');
-    
-    if (customChatButton) {
-      customChatButton.addEventListener('click', function(e) {
-        e.preventDefault();
+
+
+    document.addEventListener('DOMContentLoaded', function() {
+        const customChatButton = document.getElementById('talk-open-chat');
         
-        try {
-          // Target the specific Shopify Chat element from your HTML
-          const shopifyChat = document.querySelector('inbox-online-store-chat#ShopifyChat');
-          
-          if (shopifyChat) {
-            // Method 1: Try to set the is-open attribute to true
-            shopifyChat.setAttribute('is-open', 'true');
+        if (customChatButton) {
+          customChatButton.addEventListener('click', function(e) {
+            e.preventDefault();
             
-            // Method 2: Look for the actual button within the component and click it
-            const chatButton = shopifyChat.shadowRoot ? 
-                              shopifyChat.shadowRoot.querySelector('button') : 
-                              shopifyChat.querySelector('button');
-            
-            if (chatButton) {
-              chatButton.click();
-              console.log('Found and clicked the chat button');
-            } else {
-              // Method 3: Dispatch a custom event that the component might listen for
-              shopifyChat.dispatchEvent(new CustomEvent('toggle-chat', { bubbles: true }));
-              console.log('Dispatched toggle-chat event');
+            // Get the current product info (if on a product page)
+            let productInfo = '';
+            try {
+              const productTitle = document.querySelector('.product__title')?.textContent.trim();
+              if (productTitle) {
+                productInfo = `I have a question about ${productTitle}`;
+              }
+            } catch (error) {
+              console.log('Not on a product page or product title not found');
             }
-          } else {
-            console.warn('ShopifyChat element not found');
-          }
-        } catch (error) {
-          console.error('Error while trying to open Shopify chat:', error);
+            
+            // Target the specific Shopify Chat element
+            const shopifyChat = document.querySelector('inbox-online-store-chat#ShopifyChat');
+            
+            if (shopifyChat) {
+              // Set the is-open attribute to true to open the chat
+              shopifyChat.setAttribute('is-open', 'true');
+              
+              // Wait for the chat to open and then find the input field
+              setTimeout(() => {
+                // Try to find the chat input field
+                const chatInputField = document.querySelector('.chat-input-field') || 
+                                        document.querySelector('[aria-label="Message"]') ||
+                                        document.querySelector('.shopify-chat-input');
+                
+                if (chatInputField) {
+                  // Set the value of the input field
+                  chatInputField.value = productInfo || 'Hello, I need help with...';
+                  
+                  // Trigger input event to make sure the chat recognizes the value change
+                  chatInputField.dispatchEvent(new Event('input', { bubbles: true }));
+                  
+                  // Focus the input field
+                  chatInputField.focus();
+                }
+              }, 1000); // Wait 1 second for the chat to fully open
+            }
+          });
         }
       });
-    } else {
-      console.warn('Custom chat button with ID "talk-open-chat" not found');
-    }
+
+
+      
+    // const customChatButton = document.getElementById('talk-open-chat');
+    
+    // if (customChatButton) {
+    //   customChatButton.addEventListener('click', function(e) {
+    //     e.preventDefault();
+        
+    //     try {
+    //       // Target the specific Shopify Chat element from your HTML
+    //       const shopifyChat = document.querySelector('inbox-online-store-chat#ShopifyChat');
+          
+    //       if (shopifyChat) {
+    //         // Method 1: Try to set the is-open attribute to true
+    //         shopifyChat.setAttribute('is-open', 'true');
+            
+    //         // Method 2: Look for the actual button within the component and click it
+    //         const chatButton = shopifyChat.shadowRoot ? 
+    //                           shopifyChat.shadowRoot.querySelector('button') : 
+    //                           shopifyChat.querySelector('button');
+            
+    //         if (chatButton) {
+    //           chatButton.click();
+    //           console.log('Found and clicked the chat button');
+    //         } else {
+    //           // Method 3: Dispatch a custom event that the component might listen for
+    //           shopifyChat.dispatchEvent(new CustomEvent('toggle-chat', { bubbles: true }));
+    //           console.log('Dispatched toggle-chat event');
+    //         }
+    //       } else {
+    //         console.warn('ShopifyChat element not found');
+    //       }
+    //     } catch (error) {
+    //       console.error('Error while trying to open Shopify chat:', error);
+    //     }
+    //   });
+    // } else {
+    //   console.warn('Custom chat button with ID "talk-open-chat" not found');
+    // }
 });
