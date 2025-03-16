@@ -132,26 +132,37 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Try to find and click the Shopify Chat button
         try {
-          // Method 1: Try to find the chat button using Shopify's common selectors
-          const shopifyChatButton = document.querySelector('[data-shopify-chat-button]') || 
-                                    document.querySelector('.shopify-chat-button') || 
-                                    document.querySelector('[aria-label="Chat"]');
+          // Look for the Shopify Chat button using common selectors
+          const shopifyChatButton = document.querySelector('[aria-label="Chat with us"]') || 
+                                    document.querySelector('[data-chat-window-trigger]') ||
+                                    document.querySelector('.shopify-chat-trigger') ||
+                                    document.querySelector('.shopify-chat-launcher') ||
+                                    document.querySelector('[data-shopify-chat="button"]');
           
           if (shopifyChatButton) {
+            // Simulate a click on the actual chat button
             shopifyChatButton.click();
-            return;
+            console.log('Found and clicked Shopify chat button');
+          } else {
+            // Alternative method: Look for the iframe and try to communicate with it
+            const chatIframe = document.querySelector('iframe[title*="chat" i]') || 
+                             document.querySelector('iframe[src*="shopify-chat" i]');
+            
+            if (chatIframe) {
+              // Try to make the iframe visible
+              chatIframe.style.display = 'block';
+              
+              // Try to send a message to the iframe to open the chat
+              try {
+                chatIframe.contentWindow.postMessage({ action: 'open_chat' }, '*');
+                console.log('Sent message to chat iframe');
+              } catch (frameError) {
+                console.warn('Could not communicate with chat iframe:', frameError);
+              }
+            } else {
+              console.warn('Shopify chat button or iframe not found');
+            }
           }
-          
-          // Method 2: If direct click doesn't work, try to trigger via Shopify Chat API
-          if (window.ShopifyChat) {
-            window.ShopifyChat.open();
-            return;
-          }
-          
-          // Method 3: Last resort, dispatch a custom event that Shopify might listen for
-          document.dispatchEvent(new CustomEvent('shopify:chat:open'));
-          
-          console.log('Attempted to open Shopify chat');
         } catch (error) {
           console.error('Error while trying to open Shopify chat:', error);
         }
