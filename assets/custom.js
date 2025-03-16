@@ -124,5 +124,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 $("#talk-open-chat").on("click", function(e) {
+    console.log("clicked");
     $("#ShopifyChat").trigger("click");
 });
