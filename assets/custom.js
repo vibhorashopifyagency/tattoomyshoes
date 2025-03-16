@@ -108,6 +108,8 @@ $("#gender-optional").on("change", (event) => {
 });
 
 document.addEventListener('DOMContentLoaded', function() {
+
+    // Custom File Upload's show image name on select
     const fileInput = document.querySelector('.file-upload__input');
     const fileNameDisplay = document.querySelector('.file-upload__selected-file');
     
@@ -120,10 +122,9 @@ document.addEventListener('DOMContentLoaded', function() {
         }
       });
     }
-});
 
 
-document.addEventListener('DOMContentLoaded', function() {
+    // Open ShopifyChat on Talk to us button click
     const customChatButton = document.getElementById('talk-open-chat');
     
     if (customChatButton) {
@@ -161,4 +162,4 @@ document.addEventListener('DOMContentLoaded', function() {
     } else {
       console.warn('Custom chat button with ID "talk-open-chat" not found');
     }
-  });
+});
