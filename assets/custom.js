@@ -106,3 +106,18 @@ $("#gender-optional").on("change", (event) => {
         }
     }
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const fileInput = document.querySelector('.file-upload__input');
+    const fileNameDisplay = document.querySelector('.file-upload__selected-file');
+    
+    if (fileInput && fileNameDisplay) {
+      fileInput.addEventListener('change', function() {
+        if (this.files && this.files.length > 0) {
+          fileNameDisplay.textContent = this.files[0].name;
+        } else {
+          fileNameDisplay.textContent = '';
+        }
+      });
+    }
+});
