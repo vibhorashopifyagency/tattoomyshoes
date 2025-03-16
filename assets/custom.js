@@ -123,51 +123,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-document.addEventListener('DOMContentLoaded', function() {
-    const customChatButton = document.getElementById('talk-open-chat');
-    
-    if (customChatButton) {
-      customChatButton.addEventListener('click', function(e) {
-        e.preventDefault();
-        
-        // Try to find and click the Shopify Chat button
-        try {
-          // Look for the Shopify Chat button using common selectors
-          const shopifyChatButton = document.querySelector('[aria-label="Chat with us"]') || 
-                                    document.querySelector('[data-chat-window-trigger]') ||
-                                    document.querySelector('.shopify-chat-trigger') ||
-                                    document.querySelector('.shopify-chat-launcher') ||
-                                    document.querySelector('[data-shopify-chat="button"]');
-          
-          if (shopifyChatButton) {
-            // Simulate a click on the actual chat button
-            shopifyChatButton.click();
-            console.log('Found and clicked Shopify chat button');
-          } else {
-            // Alternative method: Look for the iframe and try to communicate with it
-            const chatIframe = document.querySelector('iframe[title*="chat" i]') || 
-                             document.querySelector('iframe[src*="shopify-chat" i]');
-            
-            if (chatIframe) {
-              // Try to make the iframe visible
-              chatIframe.style.display = 'block';
-              
-              // Try to send a message to the iframe to open the chat
-              try {
-                chatIframe.contentWindow.postMessage({ action: 'open_chat' }, '*');
-                console.log('Sent message to chat iframe');
-              } catch (frameError) {
-                console.warn('Could not communicate with chat iframe:', frameError);
-              }
-            } else {
-              console.warn('Shopify chat button or iframe not found');
-            }
-          }
-        } catch (error) {
-          console.error('Error while trying to open Shopify chat:', error);
-        }
-      });
-    } else {
-      console.warn('Custom chat button with ID "talk-open-chat" not found');
-    }
-  });
+$("#talk-open-chat").on("click", function(e) {
+    console.log("clicked");
+    $("#ShopifyChat").click();
+});
