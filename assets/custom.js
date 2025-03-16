@@ -123,7 +123,40 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-$("#talk-open-chat").on("click", function(e) {
-    console.log("clicked");
-    $("#ShopifyChat").click();
-});
+document.addEventListener('DOMContentLoaded', function() {
+    const customChatButton = document.getElementById('talk-open-chat');
+    
+    if (customChatButton) {
+      customChatButton.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        // Try to find and click the Shopify Chat button
+        try {
+          // Method 1: Try to find the chat button using Shopify's common selectors
+          const shopifyChatButton = document.querySelector('[data-shopify-chat-button]') || 
+                                    document.querySelector('.shopify-chat-button') || 
+                                    document.querySelector('[aria-label="Chat"]');
+          
+          if (shopifyChatButton) {
+            shopifyChatButton.click();
+            return;
+          }
+          
+          // Method 2: If direct click doesn't work, try to trigger via Shopify Chat API
+          if (window.ShopifyChat) {
+            window.ShopifyChat.open();
+            return;
+          }
+          
+          // Method 3: Last resort, dispatch a custom event that Shopify might listen for
+          document.dispatchEvent(new CustomEvent('shopify:chat:open'));
+          
+          console.log('Attempted to open Shopify chat');
+        } catch (error) {
+          console.error('Error while trying to open Shopify chat:', error);
+        }
+      });
+    } else {
+      console.warn('Custom chat button with ID "talk-open-chat" not found');
+    }
+  });
