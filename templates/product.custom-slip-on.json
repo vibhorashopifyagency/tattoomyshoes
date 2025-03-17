@@ -224,6 +224,7 @@
         "image_slide_ryBAzL": {
           "type": "image_slide",
           "settings": {
+            "slide_image": "shopify://shop_images/IMG_0678.jpg",
             "image_title": "",
             "image_description": ""
           }
