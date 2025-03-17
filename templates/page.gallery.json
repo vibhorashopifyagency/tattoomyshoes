@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -21,14 +30,14 @@
         "text_eKnChm": {
           "type": "text",
           "settings": {
-            "text": "<h5>Step into a world of artistic expression with our Tattoo My Shoes Gallery. Find unique designs that will take your footwear to the next level.<\/h5>"
+            "text": "<h5>Step into a world of artistic expression with our Tattoo My Shoes Gallery. Find unique designs that will take your footwear to the next level.</h5>"
           }
         },
         "button_7iemKV": {
           "type": "button",
           "settings": {
             "button_label": "Start Shopping",
-            "button_link": "shopify:\/\/collections\/all",
+            "button_link": "shopify://collections/all",
             "button_style_secondary": true,
             "button_label_2": "",
             "button_link_2": "",
@@ -50,135 +59,163 @@
         "padding_bottom": 40
       }
     },
-    "1740737791edf2c27e": {
-      "type": "apps",
-      "settings": {
-        "include_margins": true
-      }
-    },
-    "custom_gallery_slider_fBigER": {
-      "type": "custom-gallery-slider",
-      "blocks": {
-        "image_slide_NhTBmA": {
-          "type": "image_slide",
-          "settings": {
-            "slide_image": "shopify:\/\/shop_images\/20250302_102831.jpg",
-            "image_title": "Custom Shoe",
-            "image_description": "A beautifully designed custom shoe."
-          }
-        },
-        "image_slide_UqJtjW": {
-          "type": "image_slide",
-          "settings": {
-            "slide_image": "shopify:\/\/shop_images\/20250302_102825.jpg",
-            "image_title": "Custom Shoe",
-            "image_description": "A beautifully designed custom shoe."
-          }
-        },
-        "image_slide_DKra8U": {
-          "type": "image_slide",
-          "settings": {
-            "slide_image": "shopify:\/\/shop_images\/20250302_102814.jpg",
-            "image_title": "Custom Shoe",
-            "image_description": "A beautifully designed custom shoe."
-          }
-        },
-        "image_slide_rBPPDR": {
-          "type": "image_slide",
-          "settings": {
-            "slide_image": "shopify:\/\/shop_images\/20250302_102804.jpg",
-            "image_title": "Custom Shoe",
-            "image_description": "A beautifully designed custom shoe."
-          }
-        },
-        "image_slide_V4CARV": {
-          "type": "image_slide",
-          "settings": {
-            "slide_image": "shopify:\/\/shop_images\/20250302_102707.jpg",
-            "image_title": "Custom Shoe",
-            "image_description": "A beautifully designed custom shoe."
-          }
-        },
-        "image_slide_j9D8ik": {
-          "type": "image_slide",
-          "settings": {
-            "slide_image": "shopify:\/\/shop_images\/20250302_102725.jpg",
-            "image_title": "Custom Shoe",
-            "image_description": "A beautifully designed custom shoe."
-          }
-        }
-      },
-      "block_order": [
-        "image_slide_NhTBmA",
-        "image_slide_UqJtjW",
-        "image_slide_DKra8U",
-        "image_slide_rBPPDR",
-        "image_slide_V4CARV",
-        "image_slide_j9D8ik"
-      ],
-      "settings": {
-        "section_title": "Explore our past custom shoe designs, crafted with precision and creativity.",
-        "h2_color": "#ffffff",
-        "section_description": "",
-        "background_image": "shopify:\/\/shop_images\/27230.jpg",
-        "padding": 20,
-        "slides_desktop": 4,
-        "slides_mobile": 2,
-        "enable_loop": true,
-        "enable_autoplay": true,
-        "autoplay_speed": 3,
-        "button_text": "View More",
-        "button_link": "",
-        "button_color": "#ffffff",
-        "button_text_color": "#ffffff",
-        "button_font_size": 16
-      }
-    },
     "custom_design_gallery_Gfy78M": {
       "type": "custom-design-gallery",
       "blocks": {
         "image_G46RN6": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/20250302_102657_d4a7d620-c25b-4841-8594-6bf26c9035c1.jpg",
+            "image": "shopify://shop_images/20240212_152726.jpg",
             "alt": "Gallery Image"
           }
         },
         "image_GNQ3ar": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/20250302_102831.jpg",
-            "alt": "Gallery Image"
-          }
-        },
-        "image_L7gxmR": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/20250302_102707.jpg",
-            "alt": "Gallery Image"
-          }
-        },
-        "image_UAh9kp": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/20250302_102814.jpg",
+            "image": "shopify://shop_images/20240212_152648.jpg",
             "alt": "Gallery Image"
           }
         },
         "video_rYGU9g": {
           "type": "video",
           "settings": {
-            "video_url": "https:\/\/youtu.be\/Z7lWcSXnQtE",
-            "cover_image": "shopify:\/\/shop_images\/20250302_102831.jpg"
+            "video_url": "https://youtu.be/Z7lWcSXnQtE",
+            "cover_image": "shopify://shop_images/20250302_102831.jpg"
+          }
+        },
+        "image_L7gxmR": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/20240806_201831.jpg",
+            "alt": "Gallery Image"
+          }
+        },
+        "image_UAh9kp": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/20240806_201754.jpg",
+            "alt": "Gallery Image"
+          }
+        },
+        "image_P9iY8z": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/20240717_130013.jpg",
+            "alt": "Gallery Image"
+          }
+        },
+        "image_rUyF6B": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/20240615_083217_6ba36699-1a4b-40e8-967f-b6e5fe6dbbf2.jpg",
+            "alt": "Gallery Image"
+          }
+        },
+        "image_m4iRBp": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/k7yUj-eaap6s6lx337xppzrmmvobrb_c186669e-0ebc-4682-a61f-9b8dda6aa2c8.jpg",
+            "alt": ""
+          }
+        },
+        "image_xTxHRq": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/20230904_144823.jpg",
+            "alt": "Gallery Image"
+          }
+        },
+        "image_D4GYct": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/20230917_092646.jpg",
+            "alt": "Gallery Image"
+          }
+        },
+        "image_Ap8cVz": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/20230917_092456.jpg",
+            "alt": "Gallery Image"
+          }
+        },
+        "image_XfhaMg": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/20230917_092456.jpg",
+            "alt": "Gallery Image"
+          }
+        },
+        "image_NX8XFi": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/accordion.gif",
+            "alt": "Gallery Image"
+          }
+        },
+        "image_fgBeEy": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/20190330_085956_8631bdec-c1fa-4555-b703-e1f742c13e80.jpg",
+            "alt": "Gallery Image"
+          }
+        },
+        "image_Bz3zGP": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/MtKMF-ukrrubxfetzz43wdnzczwn2z_dba17601-ace5-4501-85b3-951c010d7066.jpg",
+            "alt": ""
+          }
+        },
+        "image_N3FDJY": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/IMG_0388.jpg",
+            "alt": "Gallery Image"
+          }
+        },
+        "image_jRJPGz": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/TdVfz-qtt36dr67ljjcjxoymlnbm6g_4424966e-eddf-425c-b298-42cb4a4dc886.jpg",
+            "alt": ""
+          }
+        },
+        "image_JRipKf": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/IMG_0678.jpg",
+            "alt": "Gallery Image"
+          }
+        },
+        "image_gFm6rh": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Clipper_ship_3.jpg",
+            "alt": "Gallery Image"
           }
         }
       },
       "block_order": [
         "image_G46RN6",
         "image_GNQ3ar",
+        "video_rYGU9g",
         "image_L7gxmR",
         "image_UAh9kp",
-        "video_rYGU9g"
+        "image_P9iY8z",
+        "image_rUyF6B",
+        "image_m4iRBp",
+        "image_xTxHRq",
+        "image_D4GYct",
+        "image_Ap8cVz",
+        "image_XfhaMg",
+        "image_NX8XFi",
+        "image_fgBeEy",
+        "image_Bz3zGP",
+        "image_N3FDJY",
+        "image_jRJPGz",
+        "image_JRipKf",
+        "image_gFm6rh"
       ],
       "settings": {
         "title": "Our Gallery",
@@ -191,8 +228,6 @@
   "order": [
     "main",
     "rich_text_dqAWwF",
-    "1740737791edf2c27e",
-    "custom_gallery_slider_fBigER",
     "custom_design_gallery_Gfy78M"
   ]
 }
