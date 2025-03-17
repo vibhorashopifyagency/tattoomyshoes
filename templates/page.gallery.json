@@ -92,6 +92,7 @@
         },
         "video_rYGU9g": {
           "type": "video",
+          "disabled": true,
           "settings": {
             "video_url": "https://youtu.be/Z7lWcSXnQtE",
             "cover_image": "shopify://shop_images/20250302_102831.jpg"
