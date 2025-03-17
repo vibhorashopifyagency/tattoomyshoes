@@ -134,6 +134,7 @@
       "settings": {
         "section_title": "Previously Ordered Designs",
         "h2_color": "#000000",
+        "subheading_color": "#000000",
         "section_description": "",
         "padding": 20,
         "slides_desktop": 3,
@@ -246,6 +247,7 @@
       "settings": {
         "section_title": "Explore our past custom shoe designs, crafted with precision and creativity.",
         "h2_color": "#ffffff",
+        "subheading_color": "#ffffff",
         "section_description": "TATTOO MY SHOES CUSTOM MADE",
         "background_image": "shopify://shop_images/27230.jpg",
         "padding": 20,
