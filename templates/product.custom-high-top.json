@@ -216,6 +216,7 @@
         "image_slide_FA4JMU": {
           "type": "image_slide",
           "settings": {
+            "slide_image": "shopify://shop_images/20190330_085956.jpg",
             "image_title": "",
             "image_description": ""
           }
