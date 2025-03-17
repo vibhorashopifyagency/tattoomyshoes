@@ -249,48 +249,7 @@
         "image_slide_Jb4jhc": {
           "type": "image_slide",
           "settings": {
-            "image_title": "",
-            "image_description": ""
-          }
-        },
-        "image_slide_HwGFmA": {
-          "type": "image_slide",
-          "settings": {
-            "image_title": "",
-            "image_description": ""
-          }
-        },
-        "image_slide_Lgi4xi": {
-          "type": "image_slide",
-          "settings": {
-            "image_title": "",
-            "image_description": ""
-          }
-        },
-        "image_slide_ciydcC": {
-          "type": "image_slide",
-          "settings": {
-            "image_title": "",
-            "image_description": ""
-          }
-        },
-        "image_slide_yceh93": {
-          "type": "image_slide",
-          "settings": {
-            "image_title": "",
-            "image_description": ""
-          }
-        },
-        "image_slide_7gzqV6": {
-          "type": "image_slide",
-          "settings": {
-            "image_title": "",
-            "image_description": ""
-          }
-        },
-        "image_slide_6GPGcW": {
-          "type": "image_slide",
-          "settings": {
+            "slide_image": "shopify://shop_images/appointed.png",
             "image_title": "",
             "image_description": ""
           }
@@ -301,13 +260,7 @@
         "image_slide_FA4JMU",
         "image_slide_9rXi3x",
         "image_slide_3zNDYr",
-        "image_slide_Jb4jhc",
-        "image_slide_HwGFmA",
-        "image_slide_Lgi4xi",
-        "image_slide_ciydcC",
-        "image_slide_yceh93",
-        "image_slide_7gzqV6",
-        "image_slide_6GPGcW"
+        "image_slide_Jb4jhc"
       ],
       "settings": {
         "section_title": "Explore our past custom shoe designs, crafted with precision and creativity.",
