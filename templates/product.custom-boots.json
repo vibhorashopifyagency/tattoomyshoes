@@ -253,6 +253,37 @@
             "image_title": "",
             "image_description": ""
           }
+        },
+        "image_slide_WFpnTa": {
+          "type": "image_slide",
+          "settings": {
+            "slide_image": "shopify://shop_images/20240330_162104.jpg",
+            "image_title": "Custom Shoe",
+            "image_description": "A beautifully designed custom shoe."
+          }
+        },
+        "image_slide_nDWP9f": {
+          "type": "image_slide",
+          "settings": {
+            "slide_image": "shopify://shop_images/20240330_162242.jpg",
+            "image_title": "Custom Shoe",
+            "image_description": "A beautifully designed custom shoe."
+          }
+        },
+        "image_slide_jwGYpU": {
+          "type": "image_slide",
+          "settings": {
+            "slide_image": "shopify://shop_images/20240330_162228.jpg",
+            "image_title": "Custom Shoe",
+            "image_description": "A beautifully designed custom shoe."
+          }
+        },
+        "image_slide_qjejMP": {
+          "type": "image_slide",
+          "settings": {
+            "image_title": "Custom Shoe",
+            "image_description": "A beautifully designed custom shoe."
+          }
         }
       },
       "block_order": [
@@ -260,7 +291,11 @@
         "image_slide_FA4JMU",
         "image_slide_9rXi3x",
         "image_slide_3zNDYr",
-        "image_slide_Jb4jhc"
+        "image_slide_Jb4jhc",
+        "image_slide_WFpnTa",
+        "image_slide_nDWP9f",
+        "image_slide_jwGYpU",
+        "image_slide_qjejMP"
       ],
       "settings": {
         "section_title": "Explore our past custom shoe designs, crafted with precision and creativity.",
