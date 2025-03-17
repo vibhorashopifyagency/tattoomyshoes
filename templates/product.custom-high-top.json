@@ -317,6 +317,7 @@
         "section_title": "Custom Designs. Happy Clients.",
         "h2_color": "#780000",
         "section_description": "Explore our past custom shoe designs, crafted with precision and creativity.",
+        "background_image": "shopify://shop_images/27230.jpg",
         "padding": 20,
         "slides_desktop": 5,
         "slides_mobile": 2,
