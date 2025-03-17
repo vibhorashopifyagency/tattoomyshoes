@@ -224,6 +224,7 @@
         "image_slide_T934eA": {
           "type": "image_slide",
           "settings": {
+            "slide_image": "shopify://shop_images/20230917_092456.jpg",
             "image_title": "",
             "image_description": ""
           }
@@ -231,6 +232,7 @@
         "image_slide_ryBAzL": {
           "type": "image_slide",
           "settings": {
+            "slide_image": "shopify://shop_images/20230917_092646.jpg",
             "image_title": "",
             "image_description": ""
           }
@@ -238,6 +240,7 @@
         "image_slide_9rXi3x": {
           "type": "image_slide",
           "settings": {
+            "slide_image": "shopify://shop_images/20230904_144823.jpg",
             "image_title": "",
             "image_description": ""
           }
