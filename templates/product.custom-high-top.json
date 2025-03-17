@@ -248,6 +248,7 @@
         "image_slide_3zNDYr": {
           "type": "image_slide",
           "settings": {
+            "slide_image": "shopify://shop_images/20240615_083217.jpg",
             "image_title": "",
             "image_description": ""
           }
@@ -255,6 +256,7 @@
         "image_slide_Jb4jhc": {
           "type": "image_slide",
           "settings": {
+            "slide_image": "shopify://shop_images/20240717_130013.jpg",
             "image_title": "",
             "image_description": ""
           }
@@ -262,6 +264,7 @@
         "image_slide_HwGFmA": {
           "type": "image_slide",
           "settings": {
+            "slide_image": "shopify://shop_images/20240806_201754.jpg",
             "image_title": "",
             "image_description": ""
           }
@@ -269,6 +272,7 @@
         "image_slide_Lgi4xi": {
           "type": "image_slide",
           "settings": {
+            "slide_image": "shopify://shop_images/20240806_201831.jpg",
             "image_title": "",
             "image_description": ""
           }
@@ -317,12 +321,12 @@
         "image_slide_6GPGcW"
       ],
       "settings": {
-        "section_title": "Custom Designs. Happy Clients.",
-        "h2_color": "#780000",
-        "section_description": "Explore our past custom shoe designs, crafted with precision and creativity.",
+        "section_title": "Explore our past custom shoe designs, crafted with precision and creativity.",
+        "h2_color": "#ffffff",
+        "section_description": "TATTOO MY SHOES | CUSTOM MADE",
         "background_image": "shopify://shop_images/27230.jpg",
         "padding": 20,
-        "slides_desktop": 5,
+        "slides_desktop": 4,
         "slides_mobile": 2,
         "enable_loop": true,
         "enable_autoplay": true,
