@@ -217,6 +217,7 @@
         "image_slide_FA4JMU": {
           "type": "image_slide",
           "settings": {
+            "slide_image": "shopify://shop_images/20250123_200135.jpg",
             "image_title": "",
             "image_description": ""
           }
@@ -224,13 +225,7 @@
         "image_slide_T934eA": {
           "type": "image_slide",
           "settings": {
-            "image_title": "",
-            "image_description": ""
-          }
-        },
-        "image_slide_ryBAzL": {
-          "type": "image_slide",
-          "settings": {
+            "slide_image": "shopify://shop_images/20250123_200232.jpg",
             "image_title": "",
             "image_description": ""
           }
@@ -238,6 +233,7 @@
         "image_slide_9rXi3x": {
           "type": "image_slide",
           "settings": {
+            "slide_image": "shopify://shop_images/20250123_200252.jpg",
             "image_title": "",
             "image_description": ""
           }
@@ -245,6 +241,7 @@
         "image_slide_3zNDYr": {
           "type": "image_slide",
           "settings": {
+            "slide_image": "shopify://shop_images/20250123_200244.jpg",
             "image_title": "",
             "image_description": ""
           }
@@ -302,7 +299,6 @@
       "block_order": [
         "image_slide_FA4JMU",
         "image_slide_T934eA",
-        "image_slide_ryBAzL",
         "image_slide_9rXi3x",
         "image_slide_3zNDYr",
         "image_slide_Jb4jhc",
@@ -320,7 +316,7 @@
         "section_description": "TATTOO MY SHOES CUSTOM MADE",
         "background_image": "shopify://shop_images/27230.jpg",
         "padding": 20,
-        "slides_desktop": 5,
+        "slides_desktop": 4,
         "slides_mobile": 2,
         "enable_loop": true,
         "enable_autoplay": true,
