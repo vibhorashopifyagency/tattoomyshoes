@@ -155,8 +155,12 @@
             {% else %}
               <div class="no-image-placeholder">No Image</div>
             {% endif %}
+            {% if block.settings.image_title != blank %}
             <h3>{{ block.settings.image_title | truncate: 30 }}</h3>
+            {% endif %}
+            {% if block.settings.image_description != blank %}
             <p class="image-description">{{ block.settings.image_description | truncate: 100 }}</p>
+            {% endif %}
           </div>
         {% endfor %}
       {% else %}
