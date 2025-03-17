@@ -24,6 +24,7 @@
     width: 80%;
     font-size: 16px;
   }
+  .subheading { color: {{ section.settings.subheading_color }}; }
   .slider-container {
     position: relative;
     overflow: hidden;
@@ -45,6 +46,9 @@
     width: 100%;
     border-radius: 10px;
     cursor: pointer;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    object-position: center;
   }
   .slide h3 {
     margin-bottom: 5px;
@@ -138,7 +142,7 @@
 
 <div class="custom-gallery-slider" id="custom-gallery-slider-{{ section.id }}">
   <h2>{{ section.settings.section_title }}</h2>
-  <p>{{ section.settings.section_description }}</p>
+  <p class="subheading">{{ section.settings.section_description }}</p>
 
   <div class="slider-container">
     <button type="button" class="nav-arrow left" aria-label="Previous slide">&#10094;</button>
@@ -478,6 +482,12 @@
         "type": "color",
         "id": "h2_color",
         "label": "Heading Color",
+        "default": "#000000"
+      },
+      {
+        "type": "color",
+        "id": "subheading_color",
+        "label": "Sub Heading Color",
         "default": "#000000"
       },
       {
