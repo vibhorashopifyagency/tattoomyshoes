@@ -232,6 +232,7 @@
         "image_slide_9rXi3x": {
           "type": "image_slide",
           "settings": {
+            "slide_image": "shopify://shop_images/IMG_0388.jpg",
             "image_title": "",
             "image_description": ""
           }
