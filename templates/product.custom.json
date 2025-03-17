@@ -210,6 +210,46 @@
         "padding_bottom": 36
       }
     },
+    "custom_gallery_slider_MrTi9x": {
+      "type": "custom-gallery-slider",
+      "blocks": {
+        "image_slide_FA4JMU": {
+          "type": "image_slide",
+          "settings": {
+            "image_title": "Custom Shoe",
+            "image_description": "A beautifully designed custom shoe."
+          }
+        },
+        "image_slide_T934eA": {
+          "type": "image_slide",
+          "settings": {
+            "image_title": "Custom Shoe",
+            "image_description": "A beautifully designed custom shoe."
+          }
+        }
+      },
+      "block_order": [
+        "image_slide_FA4JMU",
+        "image_slide_T934eA"
+      ],
+      "settings": {
+        "section_title": "Custom Designs. Happy Clients.",
+        "h2_color": "#ffffff",
+        "section_description": "Explore our past custom shoe designs, crafted with precision and creativity.",
+        "background_image": "shopify://shop_images/27230.jpg",
+        "padding": 20,
+        "slides_desktop": 3,
+        "slides_mobile": 1,
+        "enable_loop": true,
+        "enable_autoplay": true,
+        "autoplay_speed": 3,
+        "button_text": "View More",
+        "button_link": "",
+        "button_color": "#ffffff",
+        "button_text_color": "#ffffff",
+        "button_font_size": 16
+      }
+    },
     "related-products": {
       "type": "related-products",
       "settings": {
@@ -233,6 +273,7 @@
     "main",
     "custom_gallery_slider_Qk4AFP",
     "collapsible_content_tGQUn8",
+    "custom_gallery_slider_MrTi9x",
     "related-products"
   ]
 }
