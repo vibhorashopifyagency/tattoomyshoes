@@ -11,6 +11,7 @@
   "sections": {
     "banner": {
       "type": "main-collection-banner",
+      "disabled": true,
       "settings": {
         "show_collection_description": true,
         "show_collection_image": true,
@@ -30,7 +31,7 @@
         "text_y4dTgD": {
           "type": "text",
           "settings": {
-            "text": "<p>{{ collection.description }}</p>",
+            "text": "{{ collection.description }}",
             "text_style": "body"
           }
         },
@@ -49,11 +50,10 @@
         "text_y4dTgD",
         "button_g6apmN"
       ],
-      "disabled": true,
       "settings": {
         "image": "{{ collection.image }}",
         "height": "medium",
-        "desktop_image_width": "medium",
+        "desktop_image_width": "small",
         "layout": "image_first",
         "desktop_content_position": "middle",
         "desktop_content_alignment": "center",
