@@ -24,7 +24,7 @@
         "heading_DrGy69": {
           "type": "heading",
           "settings": {
-            "heading": "KIDS COLLECTION",
+            "heading": "{{ collection.title }}",
             "heading_size": "h1"
           }
         },
