@@ -31,7 +31,7 @@
         "text_y4dTgD": {
           "type": "text",
           "settings": {
-            "text": "",
+            "text": "<p>{{ collection.description }}</p>",
             "text_style": "body"
           }
         },
