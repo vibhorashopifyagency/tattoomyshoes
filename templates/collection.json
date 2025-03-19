@@ -51,7 +51,7 @@
         "button_g6apmN"
       ],
       "settings": {
-        "image": "shopify://shop_images/20240713_084922.jpg",
+        "image": "{{ collection.image }}",
         "height": "medium",
         "desktop_image_width": "medium",
         "layout": "image_first",
