@@ -98,7 +98,7 @@
         "full_width": true,
         "show_view_all": true,
         "view_all_style": "solid",
-        "enable_desktop_slider": false,
+        "enable_desktop_slider": true,
         "color_scheme": "scheme-37dad7b4-fed2-4e9e-812a-4267b336ef78",
         "image_ratio": "portrait",
         "image_shape": "default",
@@ -107,7 +107,7 @@
         "show_rating": true,
         "quick_add": "standard",
         "columns_mobile": "2",
-        "swipe_on_mobile": false,
+        "swipe_on_mobile": true,
         "padding_top": 20,
         "padding_bottom": 40
       }
