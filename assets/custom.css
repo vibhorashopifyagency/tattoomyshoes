@@ -444,3 +444,5 @@
   left: 1.5rem;
   font-size: 1rem;
 }
+
+.collection .collection__description > p { text-align: center; }
