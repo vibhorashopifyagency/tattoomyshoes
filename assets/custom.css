@@ -13,6 +13,13 @@
     -webkit-box-shadow: inset 0 0 0 1px #000000, 0 5px 20px rgba(0, 0, 0, .15) !important;
     box-shadow: inset 0 0 0 1px #000000, 0 5px 20px rgba(0, 0, 0, .15) !important;
 }
+.tmenu_image--above .tmenu_item_text,
+.tmenu_collection--above .tmenu_item_text,
+.tmenu_item_text,
+.tmenu_item .tmenu_item_level_1 > a .tmenu_item_text,
+.tmenu_item .tmenu_item_level_2 > a .tmenu_item_text {
+  font-family: 'Gathell' !important;
+}
 
 /* Custom Product Template Buttons CSS */
 #custom-buttons {
@@ -303,7 +310,7 @@
 }
 
 .customization-title {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   margin: 1rem 0;
   font-weight: 500;
   color: rgb(var(--color-foreground));
@@ -438,3 +445,6 @@
   left: 1.5rem;
   font-size: 1rem;
 }
+
+.collection .collection__description > p { text-align: center; }
+.custom-button { background-color: #790100; }
