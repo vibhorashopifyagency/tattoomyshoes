@@ -16,6 +16,7 @@
 .tmenu_image--above .tmenu_item_text,
 .tmenu_collection--above .tmenu_item_text,
 .tmenu_item_text,
+.tmenu_item .tmenu_item_level_1 > a .tmenu_item_text,
 .tmenu_item .tmenu_item_level_2 > a .tmenu_item_text {
   font-family: 'Gathell' !important;
 }
