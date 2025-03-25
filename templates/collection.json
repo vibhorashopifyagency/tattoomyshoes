@@ -52,7 +52,7 @@
       ],
       "settings": {
         "image": "{{ collection.image }}",
-        "height": "medium",
+        "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
         "desktop_content_position": "middle",
@@ -60,7 +60,7 @@
         "content_layout": "overlap",
         "section_color_scheme": "scheme-84a78fdd-99c2-4f0c-be81-2ab09e7dddd6",
         "color_scheme": "scheme-a705afd9-5c1f-4480-9e44-5dac04f31da8",
-        "image_behavior": "ambient",
+        "image_behavior": "none",
         "mobile_content_alignment": "center",
         "padding_top": 20,
         "padding_bottom": 20
