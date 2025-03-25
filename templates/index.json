@@ -251,6 +251,50 @@
         "padding_bottom": 40
       }
     },
+    "rich_text_tQKdV6": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_jjhKpw": {
+          "type": "heading",
+          "settings": {
+            "heading": "Exclusive Kids Collection",
+            "heading_size": "h1"
+          }
+        },
+        "text_FeGehQ": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
+          }
+        },
+        "button_EVjn9M": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_jjhKpw",
+        "text_FeGehQ",
+        "button_EVjn9M"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-84a78fdd-99c2-4f0c-be81-2ab09e7dddd6",
+        "full_width": true,
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
     "rich_text_3QnYP9": {
       "type": "rich-text",
       "blocks": {
@@ -319,50 +363,6 @@
         "color_scheme_2": "scheme-2087ceec-c001-491b-8899-09652e7e391f",
         "padding_top": 40,
         "padding_bottom": 40
-      }
-    },
-    "rich_text_tQKdV6": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_jjhKpw": {
-          "type": "heading",
-          "settings": {
-            "heading": "Exclusive Kids Collection",
-            "heading_size": "h1"
-          }
-        },
-        "text_FeGehQ": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
-          }
-        },
-        "button_EVjn9M": {
-          "type": "button",
-          "disabled": true,
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_jjhKpw",
-        "text_FeGehQ",
-        "button_EVjn9M"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-84a78fdd-99c2-4f0c-be81-2ab09e7dddd6",
-        "full_width": true,
-        "padding_top": 20,
-        "padding_bottom": 20
       }
     },
     "featured_collection_9rpKNM": {
@@ -789,10 +789,10 @@
     "video_WxTBbc",
     "image_with_text_Dht8Jw",
     "featured_product_ekRHJt",
-    "rich_text_3QnYP9",
-    "custom_tabs_rqKNkf",
     "rich_text_tQKdV6",
     "featured_collection_9rpKNM",
+    "rich_text_3QnYP9",
+    "custom_tabs_rqKNkf",
     "image_banner",
     "collection_list_qPwY9d",
     "rich_text_MeYWeA",
