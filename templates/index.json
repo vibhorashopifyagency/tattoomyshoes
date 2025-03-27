@@ -540,7 +540,7 @@
         "heading_size": "h1",
         "justify_heading_text": "center",
         "card_heading_align": "center",
-        "image_ratio": "portrait",
+        "image_ratio": "adapt",
         "columns_desktop": 3,
         "color_scheme": "scheme-84a78fdd-99c2-4f0c-be81-2ab09e7dddd6",
         "show_view_all": false,
