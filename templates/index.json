@@ -231,6 +231,7 @@
         "text_jGx7XV",
         "button_HmC976"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/IMG_20240525_104238_346.jpg",
         "height": "large",
