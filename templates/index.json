@@ -162,7 +162,7 @@
         "heading_Pm4iwQ": {
           "type": "heading",
           "settings": {
-            "heading": "Upcoming Events",
+            "heading": "DFW Events Calendar",
             "heading_size": "h1"
           }
         },
@@ -176,7 +176,7 @@
         "button_HmC976": {
           "type": "button",
           "settings": {
-            "button_label": "Show Events",
+            "button_label": "Don’t miss out",
             "button_link": "shopify://pages/tattoo-my-shoes-events-calendar",
             "button_style_secondary": true
           }
@@ -187,7 +187,6 @@
         "text_jGx7XV",
         "button_HmC976"
       ],
-      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/IMG_20240525_104238_346.jpg",
         "height": "large",
