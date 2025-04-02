@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "image_with_text_drUpyF": {
@@ -22,7 +31,7 @@
           "type": "text",
           "disabled": true,
           "settings": {
-            "text": "<p>{{ collection.description }}<\/p>",
+            "text": "<p>{{ collection.description }}</p>",
             "text_style": "body"
           }
         },
@@ -43,7 +52,7 @@
         "button_hNpE7p"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/ernie.jpg",
+        "image": "shopify://shop_images/ernie.jpg",
         "height": "medium",
         "desktop_image_width": "medium",
         "layout": "image_first",

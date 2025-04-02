@@ -69,7 +69,7 @@
         "slide_dY839n": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Untitled_design_5.png",
+            "image": "shopify://shop_images/Untitled_design_33.png",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
@@ -87,26 +87,7 @@
         "slide_WxQewk": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Untitled_2200_x_720_px_1.png",
-            "heading": "",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "box_align": "middle-center",
-            "show_text_box": false,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "scheme-1",
-            "text_alignment_mobile": "center"
-          }
-        },
-        "slide_azxdna": {
-          "type": "slide",
-          "disabled": true,
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Untitled_design_33.png",
+            "image": "shopify://shop_images/BANNER_BOOTS_TATTOO_MY_SHOES.png",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
