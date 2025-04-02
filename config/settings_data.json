@@ -9,7 +9,7 @@
  */
 {
   "current": {
-    "logo": "shopify:\/\/shop_images\/TMS_white_logo.png",
+    "logo": "shopify://shop_images/TMS_white_logo.png",
     "logo_width": 110,
     "type_header_font": "eczar_n5",
     "heading_scale": 125,
@@ -107,13 +107,13 @@
     "sale_badge_color_scheme": "scheme-a705afd9-5c1f-4480-9e44-5dac04f31da8",
     "sold_out_badge_color_scheme": "scheme-84a78fdd-99c2-4f0c-be81-2ab09e7dddd6",
     "brand_headline": "About Us",
-    "brand_description": "<p>Tattoo My Shoes creates <strong>unique<\/strong>, <strong>custom-designed shoes<\/strong>—<strong>hand-drawn<\/strong> or <strong>printed<\/strong>—to match your style.<\/p><p>Stand out with one-of-a-kind footwear that turns heads.<\/p>",
+    "brand_description": "<p>Tattoo My Shoes creates <strong>unique</strong>, <strong>custom-designed shoes</strong>—<strong>hand-drawn</strong> or <strong>printed</strong>—to match your style.</p><p>Stand out with one-of-a-kind footwear that turns heads.</p>",
     "brand_image_width": 100,
-    "social_facebook_link": "https:\/\/www.facebook.com\/tattoomyshoes",
-    "social_instagram_link": "https:\/\/www.instagram.com\/tattoomyshoes\/",
+    "social_facebook_link": "https://www.facebook.com/tattoomyshoes",
+    "social_instagram_link": "https://www.instagram.com/tattoomyshoes/",
     "social_youtube_link": "",
-    "social_tiktok_link": "https:\/\/www.tiktok.com\/@tattoomyshoes",
-    "social_twitter_link": "https:\/\/x.com\/tattoomyshoes",
+    "social_tiktok_link": "https://www.tiktok.com/@tattoomyshoes",
+    "social_twitter_link": "https://x.com/tattoomyshoes",
     "social_snapchat_link": "",
     "social_pinterest_link": "",
     "social_tumblr_link": "",
@@ -144,12 +144,12 @@
     "content_for_index": [],
     "blocks": {
       "15623156175785154009": {
-        "type": "shopify:\/\/apps\/qikify-smart-menu-mega-menu\/blocks\/app-embed\/19d2f1cd-1836-4a32-8937-03df3c601dc8",
+        "type": "shopify://apps/qikify-smart-menu-mega-menu/blocks/app-embed/19d2f1cd-1836-4a32-8937-03df3c601dc8",
         "disabled": false,
         "settings": {}
       },
       "15683396631634586217": {
-        "type": "shopify:\/\/apps\/inbox\/blocks\/chat\/841fc607-4181-4ad1-842d-e24d7f8bad6b",
+        "type": "shopify://apps/inbox/blocks/chat/841fc607-4181-4ad1-842d-e24d7f8bad6b",
         "disabled": false,
         "settings": {
           "button_color": "#841d1d",
@@ -163,12 +163,12 @@
         }
       },
       "5550728556201851227": {
-        "type": "shopify:\/\/apps\/glc-geolocation-redirects-app\/blocks\/selector\/e347b539-0714-46e4-9e69-23a73992ae3a",
+        "type": "shopify://apps/glc-geolocation-redirects-app/blocks/selector/e347b539-0714-46e4-9e69-23a73992ae3a",
         "disabled": false,
         "settings": {}
       },
       "13768625480086291342": {
-        "type": "shopify:\/\/apps\/forms\/blocks\/forms\/8744a304-fcb1-4347-b211-bb6b4759a76a",
+        "type": "shopify://apps/forms/blocks/forms/8744a304-fcb1-4347-b211-bb6b4759a76a",
         "disabled": false,
         "settings": {}
       }
@@ -442,7 +442,7 @@
       "sale_badge_color_scheme": "scheme-4",
       "sold_out_badge_color_scheme": "scheme-3",
       "brand_headline": "",
-      "brand_description": "<p><\/p>",
+      "brand_description": "<p></p>",
       "brand_image_width": 100,
       "social_twitter_link": "",
       "social_facebook_link": "",
