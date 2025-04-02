@@ -1,12 +1,3 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
     "main": {
@@ -217,7 +208,7 @@
         "image_slide_9rXi3x": {
           "type": "image_slide",
           "settings": {
-            "slide_image": "shopify://shop_images/20230904_144823.jpg",
+            "slide_image": "shopify:\/\/shop_images\/20230904_144823.jpg",
             "image_title": "",
             "image_description": ""
           }
@@ -225,7 +216,7 @@
         "image_slide_3zNDYr": {
           "type": "image_slide",
           "settings": {
-            "slide_image": "shopify://shop_images/20240615_083217.jpg",
+            "slide_image": "shopify:\/\/shop_images\/20240615_083217.jpg",
             "image_title": "",
             "image_description": ""
           }
@@ -233,7 +224,7 @@
         "image_slide_Jb4jhc": {
           "type": "image_slide",
           "settings": {
-            "slide_image": "shopify://shop_images/20240717_130013.jpg",
+            "slide_image": "shopify:\/\/shop_images\/20240717_130013.jpg",
             "image_title": "",
             "image_description": ""
           }
@@ -241,7 +232,7 @@
         "image_slide_HwGFmA": {
           "type": "image_slide",
           "settings": {
-            "slide_image": "shopify://shop_images/20240806_201754.jpg",
+            "slide_image": "shopify:\/\/shop_images\/20240806_201754.jpg",
             "image_title": "",
             "image_description": ""
           }
@@ -249,7 +240,7 @@
         "image_slide_T934eA": {
           "type": "image_slide",
           "settings": {
-            "slide_image": "shopify://shop_images/20230917_092456.jpg",
+            "slide_image": "shopify:\/\/shop_images\/20230917_092456.jpg",
             "image_title": "",
             "image_description": ""
           }
@@ -257,7 +248,7 @@
         "image_slide_Lgi4xi": {
           "type": "image_slide",
           "settings": {
-            "slide_image": "shopify://shop_images/20240806_201831.jpg",
+            "slide_image": "shopify:\/\/shop_images\/20240806_201831.jpg",
             "image_title": "",
             "image_description": ""
           }
@@ -265,7 +256,7 @@
         "image_slide_ryBAzL": {
           "type": "image_slide",
           "settings": {
-            "slide_image": "shopify://shop_images/20230917_092646.jpg",
+            "slide_image": "shopify:\/\/shop_images\/20230917_092646.jpg",
             "image_title": "",
             "image_description": ""
           }
@@ -273,7 +264,7 @@
         "image_slide_ciydcC": {
           "type": "image_slide",
           "settings": {
-            "slide_image": "shopify://shop_images/20240212_152648.jpg",
+            "slide_image": "shopify:\/\/shop_images\/20240212_152648.jpg",
             "image_title": "",
             "image_description": ""
           }
@@ -281,7 +272,7 @@
         "image_slide_yceh93": {
           "type": "image_slide",
           "settings": {
-            "slide_image": "shopify://shop_images/20240212_152726.jpg",
+            "slide_image": "shopify:\/\/shop_images\/20240212_152726.jpg",
             "image_title": "",
             "image_description": ""
           }
@@ -289,7 +280,7 @@
         "image_slide_FA4JMU": {
           "type": "image_slide",
           "settings": {
-            "slide_image": "shopify://shop_images/20190330_085956.jpg",
+            "slide_image": "shopify:\/\/shop_images\/20190330_085956.jpg",
             "image_title": "",
             "image_description": ""
           }
@@ -312,7 +303,7 @@
         "h2_color": "#ffffff",
         "subheading_color": "#ffffff",
         "section_description": "TATTOO MY SHOES | CUSTOM MADE",
-        "background_image": "shopify://shop_images/27230.jpg",
+        "background_image": "shopify:\/\/shop_images\/27230.jpg",
         "padding": 20,
         "slides_desktop": 4,
         "slides_mobile": 2,
