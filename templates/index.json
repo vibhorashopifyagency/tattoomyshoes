@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "rich_text_8HCJww": {
@@ -14,7 +23,7 @@
         "text_weHc3D": {
           "type": "text",
           "settings": {
-            "text": "<p>DFW Events Calendar - <a href=\"\/pages\/tattoo-my-shoes-events-calendar\" target=\"_blank\" title=\"Events Calendar\"><strong>Don’t miss out<\/strong><\/a><\/p>"
+            "text": "<p>DFW Events Calendar - <a href=\"/pages/tattoo-my-shoes-events-calendar\" target=\"_blank\" title=\"Events Calendar\"><strong>Don’t miss out</strong></a></p>"
           }
         },
         "button_h7rtkt": {
@@ -51,7 +60,7 @@
         "slide_e4UGNj": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Black_and_Beige_Minimalist_Black_Friday_Sale_Banner.png",
+            "image": "shopify://shop_images/Black_and_Beige_Minimalist_Black_Friday_Sale_Banner.png",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
@@ -106,8 +115,7 @@
       "block_order": [
         "slide_e4UGNj",
         "slide_dY839n",
-        "slide_WxQewk",
-        "slide_azxdna"
+        "slide_WxQewk"
       ],
       "settings": {
         "layout": "full_bleed",
@@ -123,10 +131,10 @@
     "featured_collection_WCNiGL": {
       "type": "featured-collection",
       "settings": {
-        "title": "<strong>DESIGN YOUR CUSTOMS<\/strong>",
+        "title": "<strong>DESIGN YOUR CUSTOMS</strong>",
         "heading_size": "h1",
         "justify_heading_text": "center",
-        "description": "<p>Tell us what you need & we will bring your idea to life.<\/p>",
+        "description": "<p>Tell us what you need & we will bring your idea to life.</p>",
         "show_description": false,
         "description_style": "uppercase",
         "collection": "custom-products",
@@ -185,7 +193,7 @@
         "heading": "",
         "heading_size": "h0",
         "enable_video_looping": true,
-        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
         "description": "",
         "full_width": true,
         "color_scheme": "scheme-a705afd9-5c1f-4480-9e44-5dac04f31da8",
@@ -206,7 +214,7 @@
         "text_jGx7XV": {
           "type": "text",
           "settings": {
-            "text": "<p>Discover the Hottest Events Featuring Tattoo My Shoes - Don't Miss Out!<\/p>",
+            "text": "<p>Discover the Hottest Events Featuring Tattoo My Shoes - Don't Miss Out!</p>",
             "text_style": "body"
           }
         },
@@ -214,7 +222,7 @@
           "type": "button",
           "settings": {
             "button_label": "Don’t miss out",
-            "button_link": "shopify:\/\/pages\/tattoo-my-shoes-events-calendar",
+            "button_link": "shopify://pages/tattoo-my-shoes-events-calendar",
             "button_style_secondary": true
           }
         }
@@ -226,7 +234,7 @@
       ],
       "disabled": true,
       "settings": {
-        "image": "shopify:\/\/shop_images\/IMG_20240525_104238_346.jpg",
+        "image": "shopify://shop_images/IMG_20240525_104238_346.jpg",
         "height": "large",
         "desktop_image_width": "large",
         "layout": "image_first",
@@ -255,14 +263,14 @@
           "type": "text",
           "disabled": true,
           "settings": {
-            "text": "<p>Discover the Hottest Events Featuring Tattoo My Shoes<\/p>"
+            "text": "<p>Discover the Hottest Events Featuring Tattoo My Shoes</p>"
           }
         },
         "button_FDa6w6": {
           "type": "button",
           "settings": {
             "button_label": "Don’t miss out",
-            "button_link": "shopify:\/\/pages\/tattoo-my-shoes-events-calendar",
+            "button_link": "shopify://pages/tattoo-my-shoes-events-calendar",
             "button_style_secondary": true,
             "button_label_2": "",
             "button_link_2": "",
@@ -375,7 +383,7 @@
           "type": "text",
           "disabled": true,
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
           }
         },
         "button_EVjn9M": {
@@ -464,9 +472,9 @@
           "type": "tab",
           "settings": {
             "title": "Ernie Moreno",
-            "featured_image": "shopify:\/\/shop_images\/ernie.jpg",
-            "description": "<p>Hey, I’m Ernie, and I believe shoes should tell a story. Every step you take should be a statement, a reflection of your personality, passion, and creativity. That’s why I pour my heart and soul into crafting each pair in this hand-drawn collection, ensuring every design is unique, bold, and meaningful. Whether you're looking for a striking piece of wearable art or something that truly represents you, my creations are here to turn your vision into reality. Ready to walk in art? Own a piece of my vision. Check out my designs below!<\/p>",
-            "read_more_link": "shopify:\/\/collections\/ernie-moreno",
+            "featured_image": "shopify://shop_images/ernie.jpg",
+            "description": "<p>Hey, I’m Ernie, and I believe shoes should tell a story. Every step you take should be a statement, a reflection of your personality, passion, and creativity. That’s why I pour my heart and soul into crafting each pair in this hand-drawn collection, ensuring every design is unique, bold, and meaningful. Whether you're looking for a striking piece of wearable art or something that truly represents you, my creations are here to turn your vision into reality. Ready to walk in art? Own a piece of my vision. Check out my designs below!</p>",
+            "read_more_link": "shopify://collections/ernie-moreno",
             "collection": "ernie-moreno",
             "products_to_show": 8,
             "products_per_view": 4,
@@ -477,9 +485,9 @@
           "type": "tab",
           "settings": {
             "title": "Gill Montie",
-            "featured_image": "shopify:\/\/shop_images\/Gill_Montie.png",
-            "description": "<p>Hi, I am Gill Montie, and I’ve designed these custom shoes to bring tattoo artistry to life. Featuring my exclusive artwork, each pair blends bold skulls, intricate details, and raw artistic expression into every step you take. This collection is a tribute to classic tattoo culture, crafted for those who appreciate masterful ink work and want to wear something truly unique. Whether you’re a longtime fan or just love standout designs, here’s your chance to own a piece of tattoo history. Step in, make a statement, and check out my designs below!<\/p>",
-            "read_more_link": "shopify:\/\/collections\/gill-monte-shoes-at-tattoo-my-shoes",
+            "featured_image": "shopify://shop_images/Gill_Montie.png",
+            "description": "<p>Hi, I am Gill Montie, and I’ve designed these custom shoes to bring tattoo artistry to life. Featuring my exclusive artwork, each pair blends bold skulls, intricate details, and raw artistic expression into every step you take. This collection is a tribute to classic tattoo culture, crafted for those who appreciate masterful ink work and want to wear something truly unique. Whether you’re a longtime fan or just love standout designs, here’s your chance to own a piece of tattoo history. Step in, make a statement, and check out my designs below!</p>",
+            "read_more_link": "shopify://collections/gill-monte-shoes-at-tattoo-my-shoes",
             "collection": "gill-monte-shoes-at-tattoo-my-shoes",
             "products_to_show": 7,
             "products_per_view": 4,
@@ -492,7 +500,7 @@
         "tab_T3pwFL"
       ],
       "settings": {
-        "background_image": "shopify:\/\/shop_images\/3d-dark-grunge-display-background-with-smoky-atmosphere.webp",
+        "background_image": "shopify://shop_images/3d-dark-grunge-display-background-with-smoky-atmosphere.webp",
         "heading": "",
         "heading_size": "h1",
         "heading_alignment": "center",
@@ -518,7 +526,7 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "Start Shopping!",
-            "button_link_1": "shopify:\/\/collections\/all",
+            "button_link_1": "shopify://collections/all",
             "button_style_secondary_1": false,
             "button_label_2": "",
             "button_link_2": "",
@@ -532,7 +540,7 @@
       ],
       "disabled": true,
       "settings": {
-        "image": "shopify:\/\/shop_images\/women-in-dress-walks-through-mist.jpg",
+        "image": "shopify://shop_images/women-in-dress-walks-through-mist.jpg",
         "image_overlay_opacity": 40,
         "image_height": "large",
         "desktop_content_position": "middle-center",
@@ -608,7 +616,7 @@
         "text_RnJRwa": {
           "type": "text",
           "settings": {
-            "text": "<p>At <strong>Tattoo My Shoes<\/strong>, we design <strong>custom-printed<\/strong> and <strong>custom hand-drawn<\/strong> shoes that bring your <strong>wildest thoughts to <\/strong>life on shoes.<\/p><p>Founded by <strong>Ernie Moreno<\/strong>, we create <strong>comfortable<\/strong>, <strong>stylish<\/strong>, and <strong>custom shoes<\/strong> that make you a true <strong>trendsetter<\/strong>. Whether you want <span style=\"text-decoration:underline\">stories on shoes<\/span> or a one-of-a-kind design, we’ve got you covered. Step up your style—let’s create something legendary! 🚀👟<\/p>"
+            "text": "<p>At <strong>Tattoo My Shoes</strong>, we design <strong>custom-printed</strong> and <strong>custom hand-drawn</strong> shoes that bring your <strong>wildest thoughts to </strong>life on shoes.</p><p>Founded by <strong>Ernie Moreno</strong>, we create <strong>comfortable</strong>, <strong>stylish</strong>, and <strong>custom shoes</strong> that make you a true <strong>trendsetter</strong>. Whether you want <span style=\"text-decoration:underline\">stories on shoes</span> or a one-of-a-kind design, we’ve got you covered. Step up your style—let’s create something legendary! 🚀👟</p>"
           }
         },
         "button_riE9Dt": {
@@ -654,7 +662,7 @@
           "settings": {
             "review_text": "Test",
             "review_author": "Test",
-            "review_image": "shopify:\/\/shop_images\/e951a5_41aea6817d194210bf398958bc1dd699mv2.png"
+            "review_image": "shopify://shop_images/e951a5_41aea6817d194210bf398958bc1dd699mv2.png"
           }
         },
         "review_DRzmFN": {
@@ -662,7 +670,7 @@
           "settings": {
             "review_text": "Test",
             "review_author": "Test",
-            "review_image": "shopify:\/\/shop_images\/e951a5_41aea6817d194210bf398958bc1dd699mv2.png"
+            "review_image": "shopify://shop_images/e951a5_41aea6817d194210bf398958bc1dd699mv2.png"
           }
         },
         "review_mVhgWR": {
@@ -670,7 +678,7 @@
           "settings": {
             "review_text": "Test 2",
             "review_author": "Test 2",
-            "review_image": "shopify:\/\/shop_images\/e951a5_41aea6817d194210bf398958bc1dd699mv2.png"
+            "review_image": "shopify://shop_images/e951a5_41aea6817d194210bf398958bc1dd699mv2.png"
           }
         },
         "review_E4H6UW": {
@@ -678,7 +686,7 @@
           "settings": {
             "review_text": "Test",
             "review_author": "Test",
-            "review_image": "shopify:\/\/shop_images\/e951a5_41aea6817d194210bf398958bc1dd699mv2.png"
+            "review_image": "shopify://shop_images/e951a5_41aea6817d194210bf398958bc1dd699mv2.png"
           }
         },
         "review_JAUPNY": {
@@ -686,7 +694,7 @@
           "settings": {
             "review_text": "Test",
             "review_author": "Test",
-            "review_image": "shopify:\/\/shop_images\/e951a5_41aea6817d194210bf398958bc1dd699mv2.png"
+            "review_image": "shopify://shop_images/e951a5_41aea6817d194210bf398958bc1dd699mv2.png"
           }
         },
         "review_e9DQmb": {
@@ -694,7 +702,7 @@
           "settings": {
             "review_text": "Test",
             "review_author": "Test",
-            "review_image": "shopify:\/\/shop_images\/e951a5_41aea6817d194210bf398958bc1dd699mv2.png"
+            "review_image": "shopify://shop_images/e951a5_41aea6817d194210bf398958bc1dd699mv2.png"
           }
         },
         "review_WTnXMM": {
@@ -702,7 +710,7 @@
           "settings": {
             "review_text": "Test Final",
             "review_author": "Test Final",
-            "review_image": "shopify:\/\/shop_images\/e951a5_41aea6817d194210bf398958bc1dd699mv2.png"
+            "review_image": "shopify://shop_images/e951a5_41aea6817d194210bf398958bc1dd699mv2.png"
           }
         }
       },
@@ -725,35 +733,35 @@
         "row_XVNyJM": {
           "type": "row",
           "settings": {
-            "image": "shopify:\/\/shop_images\/ernie.jpg",
+            "image": "shopify://shop_images/ernie.jpg",
             "caption": "Level up your game with",
             "heading": "Ernie Moreno",
-            "text": "<p>I’m Ernie, and I believe shoes should tell a story. Each pair in this hand-drawn collection is crafted with passion and precision. Ready to walk in art? Own a piece of my vision<\/p>",
+            "text": "<p>I’m Ernie, and I believe shoes should tell a story. Each pair in this hand-drawn collection is crafted with passion and precision. Ready to walk in art? Own a piece of my vision</p>",
             "button_label": "View Collection",
-            "button_link": "shopify:\/\/collections\/ernie-moreno"
+            "button_link": "shopify://collections/ernie-moreno"
           }
         },
         "row_jNfANa": {
           "type": "row",
           "settings": {
-            "image": "shopify:\/\/shop_images\/gill_montie.jpg",
+            "image": "shopify://shop_images/gill_montie.jpg",
             "caption": "Unique designs for you by",
             "heading": "Gill Montie",
-            "text": "<p>The Gill Montie custom shoes showcase exclusive tattoo artwork by the legendary artist, blending bold skulls and intricate designs. Step into a piece of tattoo history and make a statement!<\/p>",
+            "text": "<p>The Gill Montie custom shoes showcase exclusive tattoo artwork by the legendary artist, blending bold skulls and intricate designs. Step into a piece of tattoo history and make a statement!</p>",
             "button_label": "View Collection",
-            "button_link": "shopify:\/\/collections\/gill-monte-shoes-at-tattoo-my-shoes"
+            "button_link": "shopify://collections/gill-monte-shoes-at-tattoo-my-shoes"
           }
         },
         "row_WEKqxm": {
           "type": "row",
           "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/sean_kydd.jpg",
+            "image": "shopify://shop_images/sean_kydd.jpg",
             "caption": "Fashion into statement by",
             "heading": "Sean Kydd",
-            "text": "<p>Sean’s stunning tattoo-inspired designs transform shoes into bold fashion statements, reflecting his passion and your personality. Choose a unique, custom-printed pair and step into something truly one of a kind!<\/p>",
+            "text": "<p>Sean’s stunning tattoo-inspired designs transform shoes into bold fashion statements, reflecting his passion and your personality. Choose a unique, custom-printed pair and step into something truly one of a kind!</p>",
             "button_label": "View Collection",
-            "button_link": "shopify:\/\/collections\/sean-kydd"
+            "button_link": "shopify://collections/sean-kydd"
           }
         }
       },
@@ -816,7 +824,7 @@
           "settings": {
             "heading": "How Long before I get my shoes ?",
             "icon": "check_mark",
-            "row_content": "<p>Typically, turn around time for Printed shoes is approximately 2 weeks.<\/p><p>Hand Drawn are fully custom and can take upto 4 - 6 weeks <\/p><p>Around the holidays, you may experience a delay due to order volumes.<br\/>All orders will come via USPS.<\/p>",
+            "row_content": "<p>Typically, turn around time for Printed shoes is approximately 2 weeks.</p><p>Hand Drawn are fully custom and can take upto 4 - 6 weeks </p><p>Around the holidays, you may experience a delay due to order volumes.<br/>All orders will come via USPS.</p>",
             "page": ""
           }
         },
@@ -825,7 +833,7 @@
           "settings": {
             "heading": "What do you use to color your shoes?",
             "icon": "check_mark",
-            "row_content": "<p>All of our artistically created, handmade shoes are drawn in pencil and then colored with a highest quality art supplies.<\/p><p><\/p>",
+            "row_content": "<p>All of our artistically created, handmade shoes are drawn in pencil and then colored with a highest quality art supplies.</p><p></p>",
             "page": ""
           }
         },
@@ -834,7 +842,7 @@
           "settings": {
             "heading": "How do I keep my shoes clean?",
             "icon": "check_mark",
-            "row_content": "<p>The shoes are colored with Markers that saturate the canvas, they can be washed with a mild soapy rag.<\/p><p>Custom printed shoes are all machine washable<\/p><p>Printed shoes are recommended for heavy use and KIDS shoes.<\/p>",
+            "row_content": "<p>The shoes are colored with Markers that saturate the canvas, they can be washed with a mild soapy rag.</p><p>Custom printed shoes are all machine washable</p><p>Printed shoes are recommended for heavy use and KIDS shoes.</p>",
             "page": ""
           }
         }
@@ -876,7 +884,7 @@
         "paragraph_nBrWwV": {
           "type": "paragraph",
           "settings": {
-            "text": "<p><strong>Be the first to know about new collections and exclusive offers.<\/strong><\/p>"
+            "text": "<p><strong>Be the first to know about new collections and exclusive offers.</strong></p>"
           }
         }
       },
