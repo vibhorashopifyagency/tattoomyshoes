@@ -24,7 +24,7 @@
           "settings": {}
         },
         "judge_me_reviews_preview_badge_n7pmkT": {
-          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {}
         },
         "price": {
@@ -82,14 +82,14 @@
           "settings": {
             "layout": "horizontal",
             "icon_1": "lock",
-            "image_1": "shopify:\/\/shop_images\/icons8-tick.gif",
-            "heading_1": "<strong>100% Secure Payment<\/strong>",
+            "image_1": "shopify://shop_images/icons8-tick.gif",
+            "heading_1": "<strong>100% Secure Payment</strong>",
             "icon_2": "star",
-            "image_2": "shopify:\/\/shop_images\/best-quality.gif",
+            "image_2": "shopify://shop_images/best-quality.gif",
             "heading_2": "Premium Quality",
             "icon_3": "map_pin",
-            "image_3": "shopify://shop_images/united-states-of-america.gif",
-            "heading_3": "Popular in USA"
+            "image_3": "shopify://shop_images/palette.gif",
+            "heading_3": "Custom Made By Artists"
           }
         },
         "collapsible_tab_LTYFh4": {
@@ -150,7 +150,7 @@
       "type": "apps",
       "blocks": {
         "judge_me_reviews_review_widget_tCm9XY": {
-          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {}
         }
       },
