@@ -63,14 +63,14 @@
           "settings": {
             "layout": "horizontal",
             "icon_1": "check_mark",
-            "image_1": "shopify:\/\/shop_images\/icons8-tick.gif",
-            "heading_1": "<strong>100% Secure Payment<\/strong>",
+            "image_1": "shopify://shop_images/icons8-tick.gif",
+            "heading_1": "<strong>100% Secure Payment</strong>",
             "icon_2": "return",
-            "image_2": "shopify:\/\/shop_images\/best-quality.gif",
+            "image_2": "shopify://shop_images/best-quality.gif",
             "heading_2": "Premium Quality",
             "icon_3": "truck",
-            "image_3": "shopify://shop_images/united-states-of-america.gif",
-            "heading_3": "Popular in USA"
+            "image_3": "shopify://shop_images/palette.gif",
+            "heading_3": "Custom Made By Artists"
           }
         },
         "collapsible_tab_Ybd7ty": {
@@ -122,7 +122,7 @@
       "type": "apps",
       "blocks": {
         "judge_me_reviews_review_widget_3hCzJe": {
-          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {}
         }
       },
