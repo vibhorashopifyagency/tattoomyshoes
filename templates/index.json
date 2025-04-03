@@ -61,6 +61,7 @@
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/Black_and_Beige_Minimalist_Black_Friday_Sale_Banner.png",
+            "mobile_image": "shopify://shop_images/20240413_194554.jpg",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
