@@ -61,6 +61,7 @@
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/Black_and_Beige_Minimalist_Black_Friday_Sale_Banner.png",
+            "mobile_image": "shopify://shop_images/20240413_194554.jpg",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
@@ -116,6 +117,84 @@
         "slide_e4UGNj",
         "slide_dY839n",
         "slide_WxQewk"
+      ],
+      "disabled": true,
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "large",
+        "slider_visual": "dots",
+        "auto_rotate": true,
+        "change_slides_speed": 3,
+        "image_behavior": "none",
+        "show_text_below": false,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "slideshow_fDthtX": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_E7UKfc": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Black_and_Beige_Minimalist_Black_Friday_Sale_Banner.png",
+            "mobile_image": "shopify://shop_images/5_11292ac3-d339-4b7d-96a8-27995e3c591e.png",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_Q88hw8": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/1_16066483-a4e1-416e-b58f-05464cc8f4c7.png",
+            "mobile_image": "shopify://shop_images/4_645efe6c-9f1e-467e-b911-5c433612676e.png",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_m3pGTm": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Untitled_design_5.png",
+            "mobile_image": "shopify://shop_images/SLIDE_3.png",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-1",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "slide_E7UKfc",
+        "slide_Q88hw8",
+        "slide_m3pGTm"
       ],
       "settings": {
         "layout": "full_bleed",
@@ -180,7 +259,7 @@
         "show_vendor": true,
         "show_rating": true,
         "quick_add": "standard",
-        "columns_mobile": "2",
+        "columns_mobile": "1",
         "swipe_on_mobile": true,
         "padding_top": 20,
         "padding_bottom": 40
@@ -436,7 +515,7 @@
         "show_vendor": true,
         "show_rating": false,
         "quick_add": "none",
-        "columns_mobile": "2",
+        "columns_mobile": "1",
         "swipe_on_mobile": true,
         "padding_top": 36,
         "padding_bottom": 36
@@ -810,7 +889,7 @@
         "show_vendor": true,
         "show_rating": false,
         "quick_add": "none",
-        "columns_mobile": "2",
+        "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
@@ -904,6 +983,7 @@
   "order": [
     "rich_text_8HCJww",
     "slideshow_WFydwJ",
+    "slideshow_fDthtX",
     "featured_collection_WCNiGL",
     "featured_collection",
     "video_WxTBbc",
