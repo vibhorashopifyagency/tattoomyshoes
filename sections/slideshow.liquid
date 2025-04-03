@@ -194,7 +194,8 @@
                   assign fetch_priority = 'high'
                 endif
               -%}
-              {%- if forloop.first %}
+              <img src="{{ block.settings.mobile_image |  img_url: 'master' }}" alt="" />
+              {% comment %} {%- if forloop.first %}
 
                   {{
                     block.settings.mobile_image
@@ -210,7 +211,7 @@
                     | image_tag: height: height, sizes: sizes, widths: widths, fetchpriority: fetch_priority
                   }}
 
-              {%- endif -%}
+              {%- endif -%} {% endcomment %}
             {%- else -%}
               {%- assign placeholder_slide = forloop.index | modulo: 2 -%}
               {%- if placeholder_slide == 1 -%}
