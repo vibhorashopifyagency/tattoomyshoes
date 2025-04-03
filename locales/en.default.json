@@ -107,8 +107,8 @@
   "products": {
     "product": {
       "add_to_cart": "Add to cart",
-      "choose_options": "Quick View",
-      "choose_product_options": "Quick View {{ product_name }}",
+      "choose_options": "Choose Options",
+      "choose_product_options": "Choose Options {{ product_name }}",
       "description": "Description",
       "inventory_in_stock": "In stock",
       "inventory_in_stock_show_count": "{{ quantity }} in stock",
