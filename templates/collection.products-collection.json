@@ -11,59 +11,10 @@
   "sections": {
     "banner": {
       "type": "main-collection-banner",
-      "disabled": true,
       "settings": {
         "show_collection_description": true,
         "show_collection_image": true,
         "color_scheme": "scheme-84a78fdd-99c2-4f0c-be81-2ab09e7dddd6"
-      }
-    },
-    "image_with_text_Ra4hQ3": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_DrGy69": {
-          "type": "heading",
-          "settings": {
-            "heading": "{{ collection.title }} Collection",
-            "heading_size": "h1"
-          }
-        },
-        "text_y4dTgD": {
-          "type": "text",
-          "settings": {
-            "text": "<p>{{ collection.description }}</p>",
-            "text_style": "body"
-          }
-        },
-        "button_g6apmN": {
-          "type": "button",
-          "disabled": true,
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_DrGy69",
-        "text_y4dTgD",
-        "button_g6apmN"
-      ],
-      "settings": {
-        "image": "{{ collection.image }}",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "center",
-        "content_layout": "overlap",
-        "section_color_scheme": "scheme-84a78fdd-99c2-4f0c-be81-2ab09e7dddd6",
-        "color_scheme": "scheme-a705afd9-5c1f-4480-9e44-5dac04f31da8",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "padding_top": 20,
-        "padding_bottom": 20
       }
     },
     "product-grid": {
@@ -89,7 +40,6 @@
   },
   "order": [
     "banner",
-    "image_with_text_Ra4hQ3",
     "product-grid"
   ]
 }
