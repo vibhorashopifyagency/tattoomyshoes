@@ -148,6 +148,16 @@
         "disabled": false,
         "settings": {}
       },
+      "5550728556201851227": {
+        "type": "shopify://apps/glc-geolocation-redirects-app/blocks/selector/e347b539-0714-46e4-9e69-23a73992ae3a",
+        "disabled": false,
+        "settings": {}
+      },
+      "13768625480086291342": {
+        "type": "shopify://apps/forms/blocks/forms/8744a304-fcb1-4347-b211-bb6b4759a76a",
+        "disabled": false,
+        "settings": {}
+      },
       "15683396631634586217": {
         "type": "shopify://apps/inbox/blocks/chat/841fc607-4181-4ad1-842d-e24d7f8bad6b",
         "disabled": false,
@@ -159,18 +169,8 @@
           "button_text": "no_text",
           "button_horizontal_position": "bottom_right",
           "button_vertical_position": "higher",
-          "greeting_message": "Welcome to Tattoo My Shoes.\nWe hope you're having a great day. \n😄 Let's try to make it better. How may we help ?"
+          "greeting_message": "Welcome to Tattoo My Shoes.\nWe hope you're having a great day. \n😄 Let's try to make it better. What Can I make for you ?"
         }
-      },
-      "5550728556201851227": {
-        "type": "shopify://apps/glc-geolocation-redirects-app/blocks/selector/e347b539-0714-46e4-9e69-23a73992ae3a",
-        "disabled": false,
-        "settings": {}
-      },
-      "13768625480086291342": {
-        "type": "shopify://apps/forms/blocks/forms/8744a304-fcb1-4347-b211-bb6b4759a76a",
-        "disabled": false,
-        "settings": {}
       }
     },
     "color_schemes": {
