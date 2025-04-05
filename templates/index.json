@@ -54,90 +54,14 @@
         "padding_bottom": 4
       }
     },
-    "slideshow_WFydwJ": {
-      "type": "slideshow",
-      "blocks": {
-        "slide_e4UGNj": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/Black_and_Beige_Minimalist_Black_Friday_Sale_Banner.png",
-            "mobile_image": "shopify://shop_images/20240413_194554.jpg",
-            "heading": "",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "box_align": "middle-left",
-            "show_text_box": false,
-            "text_alignment": "left",
-            "image_overlay_opacity": 0,
-            "color_scheme": "scheme-a705afd9-5c1f-4480-9e44-5dac04f31da8",
-            "text_alignment_mobile": "center"
-          }
-        },
-        "slide_dY839n": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/Untitled_2200_x_720_px_1.png",
-            "heading": "",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "box_align": "middle-left",
-            "show_text_box": false,
-            "text_alignment": "left",
-            "image_overlay_opacity": 0,
-            "color_scheme": "scheme-a705afd9-5c1f-4480-9e44-5dac04f31da8",
-            "text_alignment_mobile": "center"
-          }
-        },
-        "slide_WxQewk": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/Untitled_design_5.png",
-            "heading": "",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "box_align": "middle-left",
-            "show_text_box": false,
-            "text_alignment": "left",
-            "image_overlay_opacity": 0,
-            "color_scheme": "scheme-a705afd9-5c1f-4480-9e44-5dac04f31da8",
-            "text_alignment_mobile": "center"
-          }
-        }
-      },
-      "block_order": [
-        "slide_e4UGNj",
-        "slide_dY839n",
-        "slide_WxQewk"
-      ],
-      "disabled": true,
-      "settings": {
-        "layout": "full_bleed",
-        "slide_height": "large",
-        "slider_visual": "dots",
-        "auto_rotate": true,
-        "change_slides_speed": 3,
-        "image_behavior": "none",
-        "show_text_below": false,
-        "accessibility_info": "Slideshow about our brand"
-      }
-    },
     "slideshow_fDthtX": {
       "type": "slideshow",
       "blocks": {
-        "slide_Q88hw8": {
+        "slide_m3pGTm": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/1_16066483-a4e1-416e-b58f-05464cc8f4c7.png",
-            "mobile_image": "shopify://shop_images/4_645efe6c-9f1e-467e-b911-5c433612676e.png",
+            "image": "shopify://shop_images/Your_Custom_Shoes.png",
+            "mobile_image": "shopify://shop_images/SLIDE_3.png",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
@@ -148,7 +72,7 @@
             "show_text_box": false,
             "text_alignment": "center",
             "image_overlay_opacity": 0,
-            "color_scheme": "",
+            "color_scheme": "scheme-1",
             "text_alignment_mobile": "center"
           }
         },
@@ -171,11 +95,11 @@
             "text_alignment_mobile": "center"
           }
         },
-        "slide_m3pGTm": {
+        "slide_Q88hw8": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Untitled_design_5.png",
-            "mobile_image": "shopify://shop_images/SLIDE_3.png",
+            "image": "shopify://shop_images/1_16066483-a4e1-416e-b58f-05464cc8f4c7.png",
+            "mobile_image": "shopify://shop_images/4_645efe6c-9f1e-467e-b911-5c433612676e.png",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
@@ -186,15 +110,15 @@
             "show_text_box": false,
             "text_alignment": "center",
             "image_overlay_opacity": 0,
-            "color_scheme": "scheme-1",
+            "color_scheme": "",
             "text_alignment_mobile": "center"
           }
         }
       },
       "block_order": [
-        "slide_Q88hw8",
+        "slide_m3pGTm",
         "slide_E7UKfc",
-        "slide_m3pGTm"
+        "slide_Q88hw8"
       ],
       "settings": {
         "layout": "full_bleed",
@@ -986,7 +910,6 @@
   },
   "order": [
     "rich_text_8HCJww",
-    "slideshow_WFydwJ",
     "slideshow_fDthtX",
     "featured_collection_WCNiGL",
     "featured_collection",
