@@ -210,6 +210,7 @@
     "featured_collection_WCNiGL": {
       "type": "featured-collection",
       "settings": {
+        "enable_lazy_load": false,
         "title": "<strong>DESIGN YOUR CUSTOMS</strong>",
         "heading_size": "h1",
         "justify_heading_text": "center",
@@ -239,6 +240,7 @@
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
+        "enable_lazy_load": true,
         "title": "Ready To Ship",
         "heading_size": "h1",
         "justify_heading_text": "center",
@@ -495,6 +497,7 @@
     "featured_collection_9rpKNM": {
       "type": "featured-collection",
       "settings": {
+        "enable_lazy_load": true,
         "title": "",
         "heading_size": "h1",
         "justify_heading_text": "left",
@@ -869,6 +872,7 @@
     "featured_collection_Wri4JW": {
       "type": "featured-collection",
       "settings": {
+        "enable_lazy_load": true,
         "title": "What's Trending",
         "heading_size": "h1",
         "justify_heading_text": "left",
