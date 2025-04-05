@@ -529,18 +529,23 @@
 
                   <script>
                     document.addEventListener("DOMContentLoaded", function () {
-                      const form = document.getElementById("{{ product_form_id }}");
+                      const addToCartButton = document.querySelector(`form[id="{{ product_form_id }}"] [type="submit"]`);
                       const engravingInput = document.getElementById("engraving");
 
-                      form.addEventListener("submit", function (e) {
-                        if (!engravingInput.value.trim()) {
-                          e.preventDefault(); // stop the form from submitting
-                          engravingInput.classList.add("field--error");
-                          alert("Please enter your comment in the required field.");
-                        }
-                      });
+                      if (addToCartButton && engravingInput) {
+                        addToCartButton.addEventListener("click", function (e) {
+                          if (!engravingInput.value.trim()) {
+                            e.preventDefault();
+                            engravingInput.classList.add("field--error");
+                            alert("Please enter your comment in the required field.");
+                          } else {
+                            engravingInput.classList.remove("field--error");
+                          }
+                        });
+                      }
                     });
                   </script>
+
 
 
                 {%  else %}
