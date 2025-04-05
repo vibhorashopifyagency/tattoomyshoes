@@ -518,12 +518,32 @@
                             name="properties[engraving]" 
                             form="{{ product_form_id }}"
                             placeholder=" "
+                            required="required"
                           >
                           <label class="field__label" for="engraving">Comments (Required)</label>
                         </div>
                       </div>
                     </div>
                   </div>
+
+                  <script>
+                    document.addEventListener("DOMContentLoaded", function () {
+                      const addToCartButton = document.querySelector(`form[id="{{ product_form_id }}"] [type="submit"]`);
+                      const engravingInput = document.getElementById("engraving");
+
+                      if (addToCartButton && engravingInput) {
+                        addToCartButton.addEventListener("click", function (e) {
+                          if (!engravingInput.value.trim()) {
+                            e.preventDefault();
+                            engravingInput.classList.add("field--error");
+                            alert("Please enter your comment in the required field.");
+                          } else {
+                            engravingInput.classList.remove("field--error");
+                          }
+                        });
+                      }
+                    });
+                  </script>
 
                 {%  else %}
                   {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id %}

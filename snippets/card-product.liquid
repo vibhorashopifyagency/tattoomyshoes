@@ -76,7 +76,9 @@
                 alt="{{ card_product.featured_media.alt | escape }}"
                 class="motion-reduce"
                 {% unless lazy_load == false %}
+                  {% if section.settings.enable_lazy_load %}
                   loading="lazy"
+                  {% endif %}
                 {% endunless %}
                 width="{{ card_product.featured_media.width }}"
                 height="{{ card_product.featured_media.height }}"
