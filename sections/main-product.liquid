@@ -526,6 +526,23 @@
                     </div>
                   </div>
 
+
+                  <script>
+                    document.addEventListener("DOMContentLoaded", function () {
+                      const form = document.getElementById("{{ product_form_id }}");
+                      const engravingInput = document.getElementById("engraving");
+
+                      form.addEventListener("submit", function (e) {
+                        if (!engravingInput.value.trim()) {
+                          e.preventDefault(); // stop the form from submitting
+                          engravingInput.classList.add("field--error");
+                          alert("Please enter your comment in the required field.");
+                        }
+                      });
+                    });
+                  </script>
+
+
                 {%  else %}
                   {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id %}
                 {% endif %}
