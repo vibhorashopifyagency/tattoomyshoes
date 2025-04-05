@@ -11,10 +11,9 @@
   "sections": {
     "banner": {
       "type": "main-collection-banner",
-      "disabled": true,
       "settings": {
         "show_collection_description": true,
-        "show_collection_image": true,
+        "show_collection_image": false,
         "color_scheme": "scheme-84a78fdd-99c2-4f0c-be81-2ab09e7dddd6"
       }
     },
@@ -50,6 +49,7 @@
         "text_y4dTgD",
         "button_g6apmN"
       ],
+      "disabled": true,
       "settings": {
         "image": "{{ collection.image }}",
         "height": "adapt",
