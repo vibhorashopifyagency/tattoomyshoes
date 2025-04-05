@@ -133,11 +133,11 @@
     "slideshow_fDthtX": {
       "type": "slideshow",
       "blocks": {
-        "slide_E7UKfc": {
+        "slide_Q88hw8": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Black_and_Beige_Minimalist_Black_Friday_Sale_Banner.png",
-            "mobile_image": "shopify://shop_images/5_11292ac3-d339-4b7d-96a8-27995e3c591e.png",
+            "image": "shopify://shop_images/1_16066483-a4e1-416e-b58f-05464cc8f4c7.png",
+            "mobile_image": "shopify://shop_images/4_645efe6c-9f1e-467e-b911-5c433612676e.png",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
@@ -152,11 +152,11 @@
             "text_alignment_mobile": "center"
           }
         },
-        "slide_Q88hw8": {
+        "slide_E7UKfc": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/1_16066483-a4e1-416e-b58f-05464cc8f4c7.png",
-            "mobile_image": "shopify://shop_images/4_645efe6c-9f1e-467e-b911-5c433612676e.png",
+            "image": "shopify://shop_images/Black_and_Beige_Minimalist_Black_Friday_Sale_Banner.png",
+            "mobile_image": "shopify://shop_images/5_11292ac3-d339-4b7d-96a8-27995e3c591e.png",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
@@ -192,13 +192,13 @@
         }
       },
       "block_order": [
-        "slide_E7UKfc",
         "slide_Q88hw8",
+        "slide_E7UKfc",
         "slide_m3pGTm"
       ],
       "settings": {
         "layout": "full_bleed",
-        "slide_height": "large",
+        "slide_height": "adapt_image",
         "slider_visual": "dots",
         "auto_rotate": true,
         "change_slides_speed": 3,
