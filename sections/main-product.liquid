@@ -526,7 +526,6 @@
                     </div>
                   </div>
 
-
                   <script>
                     document.addEventListener("DOMContentLoaded", function () {
                       const addToCartButton = document.querySelector(`form[id="{{ product_form_id }}"] [type="submit"]`);
@@ -545,8 +544,6 @@
                       }
                     });
                   </script>
-
-
 
                 {%  else %}
                   {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id %}
