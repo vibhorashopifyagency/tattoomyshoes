@@ -118,6 +118,7 @@
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/high_tops_banner.png",
+            "mobile_image": "shopify://shop_images/high_tops_mobile_banner.png",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
