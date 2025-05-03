@@ -62,6 +62,12 @@
     "custom_design_gallery_Gfy78M": {
       "type": "custom-design-gallery",
       "blocks": {
+        "video_c6yezR": {
+          "type": "video",
+          "settings": {
+            "video_url": "https://youtu.be/5L305TtFdDM"
+          }
+        },
         "image_G46RN6": {
           "type": "image",
           "settings": {
@@ -194,15 +200,10 @@
             "image": "shopify://shop_images/Clipper_ship_3.jpg",
             "alt": "Gallery Image"
           }
-        },
-        "video_c6yezR": {
-          "type": "video",
-          "settings": {
-            "video_url": "https://youtu.be/5L305TtFdDM"
-          }
         }
       },
       "block_order": [
+        "video_c6yezR",
         "image_G46RN6",
         "image_GNQ3ar",
         "video_rYGU9g",
@@ -221,8 +222,7 @@
         "image_N3FDJY",
         "image_jRJPGz",
         "image_JRipKf",
-        "image_gFm6rh",
-        "video_c6yezR"
+        "image_gFm6rh"
       ],
       "settings": {
         "title": "Our Gallery",
