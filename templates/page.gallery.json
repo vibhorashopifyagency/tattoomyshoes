@@ -62,6 +62,46 @@
     "custom_design_gallery_Gfy78M": {
       "type": "custom-design-gallery",
       "blocks": {
+        "image_PhRFzV": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/cats_optimized.png",
+            "alt": "Gallery Image"
+          }
+        },
+        "image_k47XJ9": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/carnage_1_optimized.png",
+            "alt": "Gallery Image"
+          }
+        },
+        "image_FrXCRQ": {
+          "type": "image",
+          "settings": {
+            "alt": "Gallery Image"
+          }
+        },
+        "image_apAkWr": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/anime_optimized.png",
+            "alt": "Gallery Image"
+          }
+        },
+        "image_rCQaeG": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/amtrad_1_optimized.png",
+            "alt": "Gallery Image"
+          }
+        },
+        "image_rdpEr3": {
+          "type": "image",
+          "settings": {
+            "alt": "Gallery Image"
+          }
+        },
         "image_ptxXFt": {
           "type": "image",
           "settings": {
@@ -320,6 +360,12 @@
         }
       },
       "block_order": [
+        "image_PhRFzV",
+        "image_k47XJ9",
+        "image_FrXCRQ",
+        "image_apAkWr",
+        "image_rCQaeG",
+        "image_rdpEr3",
         "image_ptxXFt",
         "image_nXyDMr",
         "image_CcBDbw",
