@@ -62,6 +62,27 @@
     "custom_design_gallery_Gfy78M": {
       "type": "custom-design-gallery",
       "blocks": {
+        "image_bdRawQ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/mortal_2_optimized.png",
+            "alt": "Gallery Image"
+          }
+        },
+        "image_nD6z3a": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Maul_1_optimized.png",
+            "alt": "Gallery Image"
+          }
+        },
+        "image_6twtqc": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/mando_optimized.png",
+            "alt": "Gallery Image"
+          }
+        },
         "image_rKEPtk": {
           "type": "image",
           "settings": {
@@ -386,6 +407,9 @@
         }
       },
       "block_order": [
+        "image_bdRawQ",
+        "image_nD6z3a",
+        "image_6twtqc",
         "image_rKEPtk",
         "image_zbeKiW",
         "image_98aa8N",
