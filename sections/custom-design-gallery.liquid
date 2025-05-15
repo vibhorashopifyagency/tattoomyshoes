@@ -107,7 +107,7 @@
         opacity: 1;
     }
 
-    .masonry-gallery--{{ section.id }} .gallery-modal__content {
+    .masonry-gallery--{{ section.id }} .gallery-modal__content--{{ section.id }} {
         position: relative;
         max-width: 80%;
         max-height: 80vh;
@@ -252,7 +252,7 @@
             <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
         </svg>
     </button>
-    <div class="gallery-modal__content">
+    <div class="gallery-modal__content--{{ section.id }}">
         <!-- Content will be inserted here dynamically -->
     </div>
     <button class="gallery-modal__nav--{{ section.id }} gallery-modal__nav--next--{{ section.id }}">
@@ -285,7 +285,7 @@
         
         // Modal functionality
         const modal = document.querySelector('.gallery-modal--{{ section.id }}');
-        const modalContent = document.querySelector('.gallery-modal__content');
+        const modalContent = document.querySelector('.gallery-modal__content--{{ section.id }}');
         const closeButton = document.querySelector('.gallery-modal__close--{{ section.id }}');
         const prevButton = document.querySelector('.gallery-modal__nav--prev--{{ section.id }}');
         const nextButton = document.querySelector('.gallery-modal__nav--next--{{ section.id }}');
