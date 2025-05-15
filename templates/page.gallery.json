@@ -62,6 +62,47 @@
     "custom_design_gallery_Gfy78M": {
       "type": "custom-design-gallery",
       "blocks": {
+        "image_xABYcE": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/dredd_optimized.png",
+            "alt": "Gallery Image"
+          }
+        },
+        "image_GFUdQk": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/dragons_2_optimized.png",
+            "alt": "Gallery Image"
+          }
+        },
+        "image_cWDXfa": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/crane_3_optimized.png",
+            "alt": "Gallery Image"
+          }
+        },
+        "image_DyVPcU": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/cobra_1_optimized.png",
+            "alt": "Gallery Image"
+          }
+        },
+        "image_fpbDNj": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/chucky_optimized.png",
+            "alt": "Gallery Image"
+          }
+        },
+        "image_3WGD9c": {
+          "type": "image",
+          "settings": {
+            "alt": "Gallery Image"
+          }
+        },
         "image_PhRFzV": {
           "type": "image",
           "settings": {
@@ -360,6 +401,12 @@
         }
       },
       "block_order": [
+        "image_xABYcE",
+        "image_GFUdQk",
+        "image_cWDXfa",
+        "image_DyVPcU",
+        "image_fpbDNj",
+        "image_3WGD9c",
         "image_PhRFzV",
         "image_k47XJ9",
         "image_FrXCRQ",
