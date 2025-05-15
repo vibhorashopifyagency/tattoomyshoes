@@ -85,7 +85,7 @@
     }
 
     /* Modal styles */
-    .masonry-gallery--{{ section.id }} .gallery-modal {
+    .masonry-gallery--{{ section.id }} .gallery-modal--{{ section.id }} {
         display: none;
         position: fixed;
         z-index: 1000;
@@ -114,7 +114,7 @@
         margin: auto;
     }
 
-    .masonry-gallery--{{ section.id }} .gallery-modal__close {
+    .masonry-gallery--{{ section.id }} .gallery-modal__close--{{ section.id }} {
         position: absolute;
         top: -40px;
         right: 0;
@@ -140,7 +140,7 @@
     }
 
     /* Navigation arrows */
-    .masonry-gallery--{{ section.id }} .gallery-modal__nav {
+    .masonry-gallery--{{ section.id }} .gallery-modal__nav--{{ section.id }} {
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
@@ -158,19 +158,19 @@
         border: none;
     }
 
-    .masonry-gallery--{{ section.id }} .gallery-modal__nav:hover {
+    .masonry-gallery--{{ section.id }} .gallery-modal__nav--{{ section.id }}:hover {
         background-color: rgba(0, 0, 0, 0.8);
     }
 
-    .masonry-gallery--{{ section.id }} .gallery-modal__nav--prev {
+    .masonry-gallery--{{ section.id }} .gallery-modal__nav--prev--{{ section.id }} {
         left: 20px;
     }
 
-    .masonry-gallery--{{ section.id }} .gallery-modal__nav--next {
+    .masonry-gallery--{{ section.id }} .gallery-modal__nav--next--{{ section.id }} {
         right: 20px;
     }
 
-    .masonry-gallery--{{ section.id }} .gallery-modal__nav svg {
+    .masonry-gallery--{{ section.id }} .gallery-modal__nav--{{ section.id }} svg {
         width: 24px;
         height: 24px;
         fill: white;
@@ -182,16 +182,16 @@
         width: calc(100% / {{ section.settings.columns_mobile }});
     }
     
-    .masonry-gallery--{{ section.id }} .gallery-modal__nav {
+    .masonry-gallery--{{ section.id }} .gallery-modal__nav--{{ section.id }} {
         width: 40px;
         height: 40px;
     }
     
-    .masonry-gallery--{{ section.id }} .gallery-modal__nav--prev {
+    .masonry-gallery--{{ section.id }} .gallery-modal__nav--prev--{{ section.id }} {
         left: 10px;
     }
     
-    .masonry-gallery--{{ section.id }} .gallery-modal__nav--next {
+    .masonry-gallery--{{ section.id }} .gallery-modal__nav--next--{{ section.id }} {
         right: 10px;
     }
     }
@@ -245,9 +245,9 @@
 </div>
 
 <!-- Modal/Popup HTML -->
-<div class="gallery-modal">
-    <button class="gallery-modal__close">&times;</button>
-    <button class="gallery-modal__nav gallery-modal__nav--prev">
+<div class="gallery-modal--{{ section.id }}">
+    <button class="gallery-modal__close--{{ section.id }}">&times;</button>
+    <button class="gallery-modal__nav--{{ section.id }} gallery-modal__nav--prev--{{ section.id }}">
         <svg viewBox="0 0 24 24">
             <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
         </svg>
@@ -255,7 +255,7 @@
     <div class="gallery-modal__content">
         <!-- Content will be inserted here dynamically -->
     </div>
-    <button class="gallery-modal__nav gallery-modal__nav--next">
+    <button class="gallery-modal__nav--{{ section.id }} gallery-modal__nav--next--{{ section.id }}">
         <svg viewBox="0 0 24 24">
             <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
         </svg>
@@ -284,11 +284,11 @@
         });
         
         // Modal functionality
-        const modal = document.querySelector('.gallery-modal');
+        const modal = document.querySelector('.gallery-modal--{{ section.id }}');
         const modalContent = document.querySelector('.gallery-modal__content');
-        const closeButton = document.querySelector('.gallery-modal__close');
-        const prevButton = document.querySelector('.gallery-modal__nav--prev');
-        const nextButton = document.querySelector('.gallery-modal__nav--next');
+        const closeButton = document.querySelector('.gallery-modal__close--{{ section.id }}');
+        const prevButton = document.querySelector('.gallery-modal__nav--prev--{{ section.id }}');
+        const nextButton = document.querySelector('.gallery-modal__nav--next--{{ section.id }}');
         const galleryItems = document.querySelectorAll('.masonry-item');
         
         let currentIndex = 0;
