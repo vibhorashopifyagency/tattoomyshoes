@@ -90,13 +90,6 @@
             "alt": "Gallery Image"
           }
         },
-        "image_DyVPcU": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/cobra_1_optimized.png",
-            "alt": "Gallery Image"
-          }
-        },
         "image_fpbDNj": {
           "type": "image",
           "settings": {
@@ -177,13 +170,6 @@
             "alt": "Gallery Image"
           }
         },
-        "image_REL4jY": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/20241115_200412_optimized.jpg",
-            "alt": "Gallery Image"
-          }
-        },
         "image_akpp4U": {
           "type": "image",
           "settings": {
@@ -226,31 +212,10 @@
             "alt": "Gallery Image"
           }
         },
-        "image_HNh9Pi": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/20240904_093552_optimized.jpg",
-            "alt": "Gallery Image"
-          }
-        },
         "image_YMqXAT": {
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/20240315_114540_optimized.jpg",
-            "alt": "Gallery Image"
-          }
-        },
-        "image_gQjfwp": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/20240315_114522_optimized.jpg",
-            "alt": "Gallery Image"
-          }
-        },
-        "image_q67eyL": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/20240308_084939_optimized.jpg",
             "alt": "Gallery Image"
           }
         },
@@ -268,13 +233,6 @@
             "alt": "Gallery Image"
           }
         },
-        "image_UrbLiE": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/20190531_105701_optimized.jpg",
-            "alt": "Gallery Image"
-          }
-        },
         "image_kQEVed": {
           "type": "image",
           "settings": {
@@ -286,13 +244,6 @@
           "type": "video",
           "settings": {
             "video_url": "https://youtu.be/5L305TtFdDM"
-          }
-        },
-        "image_G46RN6": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/20240212_152726.jpg",
-            "alt": "Gallery Image"
           }
         },
         "image_GNQ3ar": {
@@ -343,13 +294,6 @@
             "alt": "Gallery Image"
           }
         },
-        "image_Ap8cVz": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/20230917_092456.jpg",
-            "alt": "Gallery Image"
-          }
-        },
         "image_XfhaMg": {
           "type": "image",
           "settings": {
@@ -369,13 +313,6 @@
           "settings": {
             "image": "shopify://shop_images/20190330_085956_8631bdec-c1fa-4555-b703-e1f742c13e80.jpg",
             "alt": "Gallery Image"
-          }
-        },
-        "image_Bz3zGP": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/MtKMF-ukrrubxfetzz43wdnzczwn2z_dba17601-ace5-4501-85b3-951c010d7066.jpg",
-            "alt": ""
           }
         },
         "image_N3FDJY": {
@@ -412,7 +349,6 @@
         "image_xABYcE",
         "image_GFUdQk",
         "image_cWDXfa",
-        "image_DyVPcU",
         "image_fpbDNj",
         "image_3WGD9c",
         "image_PhRFzV",
@@ -425,23 +361,17 @@
         "image_nXyDMr",
         "image_CcBDbw",
         "image_iYpgxP",
-        "image_REL4jY",
         "image_akpp4U",
         "image_diaTUW",
         "image_G9NHHR",
         "image_hNGJCk",
         "image_TFQTEc",
         "image_KBhNVf",
-        "image_HNh9Pi",
         "image_YMqXAT",
-        "image_gQjfwp",
-        "image_q67eyL",
         "image_zTzzk7",
         "image_p4m8zE",
-        "image_UrbLiE",
         "image_kQEVed",
         "video_CnmbMN",
-        "image_G46RN6",
         "image_GNQ3ar",
         "video_Bcf94t",
         "image_L7gxmR",
@@ -449,11 +379,9 @@
         "image_m4iRBp",
         "image_xTxHRq",
         "image_D4GYct",
-        "image_Ap8cVz",
         "image_XfhaMg",
         "image_NX8XFi",
         "image_fgBeEy",
-        "image_Bz3zGP",
         "image_N3FDJY",
         "image_jRJPGz",
         "image_JRipKf",
