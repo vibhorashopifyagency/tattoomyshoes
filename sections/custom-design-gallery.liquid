@@ -210,8 +210,8 @@
         {% case block.type %}
         {% when 'image' %}
             {% if block.settings.image != blank %}
-            <div class="masonry-item" {{ block.shopify_attributes }} data-index="{{ forloop.index0 }}">
-                <div class="masonry-item__inner">
+            <div class="masonry-item--{{ block.id }}" {{ block.shopify_attributes }} data-index="{{ forloop.index0 }}">
+                <div class="masonry-item__inner--{{ block.id }}">
                 <img 
                     src="{{ block.settings.image | img_url: 'master' }}" 
                     alt="{{ block.settings.alt | escape }}"
@@ -224,9 +224,9 @@
         
             {% when 'video' %}
                 {% if block.settings.video_url != blank %}
-                <div class="masonry-item" {{ block.shopify_attributes }} data-index="{{ forloop.index0 }}">
-                    <div class="masonry-item__inner">
-                        <div class="video-container">
+                <div class="masonry-item--{{ block.id }}" {{ block.shopify_attributes }} data-index="{{ forloop.index0 }}">
+                    <div class="masonry-item__inner--{{ block.id }}">
+                        <div class="video-container--{{ block.id }}">
                             <iframe 
                                 width="100%" 
                                 height="240px" 
