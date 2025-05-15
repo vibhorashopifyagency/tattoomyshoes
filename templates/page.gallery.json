@@ -59,6 +59,50 @@
         "padding_bottom": 40
       }
     },
+    "custom_design_gallery_jYgrYQ": {
+      "type": "custom-design-gallery",
+      "blocks": {
+        "image_3g8VYP": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/mortal_2_optimized.png",
+            "alt": "Gallery Image"
+          }
+        },
+        "image_jTHj8K": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Maul_1_optimized.png",
+            "alt": "Gallery Image"
+          }
+        },
+        "image_7WmJeX": {
+          "type": "image",
+          "settings": {
+            "alt": "Gallery Image"
+          }
+        },
+        "image_xnnw6w": {
+          "type": "image",
+          "settings": {
+            "alt": "Gallery Image"
+          }
+        }
+      },
+      "block_order": [
+        "image_3g8VYP",
+        "image_jTHj8K",
+        "image_7WmJeX",
+        "image_xnnw6w"
+      ],
+      "name": "Masonry Gallery",
+      "settings": {
+        "title": "Our Gallery",
+        "columns_desktop": "3",
+        "columns_mobile": "1",
+        "gap": 15
+      }
+    },
     "custom_design_gallery_Gfy78M": {
       "type": "custom-design-gallery",
       "blocks": {
@@ -469,6 +513,7 @@
   "order": [
     "main",
     "rich_text_dqAWwF",
+    "custom_design_gallery_jYgrYQ",
     "custom_design_gallery_Gfy78M"
   ]
 }
