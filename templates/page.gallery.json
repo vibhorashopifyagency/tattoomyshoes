@@ -62,6 +62,47 @@
     "custom_design_gallery_Gfy78M": {
       "type": "custom-design-gallery",
       "blocks": {
+        "image_rKEPtk": {
+          "type": "image",
+          "settings": {
+            "alt": "Gallery Image"
+          }
+        },
+        "image_zbeKiW": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/jason_optimized.png",
+            "alt": "Gallery Image"
+          }
+        },
+        "image_98aa8N": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Guradians_7_3_optimized.jpg",
+            "alt": "Gallery Image"
+          }
+        },
+        "image_bcU9f3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/geisha_optimized.png",
+            "alt": "Gallery Image"
+          }
+        },
+        "image_89zazD": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/firefly_1_optimized.png",
+            "alt": "Gallery Image"
+          }
+        },
+        "image_6eKbzj": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/evil_ernie_1_optimized.png",
+            "alt": "Gallery Image"
+          }
+        },
         "image_aj6yyd": {
           "type": "image",
           "settings": {
@@ -345,6 +386,12 @@
         }
       },
       "block_order": [
+        "image_rKEPtk",
+        "image_zbeKiW",
+        "image_98aa8N",
+        "image_bcU9f3",
+        "image_89zazD",
+        "image_6eKbzj",
         "image_aj6yyd",
         "image_xABYcE",
         "image_GFUdQk",
