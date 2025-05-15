@@ -62,6 +62,13 @@
     "custom_design_gallery_Gfy78M": {
       "type": "custom-design-gallery",
       "blocks": {
+        "image_aj6yyd": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/DSC07931_optimized.jpg",
+            "alt": "Gallery Image"
+          }
+        },
         "image_xABYcE": {
           "type": "image",
           "settings": {
@@ -401,6 +408,7 @@
         }
       },
       "block_order": [
+        "image_aj6yyd",
         "image_xABYcE",
         "image_GFUdQk",
         "image_cWDXfa",
