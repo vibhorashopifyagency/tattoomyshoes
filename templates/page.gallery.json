@@ -82,17 +82,17 @@
             "alt": "Gallery Image"
           }
         },
+        "video_Bcf94t": {
+          "type": "video",
+          "settings": {
+            "video_url": "https://youtu.be/Z7lWcSXnQtE"
+          }
+        },
         "image_L7gxmR": {
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/20240806_201831.jpg",
             "alt": "Gallery Image"
-          }
-        },
-        "video_Bcf94t": {
-          "type": "video",
-          "settings": {
-            "video_url": "https://youtu.be/Z7lWcSXnQtE"
           }
         },
         "image_UAh9kp": {
@@ -191,8 +191,8 @@
         "video_CnmbMN",
         "image_G46RN6",
         "image_GNQ3ar",
-        "image_L7gxmR",
         "video_Bcf94t",
+        "image_L7gxmR",
         "image_UAh9kp",
         "image_m4iRBp",
         "image_xTxHRq",
