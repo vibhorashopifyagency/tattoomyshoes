@@ -1,29 +1,29 @@
 <style>
-    .masonry-gallery {
+    .masonry-gallery-{{ section.id }} {
         margin: 0 auto;
         /* padding: 20px 0; */
     }
 
-    .masonry-gallery__title {
+    .masonry-gallery__title-{{ section.id }} {
         text-align: center;
         margin-block: 20px;
     }
 
-    .masonry-wrapper {
+    .masonry-wrapper-{{ section.id }} {
         position: relative;
         width: 100%;
     }
 
-    .masonry-sizer,
-    .masonry-item {
+    .masonry-sizer-{{ section.id }},
+    .masonry-item-{{ section.id }} {
         width: calc(100% / {{ section.settings.columns_desktop }});
     }
 
-    .masonry-gutter {
+    .masonry-gutter-{{ section.id }} {
         width: {{ section.settings.gap }}px;
     }
 
-    .masonry-item {
+    .masonry-item-{{ section.id }} {
         position: relative;
         /* padding: {{ section.settings.gap | divided_by: 2 }}px; */
         box-sizing: border-box;
@@ -32,39 +32,39 @@
         overflow: hidden;
     }
 
-    .masonry-item__inner {
+    .masonry-item__inner-{{ section.id }} {
         position: relative;
         overflow: hidden;
         /* border-radius: 8px; */
         transition: transform 0.3s ease;
     }
 
-    .masonry-item__inner:hover {
+    .masonry-item__inner-{{ section.id }}:hover {
         transform: scale(1.02);
     }
 
-    .masonry-item img {
+    .masonry-item-{{ section.id }} img {
         width: 100%;
         height: auto;
         display: block;
         /* border-radius: 8px; */
     }
 
-    .video-container {
+    .video-container-{{ section.id }} {
         position: relative;
         width: 100%;
         /* border-radius: 8px; */
         overflow: hidden;
     }
 
-    .video-cover {
+    .video-cover-{{ section.id }} {
         width: 100%;
         height: auto;
         display: block;
         /* border-radius: 8px; */
     }
 
-    .play-button {
+    .play-button-{{ section.id }} {
         position: absolute;
         top: 50%;
         left: 50%;
@@ -78,14 +78,14 @@
         justify-content: center;
     }
 
-    .play-button svg {
+    .play-button-{{ section.id }} svg {
         width: 24px;
         height: 24px;
         fill: white;
     }
 
     /* Modal styles */
-    .gallery-modal {
+    .gallery-modal-{{ section.id }} {
         display: none;
         position: fixed;
         z-index: 1000;
@@ -102,19 +102,19 @@
         justify-content: center;
     }
 
-    .gallery-modal.active {
+    .gallery-modal-{{ section.id }}.active {
         display: flex;
         opacity: 1;
     }
 
-    .gallery-modal__content {
+    .gallery-modal__content-{{ section.id }} {
         position: relative;
         max-width: 80%;
         max-height: 80vh;
         margin: auto;
     }
 
-    .gallery-modal__close {
+    .gallery-modal__close-{{ section.id }} {
         position: absolute;
         top: -40px;
         right: 0;
@@ -126,21 +126,21 @@
         z-index: 1001;
     }
 
-    .gallery-modal__image {
+    .gallery-modal__image-{{ section.id }} {
         max-width: 100%;
         max-height: 80vh;
         display: block;
         margin: 0 auto;
     }
 
-    .gallery-modal__video {
+    .gallery-modal__video-{{ section.id }} {
         width: 720px;
         max-width: 1000px;
         aspect-ratio: 16/9;
     }
 
     /* Navigation arrows */
-    .gallery-modal__nav {
+    .gallery-modal__nav-{{ section.id }} {
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
@@ -158,60 +158,60 @@
         border: none;
     }
 
-    .gallery-modal__nav:hover {
+    .gallery-modal__nav-{{ section.id }}:hover {
         background-color: rgba(0, 0, 0, 0.8);
     }
 
-    .gallery-modal__nav--prev {
+    .gallery-modal__nav--prev-{{ section.id }} {
         left: 20px;
     }
 
-    .gallery-modal__nav--next {
+    .gallery-modal__nav--next-{{ section.id }} {
         right: 20px;
     }
 
-    .gallery-modal__nav svg {
+    .gallery-modal__nav-{{ section.id }} svg {
         width: 24px;
         height: 24px;
         fill: white;
     }
     
     @media screen and (max-width: 767px) {
-    .masonry-sizer,
-    .masonry-item {
+    .masonry-sizer-{{ section.id }},
+    .masonry-item-{{ section.id }} {
         width: calc(100% / {{ section.settings.columns_mobile }});
     }
     
-    .gallery-modal__nav {
+    .gallery-modal__nav-{{ section.id }} {
         width: 40px;
         height: 40px;
     }
     
-    .gallery-modal__nav--prev {
+    .gallery-modal__nav--prev-{{ section.id }} {
         left: 10px;
     }
     
-    .gallery-modal__nav--next {
+    .gallery-modal__nav--next-{{ section.id }} {
         right: 10px;
     }
     }
 </style>
     
-<div class="masonry-gallery">
+<div class="masonry-gallery-{{ section.id }}">
     {% if section.settings.title != blank %}
-    <h2 class="masonry-gallery__title h1">{{ section.settings.title }}</h2>
+    <h2 class="masonry-gallery__title-{{ section.id }} h1">{{ section.settings.title }}</h2>
     {% endif %}
     
-    <div class="masonry-wrapper">
-    <div class="masonry-sizer"></div>
-    <div class="masonry-gutter"></div>
+    <div class="masonry-wrapper-{{ section.id }}">
+    <div class="masonry-sizer-{{ section.id }}"></div>
+    <div class="masonry-gutter-{{ section.id }}"></div>
     
     {% for block in section.blocks %}
         {% case block.type %}
         {% when 'image' %}
             {% if block.settings.image != blank %}
-            <div class="masonry-item" {{ block.shopify_attributes }} data-index="{{ forloop.index0 }}">
-                <div class="masonry-item__inner">
+            <div class="masonry-item-{{ section.id }}" {{ block.shopify_attributes }} data-index="{{ forloop.index0 }}" data-section-id="{{ section.id }}">
+                <div class="masonry-item__inner-{{ section.id }}">
                 <img 
                     src="{{ block.settings.image | img_url: 'master' }}" 
                     alt="{{ block.settings.alt | escape }}"
@@ -224,9 +224,9 @@
         
             {% when 'video' %}
                 {% if block.settings.video_url != blank %}
-                <div class="masonry-item" {{ block.shopify_attributes }} data-index="{{ forloop.index0 }}">
-                    <div class="masonry-item__inner">
-                        <div class="video-container">
+                <div class="masonry-item-{{ section.id }}" {{ block.shopify_attributes }} data-index="{{ forloop.index0 }}" data-section-id="{{ section.id }}">
+                    <div class="masonry-item__inner-{{ section.id }}">
+                        <div class="video-container-{{ section.id }}">
                             <iframe 
                                 width="100%" 
                                 height="240px" 
@@ -245,182 +245,218 @@
 </div>
 
 <!-- Modal/Popup HTML -->
-<div class="gallery-modal">
-    <button class="gallery-modal__close">&times;</button>
-    <button class="gallery-modal__nav gallery-modal__nav--prev">
+<div class="gallery-modal-{{ section.id }}">
+    <button class="gallery-modal__close-{{ section.id }}">&times;</button>
+    <button class="gallery-modal__nav-{{ section.id }} gallery-modal__nav--prev-{{ section.id }}">
         <svg viewBox="0 0 24 24">
             <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
         </svg>
     </button>
-    <div class="gallery-modal__content">
+    <div class="gallery-modal__content-{{ section.id }}">
         <!-- Content will be inserted here dynamically -->
     </div>
-    <button class="gallery-modal__nav gallery-modal__nav--next">
+    <button class="gallery-modal__nav-{{ section.id }} gallery-modal__nav--next-{{ section.id }}">
         <svg viewBox="0 0 24 24">
             <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
         </svg>
     </button>
 </div>
 
+{% if section.settings.enable_cdn_libraries %}
 <script src="https://unpkg.com/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"></script>
 <script src="https://unpkg.com/imagesloaded@5.0.0/imagesloaded.pkgd.min.js"></script>
+{% endif %}
 
 <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        // Initialize masonry layout when images are loaded
-        const masonryWrapper = document.querySelector('.masonry-wrapper');
+    (function() {
+        // Create a unique namespace for this section instance
+        const sectionId = "{{ section.id }}";
+        const masonryGallery = {};
         
-        // Initialize masonry
-        const masonry = new Masonry(masonryWrapper, {
-            itemSelector: '.masonry-item',
-            columnWidth: '.masonry-sizer',
-            gutter: '.masonry-gutter',
-            percentPosition: true
+        // Initialize the masonry gallery when the DOM is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            initMasonryGallery_{{ section.id }}();
         });
         
-        // Wait for images to load
-        imagesLoaded(masonryWrapper).on('progress', function() {
-            masonry.layout();
-        });
-        
-        // Modal functionality
-        const modal = document.querySelector('.gallery-modal');
-        const modalContent = document.querySelector('.gallery-modal__content');
-        const closeButton = document.querySelector('.gallery-modal__close');
-        const prevButton = document.querySelector('.gallery-modal__nav--prev');
-        const nextButton = document.querySelector('.gallery-modal__nav--next');
-        const galleryItems = document.querySelectorAll('.masonry-item');
-        
-        let currentIndex = 0;
-        
-        // Open modal when clicking on a gallery item
-        galleryItems.forEach(item => {
-            item.addEventListener('click', function() {
-            currentIndex = parseInt(item.dataset.index);
-            openItemInModal(currentIndex);
-            });
-        });
-        
-        // Navigate to previous item
-        prevButton.addEventListener('click', function(e) {
-            e.stopPropagation();
-            navigateGallery(-1);
-        });
-        
-        // Navigate to next item
-        nextButton.addEventListener('click', function(e) {
-            e.stopPropagation();
-            navigateGallery(1);
-        });
-        
-        // Close modal when clicking the close button
-        closeButton.addEventListener('click', closeModal);
-        
-        // Close modal when clicking outside the content
-        modal.addEventListener('click', function(e) {
-            if (e.target === modal) {
-            closeModal();
-            }
-        });
-        
-        // Close modal with ESC key and navigate with arrow keys
-        document.addEventListener('keydown', function(e) {
-            if (!modal.classList.contains('active')) return;
-            
-            if (e.key === 'Escape') {
-            closeModal();
-            } else if (e.key === 'ArrowLeft') {
-            navigateGallery(-1);
-            } else if (e.key === 'ArrowRight') {
-            navigateGallery(1);
-            }
-        });
-        
-        // Function to open specific item in modal
-        function openItemInModal(index) {
-            const item = galleryItems[index];
-            const videoContainer = item.querySelector('.video-container');
-            
-            if (videoContainer) {
-            // It's a video
-            const videoData = item.querySelector('.hidden-data');
-            const videoUrl = videoData.dataset.videoUrl;
-            
-            let embedUrl = '';
-            
-            // Convert YouTube/Vimeo URL to embed URL
-            if (videoUrl.includes('youtube.com') || videoUrl.includes('youtu.be')) {
-                const videoId = videoUrl.includes('v=') 
-                ? videoUrl.split('v=')[1].split('&')[0]
-                : videoUrl.split('/').pop();
-                embedUrl = `https://www.youtube.com/embed/${videoId}?autoplay=true`;
-            } else if (videoUrl.includes('vimeo.com')) {
-                const videoId = videoUrl.split('/').pop();
-                embedUrl = `https://player.vimeo.com/video/${videoId}?autoplay=true`;
-            }
-            
-            modalContent.innerHTML = `
-                <iframe class="gallery-modal__video" src="${embedUrl}" frameborder="0" allowfullscreen></iframe>
-            `;
+        // Main initialization function
+        function initMasonryGallery_{{ section.id }}() {
+            // Only initialize if required libraries are loaded
+            if (typeof Masonry === 'undefined' || typeof imagesLoaded === 'undefined') {
+                // If libraries aren't loaded yet, try to initialize again after a short delay
+                const checkLibraries = setInterval(function() {
+                    if (typeof Masonry !== 'undefined' && typeof imagesLoaded !== 'undefined') {
+                        clearInterval(checkLibraries);
+                        setupMasonry();
+                    }
+                }, 100);
+                
+                // Set a timeout to stop checking after 5 seconds
+                setTimeout(function() {
+                    clearInterval(checkLibraries);
+                    console.error('Required libraries for Masonry Gallery could not be loaded');
+                }, 5000);
             } else {
-            // It's an image
-            const img = item.querySelector('img');
-            const src = img.src;
-            const alt = img.alt;
-            
-            modalContent.innerHTML = `
-                <img class="gallery-modal__image" src="${src}" alt="${alt}">
-            `;
+                setupMasonry();
             }
-            
-            modal.classList.add('active');
-            document.body.style.overflow = 'hidden'; // Prevent scrolling of background
-            
-            // Update navigation visibility
-            updateNavigation();
         }
         
-        // Function to navigate through gallery items
-        function navigateGallery(direction) {
-            // Stop any playing videos
-            const iframe = modalContent.querySelector('iframe');
-            if (iframe) {
-                iframe.src = '';
-            }
+        function setupMasonry() {
+            // Initialize masonry layout when images are loaded
+            const masonryWrapper = document.querySelector('.masonry-wrapper-{{ section.id }}');
+            if (!masonryWrapper) return;
             
-            // Calculate new index
-            currentIndex = (currentIndex + direction + galleryItems.length) % galleryItems.length;
+            // Initialize masonry
+            masonryGallery.masonry = new Masonry(masonryWrapper, {
+                itemSelector: '.masonry-item-{{ section.id }}',
+                columnWidth: '.masonry-sizer-{{ section.id }}',
+                gutter: '.masonry-gutter-{{ section.id }}',
+                percentPosition: true
+            });
             
-            // Open the new item
-            openItemInModal(currentIndex);
+            // Wait for images to load
+            imagesLoaded(masonryWrapper).on('progress', function() {
+                masonryGallery.masonry.layout();
+            });
+            
+            setupModalFunctionality();
         }
         
-        // Update navigation buttons based on current position
-        function updateNavigation() {
-            prevButton.style.display = galleryItems.length > 1 ? 'flex' : 'none';
-            nextButton.style.display = galleryItems.length > 1 ? 'flex' : 'none';
-        }
-        
-        function closeModal() {
-            modal.classList.remove('active');
-            document.body.style.overflow = 'auto';
+        function setupModalFunctionality() {
+            // Modal functionality
+            const modal = document.querySelector('.gallery-modal-{{ section.id }}');
+            const modalContent = document.querySelector('.gallery-modal__content-{{ section.id }}');
+            const closeButton = document.querySelector('.gallery-modal__close-{{ section.id }}');
+            const prevButton = document.querySelector('.gallery-modal__nav--prev-{{ section.id }}');
+            const nextButton = document.querySelector('.gallery-modal__nav--next-{{ section.id }}');
+            const galleryItems = document.querySelectorAll('.masonry-item-{{ section.id }}');
             
-            // Clear iframe src to stop videos
-            const iframe = modalContent.querySelector('iframe');
-            if (iframe) {
-            iframe.src = '';
-            }
+            let currentIndex = 0;
             
-            // Clear content after animation
-            setTimeout(() => {
-                if (!modal.classList.contains('active')) {
-                    modalContent.innerHTML = '';
+            // Open modal when clicking on a gallery item
+            galleryItems.forEach(item => {
+                item.addEventListener('click', function() {
+                    if (item.dataset.sectionId === sectionId) {
+                        currentIndex = parseInt(item.dataset.index);
+                        openItemInModal(currentIndex);
+                    }
+                });
+            });
+            
+            // Navigate to previous item
+            prevButton.addEventListener('click', function(e) {
+                e.stopPropagation();
+                navigateGallery(-1);
+            });
+            
+            // Navigate to next item
+            nextButton.addEventListener('click', function(e) {
+                e.stopPropagation();
+                navigateGallery(1);
+            });
+            
+            // Close modal when clicking the close button
+            closeButton.addEventListener('click', closeModal);
+            
+            // Close modal when clicking outside the content
+            modal.addEventListener('click', function(e) {
+                if (e.target === modal) {
+                    closeModal();
                 }
-            }, 300);
+            });
+            
+            // Close modal with ESC key and navigate with arrow keys
+            document.addEventListener('keydown', function(e) {
+                if (!modal.classList.contains('active')) return;
+                
+                if (e.key === 'Escape') {
+                    closeModal();
+                } else if (e.key === 'ArrowLeft') {
+                    navigateGallery(-1);
+                } else if (e.key === 'ArrowRight') {
+                    navigateGallery(1);
+                }
+            });
+            
+            // Function to open specific item in modal
+            function openItemInModal(index) {
+                const items = Array.from(galleryItems).filter(item => item.dataset.sectionId === sectionId);
+                const item = items[index];
+                const videoContainer = item.querySelector('.video-container-{{ section.id }}');
+                
+                if (videoContainer) {
+                    // It's a video
+                    const iframe = videoContainer.querySelector('iframe');
+                    let videoUrl = iframe.src;
+                    
+                    // Add autoplay parameter if it doesn't exist
+                    if (videoUrl.indexOf('autoplay=') === -1) {
+                        videoUrl += (videoUrl.indexOf('?') === -1 ? '?' : '&') + 'autoplay=1';
+                    }
+                    
+                    modalContent.innerHTML = `
+                        <iframe class="gallery-modal__video-{{ section.id }}" src="${videoUrl}" frameborder="0" allowfullscreen></iframe>
+                    `;
+                } else {
+                    // It's an image
+                    const img = item.querySelector('img');
+                    const src = img.src;
+                    const alt = img.alt;
+                    
+                    modalContent.innerHTML = `
+                        <img class="gallery-modal__image-{{ section.id }}" src="${src}" alt="${alt}">
+                    `;
+                }
+                
+                modal.classList.add('active');
+                document.body.style.overflow = 'hidden'; // Prevent scrolling of background
+                
+                // Update navigation visibility
+                updateNavigation(items.length);
+            }
+            
+            // Function to navigate through gallery items
+            function navigateGallery(direction) {
+                // Stop any playing videos
+                const iframe = modalContent.querySelector('iframe');
+                if (iframe) {
+                    iframe.src = iframe.src.split('?')[0]; // Remove autoplay
+                }
+                
+                const items = Array.from(galleryItems).filter(item => item.dataset.sectionId === sectionId);
+                
+                // Calculate new index
+                currentIndex = (currentIndex + direction + items.length) % items.length;
+                
+                // Open the new item
+                openItemInModal(currentIndex);
+            }
+            
+            // Update navigation buttons based on current position
+            function updateNavigation(itemCount) {
+                prevButton.style.display = itemCount > 1 ? 'flex' : 'none';
+                nextButton.style.display = itemCount > 1 ? 'flex' : 'none';
+            }
+            
+            function closeModal() {
+                modal.classList.remove('active');
+                document.body.style.overflow = 'auto';
+                
+                // Clear iframe src to stop videos
+                const iframe = modalContent.querySelector('iframe');
+                if (iframe) {
+                    iframe.src = '';
+                }
+                
+                // Clear content after animation
+                setTimeout(() => {
+                    if (!modal.classList.contains('active')) {
+                        modalContent.innerHTML = '';
+                    }
+                }, 300);
+            }
         }
-    });
+    })();
 </script>
-
 
 {% schema %}
     {
@@ -503,6 +539,13 @@
           "unit": "px",
           "label": "Gap between items",
           "default": 15
+        },
+        {
+          "type": "checkbox",
+          "id": "enable_cdn_libraries",
+          "label": "Load required libraries (disable if already loaded globally)",
+          "default": true,
+          "info": "Uncheck only if Masonry and imagesLoaded are already loaded in your theme"
         }
       ],
       "blocks": [
