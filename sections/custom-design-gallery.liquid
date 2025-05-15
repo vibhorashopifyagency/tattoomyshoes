@@ -1,29 +1,29 @@
 <style>
-    .masonry-gallery {
+    .masonry-gallery--{{ section.id }} {
         margin: 0 auto;
         /* padding: 20px 0; */
     }
 
-    .masonry-gallery__title {
+    .masonry-gallery--{{ section.id }} .masonry-gallery__title {
         text-align: center;
         margin-block: 20px;
     }
 
-    .masonry-wrapper {
+    .masonry-gallery--{{ section.id }} .masonry-wrapper {
         position: relative;
         width: 100%;
     }
 
-    .masonry-sizer,
-    .masonry-item {
+    .masonry-gallery--{{ section.id }} .masonry-sizer,
+    .masonry-gallery--{{ section.id }} .masonry-item {
         width: calc(100% / {{ section.settings.columns_desktop }});
     }
 
-    .masonry-gutter {
+    .masonry-gallery--{{ section.id }} .masonry-gutter {
         width: {{ section.settings.gap }}px;
     }
 
-    .masonry-item {
+    .masonry-gallery--{{ section.id }} .masonry-item {
         position: relative;
         /* padding: {{ section.settings.gap | divided_by: 2 }}px; */
         box-sizing: border-box;
@@ -32,39 +32,39 @@
         overflow: hidden;
     }
 
-    .masonry-item__inner {
+    .masonry-gallery--{{ section.id }} .masonry-item__inner {
         position: relative;
         overflow: hidden;
         /* border-radius: 8px; */
         transition: transform 0.3s ease;
     }
 
-    .masonry-item__inner:hover {
+    .masonry-gallery--{{ section.id }} .masonry-item__inner:hover {
         transform: scale(1.02);
     }
 
-    .masonry-item img {
+    .masonry-gallery--{{ section.id }} .masonry-item img {
         width: 100%;
         height: auto;
         display: block;
         /* border-radius: 8px; */
     }
 
-    .video-container {
+    .masonry-gallery--{{ section.id }} .video-container {
         position: relative;
         width: 100%;
         /* border-radius: 8px; */
         overflow: hidden;
     }
 
-    .video-cover {
+    .masonry-gallery--{{ section.id }} .video-cover {
         width: 100%;
         height: auto;
         display: block;
         /* border-radius: 8px; */
     }
 
-    .play-button {
+    .masonry-gallery--{{ section.id }} .play-button {
         position: absolute;
         top: 50%;
         left: 50%;
@@ -78,14 +78,14 @@
         justify-content: center;
     }
 
-    .play-button svg {
+    .masonry-gallery--{{ section.id }} .play-button svg {
         width: 24px;
         height: 24px;
         fill: white;
     }
 
     /* Modal styles */
-    .gallery-modal {
+    .masonry-gallery--{{ section.id }} .gallery-modal {
         display: none;
         position: fixed;
         z-index: 1000;
@@ -102,19 +102,19 @@
         justify-content: center;
     }
 
-    .gallery-modal.active {
+    .masonry-gallery--{{ section.id }} .gallery-modal.active {
         display: flex;
         opacity: 1;
     }
 
-    .gallery-modal__content {
+    .masonry-gallery--{{ section.id }} .gallery-modal__content {
         position: relative;
         max-width: 80%;
         max-height: 80vh;
         margin: auto;
     }
 
-    .gallery-modal__close {
+    .masonry-gallery--{{ section.id }} .gallery-modal__close {
         position: absolute;
         top: -40px;
         right: 0;
@@ -126,21 +126,21 @@
         z-index: 1001;
     }
 
-    .gallery-modal__image {
+    .masonry-gallery--{{ section.id }} .gallery-modal__image {
         max-width: 100%;
         max-height: 80vh;
         display: block;
         margin: 0 auto;
     }
 
-    .gallery-modal__video {
+    .masonry-gallery--{{ section.id }} .gallery-modal__video {
         width: 720px;
         max-width: 1000px;
         aspect-ratio: 16/9;
     }
 
     /* Navigation arrows */
-    .gallery-modal__nav {
+    .masonry-gallery--{{ section.id }} .gallery-modal__nav {
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
@@ -158,46 +158,46 @@
         border: none;
     }
 
-    .gallery-modal__nav:hover {
+    .masonry-gallery--{{ section.id }} .gallery-modal__nav:hover {
         background-color: rgba(0, 0, 0, 0.8);
     }
 
-    .gallery-modal__nav--prev {
+    .masonry-gallery--{{ section.id }} .gallery-modal__nav--prev {
         left: 20px;
     }
 
-    .gallery-modal__nav--next {
+    .masonry-gallery--{{ section.id }} .gallery-modal__nav--next {
         right: 20px;
     }
 
-    .gallery-modal__nav svg {
+    .masonry-gallery--{{ section.id }} .gallery-modal__nav svg {
         width: 24px;
         height: 24px;
         fill: white;
     }
     
     @media screen and (max-width: 767px) {
-    .masonry-sizer,
-    .masonry-item {
+    .masonry-gallery--{{ section.id }} .masonry-sizer,
+    .masonry-gallery--{{ section.id }} .masonry-item {
         width: calc(100% / {{ section.settings.columns_mobile }});
     }
     
-    .gallery-modal__nav {
+    .masonry-gallery--{{ section.id }} .gallery-modal__nav {
         width: 40px;
         height: 40px;
     }
     
-    .gallery-modal__nav--prev {
+    .masonry-gallery--{{ section.id }} .gallery-modal__nav--prev {
         left: 10px;
     }
     
-    .gallery-modal__nav--next {
+    .masonry-gallery--{{ section.id }} .gallery-modal__nav--next {
         right: 10px;
     }
     }
 </style>
     
-<div class="masonry-gallery">
+<div class="masonry-gallery--{{ section.id }}">
     {% if section.settings.title != blank %}
     <h2 class="masonry-gallery__title h1">{{ section.settings.title }}</h2>
     {% endif %}
