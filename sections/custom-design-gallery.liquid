@@ -275,11 +275,11 @@
         
         // Initialize the masonry gallery when the DOM is loaded
         document.addEventListener('DOMContentLoaded', function() {
-            initMasonryGallery_{{ section.id }}();
+            initMasonryGallery();
         });
         
         // Main initialization function
-        function initMasonryGallery_{{ section.id }}() {
+        function initMasonryGallery() {
             // Only initialize if required libraries are loaded
             if (typeof Masonry === 'undefined' || typeof imagesLoaded === 'undefined') {
                 // If libraries aren't loaded yet, try to initialize again after a short delay
