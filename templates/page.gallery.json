@@ -59,37 +59,15 @@
         "padding_bottom": 40
       }
     },
-    "custom_design_gallery_BfA4Ja": {
+    "custom_design_gallery_Gfy78M": {
       "type": "custom-design-gallery",
       "blocks": {
-        "video_37pjeY": {
+        "video_CnmbMN": {
           "type": "video",
           "settings": {
             "video_url": "https://youtu.be/5L305TtFdDM"
           }
         },
-        "video_CWbVRE": {
-          "type": "video",
-          "settings": {
-            "video_url": "https://youtu.be/Z7lWcSXnQtE"
-          }
-        }
-      },
-      "block_order": [
-        "video_37pjeY",
-        "video_CWbVRE"
-      ],
-      "name": "Masonry Gallery",
-      "settings": {
-        "title": "Our Gallery",
-        "columns_desktop": "2",
-        "columns_mobile": "1",
-        "gap": 15
-      }
-    },
-    "custom_design_gallery_Gfy78M": {
-      "type": "custom-design-gallery",
-      "blocks": {
         "image_G46RN6": {
           "type": "image",
           "settings": {
@@ -144,6 +122,12 @@
           "settings": {
             "image": "shopify://shop_images/20230917_092456.jpg",
             "alt": "Gallery Image"
+          }
+        },
+        "video_Bcf94t": {
+          "type": "video",
+          "settings": {
+            "video_url": "https://youtu.be/Z7lWcSXnQtE"
           }
         },
         "image_XfhaMg": {
@@ -204,6 +188,7 @@
         }
       },
       "block_order": [
+        "video_CnmbMN",
         "image_G46RN6",
         "image_GNQ3ar",
         "image_L7gxmR",
@@ -212,6 +197,7 @@
         "image_xTxHRq",
         "image_D4GYct",
         "image_Ap8cVz",
+        "video_Bcf94t",
         "image_XfhaMg",
         "image_NX8XFi",
         "image_fgBeEy",
@@ -232,7 +218,6 @@
   "order": [
     "main",
     "rich_text_dqAWwF",
-    "custom_design_gallery_BfA4Ja",
     "custom_design_gallery_Gfy78M"
   ]
 }
