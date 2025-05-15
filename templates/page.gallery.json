@@ -62,22 +62,64 @@
     "custom_design_gallery_jYgrYQ": {
       "type": "custom-design-gallery",
       "blocks": {
-        "image_7WmJeX": {
+        "image_8Y3VPU": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/Thanos_optimized.png",
             "alt": "Gallery Image"
           }
         },
-        "image_xnnw6w": {
+        "image_d4JgBN": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/Spiderman_optimized.png",
+            "alt": "Gallery Image"
+          }
+        },
+        "image_CV64Ca": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/snakes_1_optimized.png",
+            "alt": "Gallery Image"
+          }
+        },
+        "image_m8L4dH": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/skulls2_optimized_1.png",
+            "alt": "Gallery Image"
+          }
+        },
+        "image_PMQrPc": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/pennywise_optimized.png",
+            "alt": "Gallery Image"
+          }
+        },
+        "image_RpprQU": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/penny2_optimized.png",
+            "alt": "Gallery Image"
+          }
+        },
+        "image_GtL7bN": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/nightmare_optimized.png",
             "alt": "Gallery Image"
           }
         }
       },
       "block_order": [
-        "image_7WmJeX",
-        "image_xnnw6w"
+        "image_8Y3VPU",
+        "image_d4JgBN",
+        "image_CV64Ca",
+        "image_m8L4dH",
+        "image_PMQrPc",
+        "image_RpprQU",
+        "image_GtL7bN"
       ],
       "name": "Masonry Gallery",
       "settings": {
