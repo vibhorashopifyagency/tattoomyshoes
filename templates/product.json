@@ -38,14 +38,6 @@
           "type": "quantity_selector",
           "settings": {}
         },
-        "inventory_DDnzDf": {
-          "type": "inventory",
-          "settings": {
-            "text_style": "uppercase",
-            "inventory_threshold": 1,
-            "show_inventory_quantity": true
-          }
-        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -95,7 +87,6 @@
         "price",
         "variant_picker",
         "quantity_selector",
-        "inventory_DDnzDf",
         "buy_buttons",
         "description",
         "icon_with_text_xXfqeQ",
