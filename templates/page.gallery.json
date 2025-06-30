@@ -123,7 +123,7 @@
       ],
       "name": "Masonry Gallery",
       "settings": {
-        "title": "Our Gallery",
+        "title": "Shoes you've imagined!",
         "columns_desktop": "4",
         "columns_mobile": "2",
         "gap": 5,
@@ -198,7 +198,6 @@
         "image_aj6yyd": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/DSC07931_optimized.jpg",
             "alt": "Gallery Image"
           }
         },
