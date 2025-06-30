@@ -62,6 +62,13 @@
     "custom_design_gallery_jYgrYQ": {
       "type": "custom-design-gallery",
       "blocks": {
+        "video_iEHwqE": {
+          "type": "video",
+          "settings": {
+            "video_url": "https://www.youtube.com/watch?v=Cvf-86a_UFE",
+            "cover_image": "shopify://shop_images/20231014_144453.jpg"
+          }
+        },
         "image_8Y3VPU": {
           "type": "image",
           "settings": {
@@ -113,6 +120,7 @@
         }
       },
       "block_order": [
+        "video_iEHwqE",
         "image_8Y3VPU",
         "image_d4JgBN",
         "image_CV64Ca",
