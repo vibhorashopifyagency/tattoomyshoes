@@ -464,9 +464,11 @@
               {%- when 'variant_picker' -%}
 
 
-                {% if product.id == 9594835206440 or product.id == 9594843988264 or product.id == 9594895696168 %}
+                {% if product.id == 9594835206440 or product.id == 9594843988264 or product.id == 9594895696168 or product.id == 9783000301864 %}
 
-                  {% render 'custom-product-selector-link' %}
+                  {%  unless product.id == 9783000301864 %}
+                    {% render 'custom-product-selector-link' %}
+                  {% endunless %}
 
                   <div class="product-form__customization">
                     <!-- Talk to us section -->
