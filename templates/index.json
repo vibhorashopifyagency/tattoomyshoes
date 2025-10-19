@@ -22,6 +22,7 @@
         },
         "text_weHc3D": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<p>DFW Events Calendar - <a href=\"/pages/tattoo-my-shoes-events-calendar\" target=\"_blank\" title=\"Events Calendar\"><strong>Don’t miss out</strong></a></p>"
           }
