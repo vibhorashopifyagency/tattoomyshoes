@@ -519,11 +519,25 @@
             "products_per_view": 4,
             "image_ratio": "portrait"
           }
+        },
+        "tab_Awa7tN": {
+          "type": "tab",
+          "settings": {
+            "title": "Wade Codling",
+            "featured_image": "shopify://shop_images/Wade.jpg",
+            "description": "<p>Discover the world of original art by Wade Codling. Featuring fan art and exclusive shoes from this talented and unique artist.</p>",
+            "read_more_link": "shopify://collections/gill-monte-shoes-at-tattoo-my-shoes",
+            "collection": "wade-codling-codlings-creations",
+            "products_to_show": 7,
+            "products_per_view": 4,
+            "image_ratio": "portrait"
+          }
         }
       },
       "block_order": [
         "tab_xPNnbn",
-        "tab_T3pwFL"
+        "tab_T3pwFL",
+        "tab_Awa7tN"
       ],
       "settings": {
         "background_image": "shopify://shop_images/3d-dark-grunge-display-background-with-smoky-atmosphere.webp",
