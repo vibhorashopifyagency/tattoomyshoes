@@ -781,12 +781,12 @@
         "row_WEKqxm": {
           "type": "row",
           "settings": {
-            "image": "shopify://shop_images/sean_kydd.jpg",
-            "caption": "Fashion into statement by",
-            "heading": "Sean Kydd",
-            "text": "<p>Sean’s stunning tattoo-inspired designs transform shoes into bold fashion statements, reflecting his passion and your personality. Choose a unique, custom-printed pair and step into something truly one of a kind!</p>",
+            "image": "shopify://shop_images/Wade.jpg",
+            "caption": "Custom Art work by Codling's Creations",
+            "heading": "Wade Codling",
+            "text": "<p>Discover Your Own Unique Style Through Featured Artist's Collection.</p>",
             "button_label": "View Collection",
-            "button_link": "shopify://collections/sean-kydd"
+            "button_link": "shopify://collections/wade-codling-codlings-creations"
           }
         }
       },
