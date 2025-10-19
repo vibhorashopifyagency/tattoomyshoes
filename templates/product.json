@@ -21,6 +21,11 @@
         },
         "title": {
           "type": "title",
+          "disabled": true,
+          "settings": {}
+        },
+        "description": {
+          "type": "description",
           "settings": {}
         },
         "price": {
@@ -44,10 +49,6 @@
             "show_dynamic_checkout": true,
             "show_gift_card_recipient": true
           }
-        },
-        "description": {
-          "type": "description",
-          "settings": {}
         },
         "icon_with_text_xXfqeQ": {
           "type": "icon-with-text",
@@ -84,11 +85,11 @@
       "block_order": [
         "vendor",
         "title",
+        "description",
         "price",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
-        "description",
         "icon_with_text_xXfqeQ",
         "collapsible_tab_Ybd7ty",
         "share"
