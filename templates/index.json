@@ -275,49 +275,6 @@
         "padding_bottom": 0
       }
     },
-    "rich_text_EyeGGF": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_7QAVCU": {
-          "type": "heading",
-          "settings": {
-            "heading": "DFW Events Calendar",
-            "heading_size": "h0"
-          }
-        },
-        "text_VJbkxx": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "<p>Discover the Hottest Events Featuring Tattoo My Shoes</p>"
-          }
-        },
-        "button_FDa6w6": {
-          "type": "button",
-          "settings": {
-            "button_label": "Don’t miss out",
-            "button_link": "shopify://pages/tattoo-my-shoes-events-calendar",
-            "button_style_secondary": true,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_7QAVCU",
-        "text_VJbkxx",
-        "button_FDa6w6"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-84a78fdd-99c2-4f0c-be81-2ab09e7dddd6",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
     "featured_product_ekRHJt": {
       "type": "featured-product",
       "blocks": {
@@ -947,14 +904,13 @@
     "slideshow_fDthtX",
     "featured_collection_WCNiGL",
     "featured_collection",
+    "rich_text_3QnYP9",
+    "custom_tabs_rqKNkf",
     "video_WxTBbc",
     "image_with_text_Dht8Jw",
-    "rich_text_EyeGGF",
     "featured_product_ekRHJt",
     "rich_text_tQKdV6",
     "featured_collection_9rpKNM",
-    "rich_text_3QnYP9",
-    "custom_tabs_rqKNkf",
     "image_banner",
     "collection_list_qPwY9d",
     "rich_text_MeYWeA",
