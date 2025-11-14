@@ -155,7 +155,7 @@
     "featured_collection_WCNiGL": {
       "type": "featured-collection",
       "settings": {
-        "enable_lazy_load": false,
+        "enable_lazy_load": true,
         "title": "<strong>DESIGN YOUR CUSTOMS</strong>",
         "heading_size": "h1",
         "justify_heading_text": "center",
@@ -174,7 +174,7 @@
         "image_shape": "default",
         "show_secondary_image": true,
         "show_vendor": true,
-        "show_rating": false,
+        "show_rating": true,
         "quick_add": "none",
         "columns_mobile": "2",
         "swipe_on_mobile": true,
@@ -209,6 +209,90 @@
         "columns_mobile": "1",
         "swipe_on_mobile": true,
         "padding_top": 20,
+        "padding_bottom": 40
+      }
+    },
+    "rich_text_3QnYP9": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_UhFdCq": {
+          "type": "heading",
+          "settings": {
+            "heading": "LET'S SHOP BY ARTIST",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_UhFdCq"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-84a78fdd-99c2-4f0c-be81-2ab09e7dddd6",
+        "full_width": true,
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "custom_tabs_rqKNkf": {
+      "type": "custom-tabs",
+      "blocks": {
+        "tab_xPNnbn": {
+          "type": "tab",
+          "settings": {
+            "title": "Ernie Moreno",
+            "featured_image": "shopify://shop_images/ernie.jpg",
+            "description": "<p>Hey, I’m Ernie, and I believe shoes should tell a story. Every step you take should be a statement, a reflection of your personality, passion, and creativity. That’s why I pour my heart and soul into crafting each pair in this hand-drawn collection, ensuring every design is unique, bold, and meaningful. Whether you're looking for a striking piece of wearable art or something that truly represents you, my creations are here to turn your vision into reality. Ready to walk in art? Own a piece of my vision. Check out my designs below!</p>",
+            "read_more_link": "shopify://collections/ernie-moreno",
+            "collection": "ernie-moreno",
+            "products_to_show": 8,
+            "products_per_view": 4,
+            "image_ratio": "portrait"
+          }
+        },
+        "tab_T3pwFL": {
+          "type": "tab",
+          "settings": {
+            "title": "Gill Montie",
+            "featured_image": "shopify://shop_images/Gill_Montie.png",
+            "description": "<p>Hi, I am Gill Montie, and I’ve designed these custom shoes to bring tattoo artistry to life. Featuring my exclusive artwork, each pair blends bold skulls, intricate details, and raw artistic expression into every step you take. This collection is a tribute to classic tattoo culture, crafted for those who appreciate masterful ink work and want to wear something truly unique. Whether you’re a longtime fan or just love standout designs, here’s your chance to own a piece of tattoo history. Step in, make a statement, and check out my designs below!</p>",
+            "read_more_link": "shopify://collections/gill-monte-shoes-at-tattoo-my-shoes",
+            "collection": "gill-monte-shoes-at-tattoo-my-shoes",
+            "products_to_show": 7,
+            "products_per_view": 4,
+            "image_ratio": "portrait"
+          }
+        },
+        "tab_Awa7tN": {
+          "type": "tab",
+          "settings": {
+            "title": "Wade Codling",
+            "featured_image": "shopify://shop_images/Wade.jpg",
+            "description": "<p>Discover the world of original art by Wade Codling. Featuring fan art and exclusive shoes from this talented and unique artist.</p>",
+            "read_more_link": "shopify://collections/wade-codling-codlings-creations",
+            "collection": "wade-codling-codlings-creations",
+            "products_to_show": 7,
+            "products_per_view": 4,
+            "image_ratio": "portrait"
+          }
+        }
+      },
+      "block_order": [
+        "tab_xPNnbn",
+        "tab_T3pwFL",
+        "tab_Awa7tN"
+      ],
+      "settings": {
+        "background_image": "shopify://shop_images/3d-dark-grunge-display-background-with-smoky-atmosphere.webp",
+        "heading": "Custom shoes by our Featured Artists",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "set_active_tab_background": "#7f0101",
+        "set_active_tab_text": "#ffffff",
+        "color_scheme_1": "scheme-84a78fdd-99c2-4f0c-be81-2ab09e7dddd6",
+        "color_scheme_2": "scheme-2087ceec-c001-491b-8899-09652e7e391f",
+        "padding_top": 40,
         "padding_bottom": 40
       }
     },
@@ -424,90 +508,6 @@
         "swipe_on_mobile": true,
         "padding_top": 36,
         "padding_bottom": 36
-      }
-    },
-    "rich_text_3QnYP9": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_UhFdCq": {
-          "type": "heading",
-          "settings": {
-            "heading": "LET'S SHOP BY ARTIST",
-            "heading_size": "h1"
-          }
-        }
-      },
-      "block_order": [
-        "heading_UhFdCq"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-84a78fdd-99c2-4f0c-be81-2ab09e7dddd6",
-        "full_width": true,
-        "padding_top": 20,
-        "padding_bottom": 20
-      }
-    },
-    "custom_tabs_rqKNkf": {
-      "type": "custom-tabs",
-      "blocks": {
-        "tab_xPNnbn": {
-          "type": "tab",
-          "settings": {
-            "title": "Ernie Moreno",
-            "featured_image": "shopify://shop_images/ernie.jpg",
-            "description": "<p>Hey, I’m Ernie, and I believe shoes should tell a story. Every step you take should be a statement, a reflection of your personality, passion, and creativity. That’s why I pour my heart and soul into crafting each pair in this hand-drawn collection, ensuring every design is unique, bold, and meaningful. Whether you're looking for a striking piece of wearable art or something that truly represents you, my creations are here to turn your vision into reality. Ready to walk in art? Own a piece of my vision. Check out my designs below!</p>",
-            "read_more_link": "shopify://collections/ernie-moreno",
-            "collection": "ernie-moreno",
-            "products_to_show": 8,
-            "products_per_view": 4,
-            "image_ratio": "portrait"
-          }
-        },
-        "tab_T3pwFL": {
-          "type": "tab",
-          "settings": {
-            "title": "Gill Montie",
-            "featured_image": "shopify://shop_images/Gill_Montie.png",
-            "description": "<p>Hi, I am Gill Montie, and I’ve designed these custom shoes to bring tattoo artistry to life. Featuring my exclusive artwork, each pair blends bold skulls, intricate details, and raw artistic expression into every step you take. This collection is a tribute to classic tattoo culture, crafted for those who appreciate masterful ink work and want to wear something truly unique. Whether you’re a longtime fan or just love standout designs, here’s your chance to own a piece of tattoo history. Step in, make a statement, and check out my designs below!</p>",
-            "read_more_link": "shopify://collections/gill-monte-shoes-at-tattoo-my-shoes",
-            "collection": "gill-monte-shoes-at-tattoo-my-shoes",
-            "products_to_show": 7,
-            "products_per_view": 4,
-            "image_ratio": "portrait"
-          }
-        },
-        "tab_Awa7tN": {
-          "type": "tab",
-          "settings": {
-            "title": "Wade Codling",
-            "featured_image": "shopify://shop_images/Wade.jpg",
-            "description": "<p>Discover the world of original art by Wade Codling. Featuring fan art and exclusive shoes from this talented and unique artist.</p>",
-            "read_more_link": "shopify://collections/wade-codling-codlings-creations",
-            "collection": "wade-codling-codlings-creations",
-            "products_to_show": 7,
-            "products_per_view": 4,
-            "image_ratio": "portrait"
-          }
-        }
-      },
-      "block_order": [
-        "tab_xPNnbn",
-        "tab_T3pwFL",
-        "tab_Awa7tN"
-      ],
-      "settings": {
-        "background_image": "shopify://shop_images/3d-dark-grunge-display-background-with-smoky-atmosphere.webp",
-        "heading": "Custom shoes by our Featured Artists",
-        "heading_size": "h1",
-        "heading_alignment": "center",
-        "set_active_tab_background": "#7f0101",
-        "set_active_tab_text": "#ffffff",
-        "color_scheme_1": "scheme-84a78fdd-99c2-4f0c-be81-2ab09e7dddd6",
-        "color_scheme_2": "scheme-2087ceec-c001-491b-8899-09652e7e391f",
-        "padding_top": 40,
-        "padding_bottom": 40
       }
     },
     "image_banner": {
