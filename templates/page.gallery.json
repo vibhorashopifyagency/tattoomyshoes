@@ -69,6 +69,12 @@
             "cover_image": "shopify://shop_images/20231014_144453.jpg"
           }
         },
+        "video_Yj334a": {
+          "type": "video",
+          "settings": {
+            "video_url": "https://youtu.be/Z7lWcSXnQtE"
+          }
+        },
         "video_Pccb3J": {
           "type": "video",
           "settings": {
@@ -140,6 +146,7 @@
       },
       "block_order": [
         "video_iEHwqE",
+        "video_Yj334a",
         "video_Pccb3J",
         "video_E4tMi7",
         "video_nfwm8W",
