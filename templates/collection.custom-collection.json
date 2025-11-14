@@ -140,7 +140,7 @@
         "title": "Create your Customs",
         "heading_size": "h1",
         "justify_heading_text": "left",
-        "description": "<p>Create your Customs</p>",
+        "description": "<h3>Got a crazy idea? Or feeling traditional? The choice is yours</h3>",
         "show_description": false,
         "description_style": "body",
         "collection": "custom-products",
