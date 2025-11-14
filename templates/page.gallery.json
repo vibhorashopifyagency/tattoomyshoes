@@ -170,10 +170,10 @@
     "custom_design_gallery_Gfy78M": {
       "type": "custom-design-gallery",
       "blocks": {
-        "video_Bcf94t": {
+        "video_CnmbMN": {
           "type": "video",
           "settings": {
-            "video_url": "https://youtu.be/Z7lWcSXnQtE"
+            "video_url": "https://youtu.be/5L305TtFdDM"
           }
         },
         "image_bdRawQ": {
@@ -415,12 +415,6 @@
             "alt": "Gallery Image"
           }
         },
-        "video_CnmbMN": {
-          "type": "video",
-          "settings": {
-            "video_url": "https://youtu.be/5L305TtFdDM"
-          }
-        },
         "image_GNQ3ar": {
           "type": "image",
           "settings": {
@@ -514,7 +508,7 @@
         }
       },
       "block_order": [
-        "video_Bcf94t",
+        "video_CnmbMN",
         "image_bdRawQ",
         "image_nD6z3a",
         "image_6twtqc",
@@ -550,7 +544,6 @@
         "image_zTzzk7",
         "image_p4m8zE",
         "image_kQEVed",
-        "video_CnmbMN",
         "image_GNQ3ar",
         "image_L7gxmR",
         "image_UAh9kp",
