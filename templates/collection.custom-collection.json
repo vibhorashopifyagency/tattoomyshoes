@@ -173,15 +173,15 @@
             "mobile_image": "shopify://shop_images/20241222_140206.jpg",
             "heading": "Check out Other Customs",
             "heading_size": "h1",
-            "subheading": "Your Ideas come to life!",
+            "subheading": "<strong>Your Ideas come to life!</strong>",
             "button_label": "Gallery!",
             "link": "shopify://pages/tattoo-my-shoes-gallery",
-            "button_style_secondary": false,
+            "button_style_secondary": true,
             "box_align": "middle-center",
             "show_text_box": true,
             "text_alignment": "center",
             "image_overlay_opacity": 0,
-            "color_scheme": "",
+            "color_scheme": "scheme-84a78fdd-99c2-4f0c-be81-2ab09e7dddd6",
             "text_alignment_mobile": "center"
           }
         },
