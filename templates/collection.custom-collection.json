@@ -169,7 +169,8 @@
         "slide_LBtiTc": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Maul_1_optimized.png",
+            "image": "shopify://shop_images/geisha_optimized.png",
+            "mobile_image": "shopify://shop_images/20241222_140206.jpg",
             "heading": "Check out Other Customs",
             "heading_size": "h1",
             "subheading": "Your Ideas come to life!",
