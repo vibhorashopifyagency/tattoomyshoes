@@ -620,12 +620,19 @@
           "settings": {
             "collection": "boots"
           }
+        },
+        "featured_collection_4GcCF7": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "mouse-pads"
+          }
         }
       },
       "block_order": [
         "featured_collection_arxd6f",
         "featured_collection_apyLnq",
-        "featured_collection_P44aqm"
+        "featured_collection_P44aqm",
+        "featured_collection_4GcCF7"
       ],
       "settings": {
         "title": "Shop By Category",
