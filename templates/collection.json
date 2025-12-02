@@ -31,7 +31,7 @@
         "text_y4dTgD": {
           "type": "text",
           "settings": {
-            "text": "{{ collection.description }}",
+            "text": "<p>Transform your Desk Space into something Special with Custom Order Mouse Pads.</p>",
             "text_style": "body"
           }
         },
@@ -51,7 +51,7 @@
         "button_g6apmN"
       ],
       "settings": {
-        "image": "shopify://shop_images/LOGO.png",
+        "image": "shopify://shop_images/Screenshot_1_763e364b-1fb9-4c3f-841b-fca7e699d79b.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
