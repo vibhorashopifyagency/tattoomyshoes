@@ -11,24 +11,72 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
       }
     },
+    "image_with_text_txr3xy": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_QVPYV9": {
+          "type": "heading",
+          "settings": {
+            "heading": "Custom Mouse Pads",
+            "heading_size": "h1"
+          }
+        },
+        "text_TaFeiN": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Personalize Your Workspace with Custom Mouse Pads Designed Just For You.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_HJktnY": {
+          "type": "button",
+          "settings": {
+            "button_label": "Custom Mousepads",
+            "button_link": "shopify://products/mousepad",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_QVPYV9",
+        "text_TaFeiN",
+        "button_HJktnY"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/Screenshot_1_763e364b-1fb9-4c3f-841b-fca7e699d79b.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "featured_collection_tiLxKq": {
       "type": "featured-collection",
-      "disabled": true,
       "name": "t:sections.featured-collection.presets.name",
       "settings": {
         "enable_lazy_load": true,
-        "title": "Codling's Creations",
+        "title": "Custom Mouse Pads",
         "heading_size": "h1",
         "justify_heading_text": "left",
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "wade-codling-codlings-creations",
+        "collection": "mouse-pads",
         "products_to_show": 4,
         "columns_desktop": 4,
         "full_width": false,
@@ -51,6 +99,7 @@
   },
   "order": [
     "main",
+    "image_with_text_txr3xy",
     "featured_collection_tiLxKq"
   ]
 }
