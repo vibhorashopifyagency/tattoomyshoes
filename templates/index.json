@@ -152,55 +152,6 @@
         "accessibility_info": "Slideshow about our brand"
       }
     },
-    "image_banner_JxwXDc": {
-      "type": "image-banner",
-      "blocks": {
-        "heading_QkaaAX": {
-          "type": "heading",
-          "settings": {
-            "heading": "CHRISTMAS SALE",
-            "heading_size": "h1"
-          }
-        },
-        "text_qqfhCi": {
-          "type": "text",
-          "settings": {
-            "text": "<strong>Christmas is almost here, Order by DEC 3rd to Guarantee Christmas Delivery!! Use Code XMAS for 25% off of your order!!</strong>",
-            "text_style": "subtitle"
-          }
-        },
-        "buttons_ziCdNh": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Order here!",
-            "button_link_1": "shopify://collections",
-            "button_style_secondary_1": false,
-            "button_label_2": "View Gallery",
-            "button_link_2": "shopify://pages/tattoo-my-shoes-gallery",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_QkaaAX",
-        "text_qqfhCi",
-        "buttons_ziCdNh"
-      ],
-      "name": "t:sections.image-banner.presets.name",
-      "settings": {
-        "image": "shopify://shop_images/LOGO.png",
-        "image_overlay_opacity": 0,
-        "image_height": "medium",
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
-    },
     "featured_collection_WCNiGL": {
       "type": "featured-collection",
       "settings": {
@@ -958,7 +909,6 @@
   "order": [
     "rich_text_8HCJww",
     "slideshow_fDthtX",
-    "image_banner_JxwXDc",
     "featured_collection_WCNiGL",
     "featured_collection",
     "rich_text_3QnYP9",
