@@ -63,9 +63,9 @@
           "settings": {
             "image": "shopify://shop_images/Untitled_2200_x_720_px_2200_x_720_px.png",
             "mobile_image": "shopify://shop_images/SLIDE_3.png",
-            "heading": "Create Your Perfect Pair: Custom Shoes & Boots Available.",
+            "heading": "",
             "heading_size": "h1",
-            "subheading": "Express Yourself Through Personalized Designs in Boots and Footwear.",
+            "subheading": "",
             "button_label": "",
             "link": "",
             "button_style_secondary": false,
