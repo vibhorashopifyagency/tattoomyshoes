@@ -23,7 +23,7 @@
           "type": "title",
           "settings": {}
         },
-        "price_BgYiXY": {
+        "price_EcWMXN": {
           "type": "price",
           "settings": {}
         },
@@ -116,7 +116,7 @@
       "block_order": [
         "vendor",
         "title",
-        "price_BgYiXY",
+        "price_EcWMXN",
         "judge_me_reviews_preview_badge_n7pmkT",
         "variant_picker",
         "quantity_selector",
