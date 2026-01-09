@@ -14,6 +14,7 @@
       "blocks": {
         "vendor": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "{{ product.vendor }}",
             "text_style": "uppercase"
@@ -30,9 +31,27 @@
             "text_style": "subtitle"
           }
         },
+        "text_NcitCA": {
+          "type": "text",
+          "settings": {
+            "text": "Rock a pair of kicks that's anything but ordinary. These high tops feature six hand-drawn skulls, each with its own personality and style. Perfect for anyone who wants to stand out with classic edge and undeniable cool factor. Ready to ship, so you can start turning heads right away",
+            "text_style": "body"
+          }
+        },
         "price_EcWMXN": {
           "type": "price",
           "settings": {}
+        },
+        "optional_sizing_Mk4TD9": {
+          "type": "optional_sizing",
+          "settings": {}
+        },
+        "popup_dGXUG7": {
+          "type": "popup",
+          "settings": {
+            "text": "Size Chart",
+            "page": "tattoo-my-shoes-size-chart"
+          }
         },
         "judge_me_reviews_preview_badge_n7pmkT": {
           "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
@@ -50,17 +69,6 @@
           "type": "quantity_selector",
           "disabled": true,
           "settings": {}
-        },
-        "optional_sizing_Mk4TD9": {
-          "type": "optional_sizing",
-          "settings": {}
-        },
-        "popup_dGXUG7": {
-          "type": "popup",
-          "settings": {
-            "text": "Size Chart",
-            "page": "tattoo-my-shoes-size-chart"
-          }
         },
         "inventory_tHiR64": {
           "type": "inventory",
@@ -92,15 +100,6 @@
             "heading_3": "Custom Made By Artists"
           }
         },
-        "collapsible_tab_LTYFh4": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Product Description",
-            "icon": "none",
-            "content": "{{ product.description }}",
-            "page": ""
-          }
-        },
         "description": {
           "type": "description",
           "disabled": true,
@@ -117,16 +116,16 @@
         "vendor",
         "title",
         "text_Yg7BWh",
+        "text_NcitCA",
         "price_EcWMXN",
+        "optional_sizing_Mk4TD9",
+        "popup_dGXUG7",
         "judge_me_reviews_preview_badge_n7pmkT",
         "variant_picker",
         "quantity_selector",
-        "optional_sizing_Mk4TD9",
-        "popup_dGXUG7",
         "inventory_tHiR64",
         "buy_buttons",
         "icon_with_text_8bmAPD",
-        "collapsible_tab_LTYFh4",
         "description",
         "share"
       ],
