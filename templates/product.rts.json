@@ -24,18 +24,15 @@
           "type": "title",
           "settings": {}
         },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
         "text_Yg7BWh": {
           "type": "text",
           "settings": {
             "text": "{{ product.metafields.custom.rts_size.value }}",
             "text_style": "subtitle"
-          }
-        },
-        "text_NcitCA": {
-          "type": "text",
-          "settings": {
-            "text": "Rock a pair of kicks that's anything but ordinary. These high tops feature six hand-drawn skulls, each with its own personality and style. Perfect for anyone who wants to stand out with classic edge and undeniable cool factor. Ready to ship, so you can start turning heads right away",
-            "text_style": "body"
           }
         },
         "price_EcWMXN": {
@@ -100,11 +97,6 @@
             "heading_3": "Custom Made By Artists"
           }
         },
-        "description": {
-          "type": "description",
-          "disabled": true,
-          "settings": {}
-        },
         "share": {
           "type": "share",
           "settings": {
@@ -115,8 +107,8 @@
       "block_order": [
         "vendor",
         "title",
+        "description",
         "text_Yg7BWh",
-        "text_NcitCA",
         "price_EcWMXN",
         "optional_sizing_Mk4TD9",
         "popup_dGXUG7",
@@ -126,7 +118,6 @@
         "inventory_tHiR64",
         "buy_buttons",
         "icon_with_text_8bmAPD",
-        "description",
         "share"
       ],
       "settings": {
