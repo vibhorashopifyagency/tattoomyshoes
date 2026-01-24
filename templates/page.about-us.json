@@ -9,6 +9,23 @@
  */
 {
   "sections": {
+    "video_3NLiRb": {
+      "type": "video",
+      "name": "t:sections.video.presets.name",
+      "settings": {
+        "heading": "Who is Tattoo My Shoes, See who we are!",
+        "heading_size": "h1",
+        "enable_video_looping": false,
+        "video": "shopify://files/videos/TCR.mp4",
+        "video_url": "",
+        "cover_image": "shopify://shop_images/desk.jpg",
+        "description": "custom shoes, visit the video, what do we do?",
+        "full_width": false,
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "main": {
       "type": "main-page",
       "settings": {
@@ -20,22 +37,6 @@
       "type": "how-it-works",
       "disabled": true,
       "settings": {
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "video_3NLiRb": {
-      "type": "video",
-      "name": "t:sections.video.presets.name",
-      "settings": {
-        "heading": "Who is Tattoo My Shoes, watch the story!",
-        "heading_size": "h1",
-        "enable_video_looping": false,
-        "video_url": "https://www.youtube.com/watch?v=Z7lWcSXnQtE&t=1s",
-        "cover_image": "shopify://shop_images/desk.jpg",
-        "description": "custom shoes, visit the video, what do we do?",
-        "full_width": false,
-        "color_scheme": "",
         "padding_top": 36,
         "padding_bottom": 36
       }
