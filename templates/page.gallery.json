@@ -62,6 +62,12 @@
     "custom_design_gallery_jYgrYQ": {
       "type": "custom-design-gallery",
       "blocks": {
+        "video_twVm6E": {
+          "type": "video",
+          "settings": {
+            "video_url": "https://youtu.be/lHfiTmP5cKw"
+          }
+        },
         "video_p7fVea": {
           "type": "video",
           "settings": {
@@ -169,6 +175,7 @@
         }
       },
       "block_order": [
+        "video_twVm6E",
         "video_p7fVea",
         "video_QKeUrf",
         "video_XkKRHR",
