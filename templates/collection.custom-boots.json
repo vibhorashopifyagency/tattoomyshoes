@@ -24,14 +24,14 @@
         "heading_DrGy69": {
           "type": "heading",
           "settings": {
-            "heading": "{{ collection.title }} Collection",
+            "heading": "Custom Boots",
             "heading_size": "h1"
           }
         },
         "text_y4dTgD": {
           "type": "text",
           "settings": {
-            "text": "<p>Transform your Desk Space into something Special with Custom Order Mouse Pads.</p>",
+            "text": "<p><strong>Don't j ust follow trends, Set the Standard with Wearable art hand crafted for you!</strong></p>",
             "text_style": "body"
           }
         },
@@ -51,7 +51,7 @@
         "button_g6apmN"
       ],
       "settings": {
-        "image": "shopify://shop_images/hand_drawn_hightops_1.gif",
+        "image": "shopify://shop_images/Wear_Your_Identity_version_1.png",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
