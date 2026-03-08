@@ -31,7 +31,7 @@
         "text_y4dTgD": {
           "type": "text",
           "settings": {
-            "text": "<p>Transform your Desk Space into something Special with Custom Order Mouse Pads.</p>",
+            "text": "<p>Hand Drawn Heirlooms or custom printed for Durability</p><p>Your kid will stand out from the crownd wherever they go</p>",
             "text_style": "body"
           }
         },
@@ -51,7 +51,7 @@
         "button_g6apmN"
       ],
       "settings": {
-        "image": "shopify://shop_images/hand_drawn_hightops_1.gif",
+        "image": "shopify://shop_images/kids_shoes.gif",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
