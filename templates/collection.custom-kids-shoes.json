@@ -51,9 +51,9 @@
         "button_g6apmN"
       ],
       "settings": {
-        "image": "shopify://shop_images/kids_shoes.gif",
+        "image": "shopify://shop_images/playground.jpg",
         "height": "adapt",
-        "desktop_image_width": "medium",
+        "desktop_image_width": "small",
         "layout": "image_first",
         "desktop_content_position": "middle",
         "desktop_content_alignment": "center",
