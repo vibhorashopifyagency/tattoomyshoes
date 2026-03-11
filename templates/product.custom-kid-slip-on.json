@@ -214,35 +214,57 @@
     "custom_gallery_slider_MrTi9x": {
       "type": "custom-gallery-slider",
       "blocks": {
-        "image_slide_T934eA": {
+        "image_slide_gmYfW9": {
           "type": "image_slide",
           "settings": {
-            "slide_image": "shopify://shop_images/Clipper_ship_3.jpg",
-            "image_title": "",
-            "image_description": ""
+            "image_title": "Custom Shoe",
+            "image_description": "A beautifully designed custom shoe."
           }
         },
-        "image_slide_ryBAzL": {
+        "image_slide_JHCa9d": {
           "type": "image_slide",
           "settings": {
-            "slide_image": "shopify://shop_images/IMG_0678.jpg",
-            "image_title": "",
-            "image_description": ""
+            "image_title": "Custom Shoe",
+            "image_description": "A beautifully designed custom shoe."
           }
         },
-        "image_slide_9rXi3x": {
+        "image_slide_cMbKqg": {
           "type": "image_slide",
           "settings": {
-            "slide_image": "shopify://shop_images/IMG_0388.jpg",
-            "image_title": "",
-            "image_description": ""
+            "image_title": "Custom Shoe",
+            "image_description": "A beautifully designed custom shoe."
+          }
+        },
+        "image_slide_gXyftF": {
+          "type": "image_slide",
+          "settings": {
+            "image_title": "Custom Shoe",
+            "image_description": "A beautifully designed custom shoe."
+          }
+        },
+        "image_slide_YdLgmJ": {
+          "type": "image_slide",
+          "settings": {
+            "image_title": "Custom Shoe",
+            "image_description": "A beautifully designed custom shoe."
+          }
+        },
+        "image_slide_FtR7Ck": {
+          "type": "image_slide",
+          "settings": {
+            "slide_image": "shopify://shop_images/20240713_104108.jpg",
+            "image_title": "Custom Kids Shoes",
+            "image_description": "A beautifully designed custom shoe."
           }
         }
       },
       "block_order": [
-        "image_slide_T934eA",
-        "image_slide_ryBAzL",
-        "image_slide_9rXi3x"
+        "image_slide_gmYfW9",
+        "image_slide_JHCa9d",
+        "image_slide_cMbKqg",
+        "image_slide_gXyftF",
+        "image_slide_YdLgmJ",
+        "image_slide_FtR7Ck"
       ],
       "settings": {
         "section_title": "Explore our past custom shoe designs, crafted with precision and creativity.",
