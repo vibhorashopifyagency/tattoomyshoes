@@ -295,7 +295,7 @@
         "set_active_tab_text": "#ffffff",
         "color_scheme_1": "scheme-84a78fdd-99c2-4f0c-be81-2ab09e7dddd6",
         "color_scheme_2": "scheme-2087ceec-c001-491b-8899-09652e7e391f",
-        "padding_top": 40,
+        "padding_top": 8,
         "padding_bottom": 40
       }
     },
