@@ -287,7 +287,7 @@
             "featured_image": "shopify://shop_images/Art_Without_Limits__version_1.png",
             "description": "<p>Art by Kaitlyn Page</p>",
             "read_more_link": "shopify://collections/kaitlynpage",
-            "collection": "",
+            "collection": "kaitlynpage",
             "products_to_show": 6,
             "products_per_view": 4,
             "image_ratio": "portrait"
