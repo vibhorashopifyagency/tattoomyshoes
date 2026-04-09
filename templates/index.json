@@ -284,7 +284,8 @@
           "type": "tab",
           "settings": {
             "title": "Kaitlyn Page",
-            "description": "<p>Describe your collection or product here</p>",
+            "featured_image": "{{ block.settings.collection.image }}",
+            "description": "<p>Art by Kaitlyn Page</p>",
             "read_more_link": "shopify://collections/kaitlynpage",
             "collection": "",
             "products_to_show": 6,
