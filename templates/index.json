@@ -286,7 +286,7 @@
             "title": "Kaitlyn Page",
             "featured_image": "shopify://shop_images/Art_Without_Limits__version_1.png",
             "description": "<p>Art by Kaitlyn Page</p>",
-            "read_more_link": "https://tattoomyshoes.com/collections/kaitlynpage",
+            "read_more_link": "shopify://collections/kaitlynpage",
             "collection": "",
             "products_to_show": 6,
             "products_per_view": 4,
