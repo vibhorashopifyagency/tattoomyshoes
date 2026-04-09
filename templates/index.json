@@ -279,12 +279,25 @@
             "products_per_view": 4,
             "image_ratio": "portrait"
           }
+        },
+        "tab_He9ezY": {
+          "type": "tab",
+          "settings": {
+            "title": "Kaitlyn Page",
+            "description": "<p>Describe your collection or product here</p>",
+            "read_more_link": "shopify://collections/kaitlynpage",
+            "collection": "",
+            "products_to_show": 6,
+            "products_per_view": 4,
+            "image_ratio": "portrait"
+          }
         }
       },
       "block_order": [
         "tab_xPNnbn",
         "tab_T3pwFL",
-        "tab_Awa7tN"
+        "tab_Awa7tN",
+        "tab_He9ezY"
       ],
       "settings": {
         "background_image": "shopify://shop_images/3d-dark-grunge-display-background-with-smoky-atmosphere.webp",
