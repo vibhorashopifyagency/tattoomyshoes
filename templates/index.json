@@ -221,7 +221,7 @@
         "heading_UhFdCq": {
           "type": "heading",
           "settings": {
-            "heading": "LET'S SHOP BY ARTIST",
+            "heading": "Featured Artists",
             "heading_size": "h1"
           }
         }
@@ -438,6 +438,7 @@
         "text_wKrGWD",
         "share_ehkHad"
       ],
+      "disabled": true,
       "settings": {
         "product": "gill-montie-skull-boots",
         "color_scheme": "scheme-37dad7b4-fed2-4e9e-812a-4267b336ef78",
