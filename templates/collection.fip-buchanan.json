@@ -87,7 +87,7 @@
           "type": "button",
           "settings": {
             "button_label": "Fip's Shoes",
-            "button_link": "shopify://collections/fip-buchanan",
+            "button_link": "shopify://collections/fipbuchanan",
             "button_style_secondary": false,
             "button_label_2": "",
             "button_link_2": "",
