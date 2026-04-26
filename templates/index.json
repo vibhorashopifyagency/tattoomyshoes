@@ -185,6 +185,113 @@
         "padding_bottom": 12
       }
     },
+    "collection_list_tfPNVp": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_LQnCmr": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "ernie-moreno"
+          }
+        },
+        "featured_collection_q6ky4F": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "gillmontie"
+          }
+        },
+        "featured_collection_xPKTXG": {
+          "type": "featured_collection",
+          "disabled": true,
+          "settings": {
+            "collection": "fipbuchanan"
+          }
+        },
+        "featured_collection_CqM8Bb": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "wade-codling-codlings-creations"
+          }
+        },
+        "featured_collection_KGCXg4": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "kaitlynpage"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_LQnCmr",
+        "featured_collection_q6ky4F",
+        "featured_collection_xPKTXG",
+        "featured_collection_CqM8Bb",
+        "featured_collection_KGCXg4"
+      ],
+      "name": "t:sections.collection-list.presets.name",
+      "settings": {
+        "title": "Exclusive Artists",
+        "heading_size": "h1",
+        "justify_heading_text": "center",
+        "card_heading_align": "center",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "color_scheme": "scheme-84a78fdd-99c2-4f0c-be81-2ab09e7dddd6",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collection_list_qPwY9d": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_arxd6f": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "high-tops"
+          }
+        },
+        "featured_collection_apyLnq": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "tattoo-my-shoes-slip-on-shoes"
+          }
+        },
+        "featured_collection_P44aqm": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "boots"
+          }
+        },
+        "featured_collection_4GcCF7": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "mouse-pads"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_arxd6f",
+        "featured_collection_apyLnq",
+        "featured_collection_P44aqm",
+        "featured_collection_4GcCF7"
+      ],
+      "settings": {
+        "title": "Shop By Category",
+        "heading_size": "h1",
+        "justify_heading_text": "center",
+        "card_heading_align": "center",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "color_scheme": "scheme-84a78fdd-99c2-4f0c-be81-2ab09e7dddd6",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
@@ -229,6 +336,7 @@
       "block_order": [
         "heading_UhFdCq"
       ],
+      "disabled": true,
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -300,6 +408,7 @@
         "tab_Awa7tN",
         "tab_He9ezY"
       ],
+      "disabled": true,
       "settings": {
         "background_image": "shopify://shop_images/3d-dark-grunge-display-background-with-smoky-atmosphere.webp",
         "heading": "Custom shoes by our Featured Artists",
@@ -567,55 +676,6 @@
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": false,
         "show_text_below": false
-      }
-    },
-    "collection_list_qPwY9d": {
-      "type": "collection-list",
-      "blocks": {
-        "featured_collection_arxd6f": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "high-tops"
-          }
-        },
-        "featured_collection_apyLnq": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "tattoo-my-shoes-slip-on-shoes"
-          }
-        },
-        "featured_collection_P44aqm": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "boots"
-          }
-        },
-        "featured_collection_4GcCF7": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "mouse-pads"
-          }
-        }
-      },
-      "block_order": [
-        "featured_collection_arxd6f",
-        "featured_collection_apyLnq",
-        "featured_collection_P44aqm",
-        "featured_collection_4GcCF7"
-      ],
-      "settings": {
-        "title": "Shop By Category",
-        "heading_size": "h1",
-        "justify_heading_text": "center",
-        "card_heading_align": "center",
-        "image_ratio": "adapt",
-        "columns_desktop": 4,
-        "color_scheme": "scheme-84a78fdd-99c2-4f0c-be81-2ab09e7dddd6",
-        "show_view_all": false,
-        "columns_mobile": "1",
-        "swipe_on_mobile": true,
-        "padding_top": 36,
-        "padding_bottom": 36
       }
     },
     "rich_text_MeYWeA": {
@@ -928,6 +988,9 @@
     "rich_text_8HCJww",
     "slideshow_fDthtX",
     "featured_collection_WCNiGL",
+    "collection_list_tfPNVp",
+    "rich_text_MeYWeA",
+    "collection_list_qPwY9d",
     "featured_collection",
     "rich_text_3QnYP9",
     "custom_tabs_rqKNkf",
@@ -937,8 +1000,6 @@
     "rich_text_tQKdV6",
     "featured_collection_9rpKNM",
     "image_banner",
-    "collection_list_qPwY9d",
-    "rich_text_MeYWeA",
     "reviews_slider_xAUHXe",
     "multirow_eNEJ4X",
     "featured_collection_Wri4JW",
