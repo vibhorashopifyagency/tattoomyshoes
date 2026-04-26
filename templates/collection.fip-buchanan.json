@@ -85,6 +85,7 @@
         },
         "button_AGqKAY": {
           "type": "button",
+          "disabled": true,
           "settings": {
             "button_label": "Fip's Shoes",
             "button_link": "shopify://collections/fipbuchanan",
