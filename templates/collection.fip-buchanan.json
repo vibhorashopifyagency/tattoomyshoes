@@ -31,7 +31,7 @@
           "type": "text",
           "disabled": true,
           "settings": {
-            "text": "<p>{{ collection.description }}</p>",
+            "text": "{{ collection.description }}",
             "text_style": "body"
           }
         },
@@ -67,6 +67,49 @@
         "padding_bottom": 0
       }
     },
+    "rich_text_Prd3NQ": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_AptbyE": {
+          "type": "heading",
+          "settings": {
+            "heading": "Tattoo Artist  Fip Buchanan",
+            "heading_size": "h1"
+          }
+        },
+        "text_UXJQEp": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>I particularly enjoy doing custom work and Japanese style tattooing, along with portraits, animals, flowers, and other fun stuff. I have always felt it is important to be versatile as a tattoo artist. Trying to perfect a variety of different tattoo styles and art has kept me interested in the field.</strong></p><p><strong>In addition to custom tattooing, I also do a variety of commissioned artwork including paintings, t-shirt designs, business cards, CD covers, band or event posters, </strong></p>"
+          }
+        },
+        "button_AGqKAY": {
+          "type": "button",
+          "settings": {
+            "button_label": "Fip's Shoes",
+            "button_link": "shopify://collections/fip-buchanan",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_AptbyE",
+        "text_UXJQEp",
+        "button_AGqKAY"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "banner": {
       "type": "main-collection-banner",
       "disabled": true,
@@ -99,6 +142,7 @@
   },
   "order": [
     "image_with_text_drUpyF",
+    "rich_text_Prd3NQ",
     "banner",
     "product-grid"
   ]
