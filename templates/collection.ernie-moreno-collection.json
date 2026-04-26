@@ -77,7 +77,7 @@
           "settings": {
             "button_label": "See one of a kind customs",
             "button_link": "shopify://pages/tattoo-my-shoes-gallery",
-            "button_style_secondary": false,
+            "button_style_secondary": true,
             "button_label_2": "",
             "button_link_2": "",
             "button_style_secondary_2": false
