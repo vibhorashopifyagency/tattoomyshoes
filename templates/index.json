@@ -878,7 +878,7 @@
         "enable_lazy_load": true,
         "title": "What's Trending",
         "heading_size": "h1",
-        "justify_heading_text": "left",
+        "justify_heading_text": "center",
         "description": "",
         "show_description": false,
         "description_style": "body",
