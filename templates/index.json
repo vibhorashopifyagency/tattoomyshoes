@@ -234,7 +234,7 @@
         "justify_heading_text": "center",
         "card_heading_align": "center",
         "image_ratio": "square",
-        "columns_desktop": 3,
+        "columns_desktop": 4,
         "color_scheme": "scheme-84a78fdd-99c2-4f0c-be81-2ab09e7dddd6",
         "show_view_all": false,
         "columns_mobile": "1",
