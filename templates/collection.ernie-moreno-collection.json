@@ -67,6 +67,50 @@
         "padding_bottom": 0
       }
     },
+    "rich_text_bEmQPn": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_4RKRDb": {
+          "type": "heading",
+          "settings": {
+            "heading": "Artist and Owner",
+            "heading_size": "h1"
+          }
+        },
+        "text_RY8H7q": {
+          "type": "text",
+          "settings": {
+            "text": "<p>My Passion is making one of a kind shoes and custom printed shoes that you can't find anywhere else. From Hand drawn one of a kind customs to predrawn artwork turned into custom printed shoes. Your imagination is the only limit to what we can make for you!</p><p></p><p></p>"
+          }
+        },
+        "button_AXKDpM": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_4RKRDb",
+        "text_RY8H7q",
+        "button_AXKDpM"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-84a78fdd-99c2-4f0c-be81-2ab09e7dddd6",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "banner": {
       "type": "main-collection-banner",
       "disabled": true,
@@ -99,6 +143,7 @@
   },
   "order": [
     "image_with_text_drUpyF",
+    "rich_text_bEmQPn",
     "banner",
     "product-grid"
   ]
