@@ -60,7 +60,6 @@
       "blocks": {
         "slide_m3pGTm": {
           "type": "slide",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Untitled_2200_x_720_px_2200_x_720_px.png",
             "mobile_image": "shopify://shop_images/SLIDE_3.png",
@@ -80,7 +79,6 @@
         },
         "slide_E7UKfc": {
           "type": "slide",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Boots_Banner_1.png",
             "mobile_image": "shopify://shop_images/5_11292ac3-d339-4b7d-96a8-27995e3c591e.png",
@@ -119,7 +117,6 @@
         },
         "slide_GGKxD9": {
           "type": "slide",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/high_tops_banner.png",
             "mobile_image": "shopify://shop_images/High_Tops_mobile_banner_bf2474b7-be1d-4f4e-929f-4027275aaacd.png",
