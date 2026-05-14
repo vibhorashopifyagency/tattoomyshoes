@@ -30,7 +30,7 @@
         "text_YpnGMa": {
           "type": "text",
           "settings": {
-            "text": "<p>Dave's original art brought to life on your shoes</p><p>Taking art on  your journey</p>",
+            "text": "<p>I’m a tattoo artist of almost 30 years, I am an illustrator who has designed for lots of companies in San Diego, and abroad</p><p>Now Bringing his art to your custom shoes</p>",
             "text_style": "body"
           }
         }
@@ -90,6 +90,7 @@
         "text_RY8H7q",
         "button_AXKDpM"
       ],
+      "disabled": true,
       "name": "t:sections.rich-text.presets.name",
       "settings": {
         "desktop_content_position": "center",
