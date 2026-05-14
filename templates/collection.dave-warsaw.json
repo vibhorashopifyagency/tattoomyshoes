@@ -30,7 +30,7 @@
         "text_YpnGMa": {
           "type": "text",
           "settings": {
-            "text": "<p>Dave's original brough to life on your shoes</p><p>Taking art on  your journey</p>",
+            "text": "<p>Dave's original art brought to life on your shoes</p><p>Taking art on  your journey</p>",
             "text_style": "body"
           }
         }
@@ -42,8 +42,8 @@
       ],
       "settings": {
         "image": "shopify://shop_images/Dave.png",
-        "height": "medium",
-        "desktop_image_width": "medium",
+        "height": "adapt",
+        "desktop_image_width": "small",
         "layout": "image_first",
         "desktop_content_position": "middle",
         "desktop_content_alignment": "center",
