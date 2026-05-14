@@ -29,7 +29,6 @@
         },
         "text_YpnGMa": {
           "type": "text",
-          "disabled": true,
           "settings": {
             "text": "<p>{{ collection.description }}</p>",
             "text_style": "body"
