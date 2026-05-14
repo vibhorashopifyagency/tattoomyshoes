@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "image_with_text_drUpyF": {
@@ -20,9 +29,8 @@
         },
         "text_YpnGMa": {
           "type": "text",
-          "disabled": true,
           "settings": {
-            "text": "<p>{{ collection.description }}<\/p>",
+            "text": "{{ collection.description }}",
             "text_style": "body"
           }
         },
@@ -43,9 +51,9 @@
         "button_hNpE7p"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Gill_Montie.png",
-        "height": "medium",
-        "desktop_image_width": "medium",
+        "image": "shopify://shop_images/Gill.png",
+        "height": "adapt",
+        "desktop_image_width": "small",
         "layout": "image_first",
         "desktop_content_position": "middle",
         "desktop_content_alignment": "center",
