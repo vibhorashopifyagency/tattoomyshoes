@@ -41,9 +41,9 @@
         "text_YpnGMa"
       ],
       "settings": {
-        "image": "shopify://shop_images/ernie.jpg",
-        "height": "medium",
-        "desktop_image_width": "medium",
+        "image": "shopify://shop_images/Ernie.png",
+        "height": "adapt",
+        "desktop_image_width": "small",
         "layout": "image_first",
         "desktop_content_position": "middle",
         "desktop_content_alignment": "center",
