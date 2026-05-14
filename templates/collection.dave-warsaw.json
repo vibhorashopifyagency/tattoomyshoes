@@ -30,7 +30,7 @@
         "text_YpnGMa": {
           "type": "text",
           "settings": {
-            "text": "<p>{{ collection.description }}</p>",
+            "text": "<p>Dave's original brough to life on your shoes</p><p>Taking art on  your journey</p>",
             "text_style": "body"
           }
         }
@@ -41,7 +41,7 @@
         "text_YpnGMa"
       ],
       "settings": {
-        "image": "shopify://shop_images/ernie.jpg",
+        "image": "shopify://shop_images/Dave.jpg",
         "height": "medium",
         "desktop_image_width": "medium",
         "layout": "image_first",
