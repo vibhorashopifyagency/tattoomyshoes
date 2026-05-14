@@ -29,7 +29,6 @@
         },
         "text_YpnGMa": {
           "type": "text",
-          "disabled": true,
           "settings": {
             "text": "{{ collection.description }}",
             "text_style": "body"
@@ -52,9 +51,9 @@
         "button_hNpE7p"
       ],
       "settings": {
-        "image": "shopify://shop_images/fip.jpg",
-        "height": "medium",
-        "desktop_image_width": "medium",
+        "image": "shopify://shop_images/fip.png",
+        "height": "adapt",
+        "desktop_image_width": "small",
         "layout": "image_first",
         "desktop_content_position": "middle",
         "desktop_content_alignment": "center",
@@ -79,6 +78,7 @@
         },
         "text_UXJQEp": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<p><strong>I particularly enjoy doing custom work and Japanese style tattooing, along with portraits, animals, flowers, and other fun stuff. I have always felt it is important to be versatile as a tattoo artist. Trying to perfect a variety of different tattoo styles and art has kept me interested in the field.</strong></p><p><strong>In addition to custom tattooing, I also do a variety of commissioned artwork including paintings, t-shirt designs, business cards, CD covers, band or event posters, </strong></p>"
           }
@@ -101,6 +101,7 @@
         "text_UXJQEp",
         "button_AGqKAY"
       ],
+      "disabled": true,
       "name": "t:sections.rich-text.presets.name",
       "settings": {
         "desktop_content_position": "center",
