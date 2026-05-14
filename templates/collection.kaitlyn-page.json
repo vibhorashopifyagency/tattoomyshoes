@@ -29,7 +29,6 @@
         },
         "text_YpnGMa": {
           "type": "text",
-          "disabled": true,
           "settings": {
             "text": "{{ collection.description }}",
             "text_style": "body"
@@ -78,7 +77,6 @@
     },
     "product-grid": {
       "type": "main-collection-product-grid",
-      "disabled": true,
       "settings": {
         "products_per_page": 16,
         "columns_desktop": 4,
@@ -99,6 +97,7 @@
     },
     "featured_collection_wJ4EWd": {
       "type": "featured-collection",
+      "disabled": true,
       "name": "t:sections.featured-collection.presets.name",
       "settings": {
         "enable_lazy_load": true,
