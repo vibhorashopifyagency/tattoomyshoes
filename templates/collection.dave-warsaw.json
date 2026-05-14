@@ -137,7 +137,7 @@
         "title": "Dave Warsaw Exclusive Collection",
         "heading_size": "h1",
         "justify_heading_text": "left",
-        "description": "",
+        "description": "<p>Dave Warsaw exclusive Collection</p>",
         "show_description": false,
         "description_style": "body",
         "collection": "",
