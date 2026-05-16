@@ -203,6 +203,12 @@
             "collection": "fipbuchanan"
           }
         },
+        "featured_collection_rRQXRb": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "davewarshaw"
+          }
+        },
         "featured_collection_CqM8Bb": {
           "type": "featured_collection",
           "settings": {
@@ -220,6 +226,7 @@
         "featured_collection_LQnCmr",
         "featured_collection_q6ky4F",
         "featured_collection_xPKTXG",
+        "featured_collection_rRQXRb",
         "featured_collection_CqM8Bb",
         "featured_collection_KGCXg4"
       ],
