@@ -1,0 +1,139 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_with_text_drUpyF": {
+      "type": "image-with-text",
+      "blocks": {
+        "caption_FNiXRq": {
+          "type": "caption",
+          "settings": {
+            "caption": "Tattoo My Shoes | Owner and Artist",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "heading_igDJLh": {
+          "type": "heading",
+          "settings": {
+            "heading": "{{ collection.title }}",
+            "heading_size": "h0"
+          }
+        },
+        "text_YpnGMa": {
+          "type": "text",
+          "settings": {
+            "text": "{{ collection.description }}",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "caption_FNiXRq",
+        "heading_igDJLh",
+        "text_YpnGMa"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Ernie.png",
+        "height": "adapt",
+        "desktop_image_width": "small",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "center",
+        "content_layout": "overlap",
+        "section_color_scheme": "scheme-84a78fdd-99c2-4f0c-be81-2ab09e7dddd6",
+        "color_scheme": "scheme-a705afd9-5c1f-4480-9e44-5dac04f31da8",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "rich_text_bEmQPn": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_4RKRDb": {
+          "type": "heading",
+          "settings": {
+            "heading": "Artist and Owner",
+            "heading_size": "h1"
+          }
+        },
+        "text_RY8H7q": {
+          "type": "text",
+          "settings": {
+            "text": "<p>My Passion is making one of a kind shoes and custom printed shoes that you can't find anywhere else. From Hand drawn one of a kind customs to predrawn artwork turned into custom printed shoes. Your imagination is the only limit to what we can make for you!</p><p></p><p></p>"
+          }
+        },
+        "button_AXKDpM": {
+          "type": "button",
+          "settings": {
+            "button_label": "See one of a kind customs",
+            "button_link": "shopify://pages/tattoo-my-shoes-gallery",
+            "button_style_secondary": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_4RKRDb",
+        "text_RY8H7q",
+        "button_AXKDpM"
+      ],
+      "disabled": true,
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-84a78fdd-99c2-4f0c-be81-2ab09e7dddd6",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "banner": {
+      "type": "main-collection-banner",
+      "disabled": true,
+      "settings": {
+        "show_collection_description": true,
+        "show_collection_image": true,
+        "color_scheme": "scheme-84a78fdd-99c2-4f0c-be81-2ab09e7dddd6"
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "products_per_page": 16,
+        "columns_desktop": 4,
+        "color_scheme": "scheme-37dad7b4-fed2-4e9e-812a-4267b336ef78",
+        "image_ratio": "portrait",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": true,
+        "show_rating": false,
+        "quick_add": "standard",
+        "enable_filtering": true,
+        "filter_type": "horizontal",
+        "enable_sorting": true,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "image_with_text_drUpyF",
+    "rich_text_bEmQPn",
+    "banner",
+    "product-grid"
+  ]
+}
