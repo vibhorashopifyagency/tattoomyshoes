@@ -185,16 +185,28 @@
     "collection_list_tfPNVp": {
       "type": "collection-list",
       "blocks": {
-        "featured_collection_LQnCmr": {
+        "featured_collection_MHqq8e": {
           "type": "featured_collection",
           "settings": {
-            "collection": "craigdriscoll"
+            "collection": "ernie-moreno"
           }
         },
         "featured_collection_q6ky4F": {
           "type": "featured_collection",
           "settings": {
             "collection": "gillmontie"
+          }
+        },
+        "featured_collection_KGCXg4": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "kaitlynpage"
+          }
+        },
+        "featured_collection_CqM8Bb": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "wade-codling-codlings-creations"
           }
         },
         "featured_collection_xPKTXG": {
@@ -209,26 +221,21 @@
             "collection": "davewarshaw"
           }
         },
-        "featured_collection_CqM8Bb": {
+        "featured_collection_LQnCmr": {
           "type": "featured_collection",
           "settings": {
-            "collection": "wade-codling-codlings-creations"
-          }
-        },
-        "featured_collection_KGCXg4": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "kaitlynpage"
+            "collection": "craigdriscoll"
           }
         }
       },
       "block_order": [
-        "featured_collection_LQnCmr",
+        "featured_collection_MHqq8e",
         "featured_collection_q6ky4F",
+        "featured_collection_KGCXg4",
+        "featured_collection_CqM8Bb",
         "featured_collection_xPKTXG",
         "featured_collection_rRQXRb",
-        "featured_collection_CqM8Bb",
-        "featured_collection_KGCXg4"
+        "featured_collection_LQnCmr"
       ],
       "name": "t:sections.collection-list.presets.name",
       "settings": {

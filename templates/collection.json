@@ -31,7 +31,7 @@
         "text_y4dTgD": {
           "type": "text",
           "settings": {
-            "text": "<p>Transform your Desk Space into something Special with Custom Order Mouse Pads.</p>",
+            "text": "<p>Founder and artist, I bring tattoo culture and bold custom styles to every pair. Your shoes deserve ink.</p>",
             "text_style": "body"
           }
         },
@@ -51,7 +51,7 @@
         "button_g6apmN"
       ],
       "settings": {
-        "image": "shopify://shop_images/hand_drawn_hightops_1.gif",
+        "image": "shopify://shop_images/Ernie.png",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
