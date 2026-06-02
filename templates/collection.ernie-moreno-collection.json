@@ -47,7 +47,7 @@
         "layout": "image_first",
         "desktop_content_position": "middle",
         "desktop_content_alignment": "center",
-        "content_layout": "overlap",
+        "content_layout": "no-overlap",
         "section_color_scheme": "scheme-84a78fdd-99c2-4f0c-be81-2ab09e7dddd6",
         "color_scheme": "scheme-a705afd9-5c1f-4480-9e44-5dac04f31da8",
         "image_behavior": "none",
