@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -21,7 +30,7 @@
         "text_a9NDct": {
           "type": "text",
           "settings": {
-            "text": "<h3>Get ready for an unforgettable experience at our upcoming events in 2025! Connect, create, and celebrate with Tattoo My Shoes.<\/h3>"
+            "text": "<h3>Get ready for an unforgettable experience at our upcoming events in 2025! Connect, create, and celebrate with Tattoo My Shoes.</h3>"
           }
         },
         "button_h4VXET": {
@@ -57,45 +66,45 @@
         "row_JBBLzG": {
           "type": "row",
           "settings": {
-            "image": "shopify:\/\/shop_images\/IMG_20240525_104238_346.jpg",
+            "image": "shopify://shop_images/IMG_20240525_104238_346.jpg",
             "caption": "Tattoo My Shoes Event",
-            "heading": "Blues and Tattoos",
-            "text": "<p>On 15 Mar, 2025 Tattoo My Shoes will be showcasing at the Blues and Tattoos event<\/p>",
-            "button_label": "Visit",
-            "button_link": "https:\/\/www.bluesandtattoosfest.com\/"
+            "heading": "Side Quest Con",
+            "text": "<p><strong>From July 17 - 18th 2026 Tattoo My Shoes will be showcasing at the Side Quest Con Located at the Grand Hall of the NRH Centre in North Richland Hills, TX</strong></p>",
+            "button_label": "Convention Info",
+            "button_link": "https://www.bluesandtattoosfest.com/"
           }
         },
         "row_BmhBAA": {
           "type": "row",
           "settings": {
-            "image": "shopify:\/\/shop_images\/IMG_20240525_104238_346.jpg",
+            "image": "shopify://shop_images/IMG_20240525_104238_346.jpg",
             "caption": "Tattoo My Shoes Event",
             "heading": "Denton Swap",
-            "text": "<p>Find the Hottest Shoe Tattoo Trends at Denton Swap on 13 April, 2025.<\/p>",
+            "text": "<p>Find the Hottest Shoe Tattoo Trends at Denton Swap on 13 April, 2025.</p>",
             "button_label": "Visit",
-            "button_link": "https:\/\/www.instagram.com\/dentoncountyswapmeet\/"
+            "button_link": "https://www.instagram.com/dentoncountyswapmeet/"
           }
         },
         "row_VUfVjR": {
           "type": "row",
           "settings": {
-            "image": "shopify:\/\/shop_images\/IMG_20240525_104238_346.jpg",
+            "image": "shopify://shop_images/IMG_20240525_104238_346.jpg",
             "caption": "Tattoo My Shoes Event",
             "heading": "TCR Grand Prairie",
-            "text": "<p>On Apr 26, 2025 Tattoo My Shoes will be appearing at event Blues and Tattoos<\/p>",
+            "text": "<p>On Apr 26, 2025 Tattoo My Shoes will be appearing at event Blues and Tattoos</p>",
             "button_label": "Visit",
-            "button_link": "https:\/\/www.texasmonthly.com\/event\/2025-texas-country-reporter-festival\/"
+            "button_link": "https://www.texasmonthly.com/event/2025-texas-country-reporter-festival/"
           }
         },
         "row_QBhAVB": {
           "type": "row",
           "settings": {
-            "image": "shopify:\/\/shop_images\/IMG_20240525_104238_346.jpg",
+            "image": "shopify://shop_images/IMG_20240525_104238_346.jpg",
             "caption": "Tattoo My Shoes Event",
             "heading": "Fan Expo",
-            "text": "<p>Catch us Live at Fan Expo! Tattoo My Shoes will be there from May 30 - June 1 <\/p>",
+            "text": "<p>Catch us Live at Fan Expo! Tattoo My Shoes will be there from May 30 - June 1 </p>",
             "button_label": "Visit",
-            "button_link": "https:\/\/fanexpohq.com\/fanexpodallas\/"
+            "button_link": "https://fanexpohq.com/fanexpodallas/"
           }
         }
       },
@@ -135,17 +144,17 @@
           "type": "text",
           "disabled": true,
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
           }
         },
         "button_hDGGNr": {
           "type": "button",
           "settings": {
             "button_label": "Show Gallery",
-            "button_link": "shopify:\/\/pages\/tattoo-my-shoes-gallery",
+            "button_link": "shopify://pages/tattoo-my-shoes-gallery",
             "button_style_secondary": false,
             "button_label_2": "Continue Shopping",
-            "button_link_2": "shopify:\/\/collections\/all",
+            "button_link_2": "shopify://collections/all",
             "button_style_secondary_2": true
           }
         }
